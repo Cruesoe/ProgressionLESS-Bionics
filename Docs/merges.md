@@ -26,7 +26,7 @@ Most rows hold one mod's items. The rows that mix mods are 1, 8, 12, 13, 54, 59,
 - **Integrated Implants without Bionic modularity** (7 modules that exist only when Bionic modularity is off). They are left out of the merges, so the merged Integrated Implants rows never depend on that switch.
 - **Bionic modularity + Integrated Implants**: ferny's seven ReplaceLib replacements stay as they are. The replaced Integrated Implants modules are among the seven above.
 
-Medieval Overhaul: the original has no Medieval Overhaul folder and none of these projects or items appear in it, so no row affects it. Its Workshop copy isn't installed here, so I couldn't cross-check hook hand and steel arm (Smithing).
+Medieval Overhaul: the original has no Medieval Overhaul support (no folder, patches or references), so no row affects it.
 
 ## Optional folds (single leftover projects)
 
