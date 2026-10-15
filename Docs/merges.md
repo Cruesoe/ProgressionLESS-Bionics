@@ -42,18 +42,26 @@ Medieval Overhaul: the original has no Medieval Overhaul folder and none of thes
 
 Kept on their own: Animal prosthetics and Animal bionics (gates for whole rows), power arm, crypto claw module, arm incinerator module (Anomaly), repair probe (Archotech behind Ultra mechtech), the animal mind controller (VE Genetics - More Lab Stuff), and the seven Integrated Implants modules above.
 
-## How it is implemented (261015)
+## How it is implemented
 
-All 93 rows, including the optional folds, were applied. Two of the proposed code changes turned out to be unnecessary once the merge ran as a patch layer:
+All 93 rows, including the optional folds, are merged in place, as in the other forks: the repo's files hold the result and nothing is merged at load time.
 
-1. **`Merge-GeneratedResearch.ps1`** (Projects tools) reads the plan and writes `Common/Merged`: the 65 new projects in `Defs/ResearchProjectDefs/MergedResearch.xml` and the merge itself in `Patches/MergedResearch.xml`. `Common/Merged` is listed first in LoadFolders, so it is patched after every other folder. It removes a merged project only when none of its members survived ferny's own per-item checks, adds each member's other prerequisites to the recipes that name it, points every reference at the merged project, and removes the members. A fold runs only when its existing project exists. Each new project carries `MayRequireAnyOf` for its members' mods.
-2. **Research Availability is left as ferny wrote it.** It runs first and removes per-item projects as before. The merge layer then turns that into per-group behavior, so the 57,000 lines need no rewrite and upstream changes still diff cleanly.
-3. **No defs needed moving.** Every patch-created project ferny owns is now a member that the merge removes.
-4. **Ferny's per-item recipe patches are unchanged.**
-5. **Layout.** `Tools/New-Layout.ps1` writes `Common/Merged/Patches/Layout.xml`. It places 74 projects on a new Bionics tab, in 11 columns in era order, at most 12 rows per column, Y 0 to 7.7, with prerequisites to the left and no overlaps. It puts the 5 Anomaly projects on the Anomaly tab at X 7.5 to 8.5, right of vanilla's last column.
+- **`Merge-GeneratedResearch.ps1`** (Projects tools) reads the plan and rewrites every XML file under `Common`:
+  - it removes the members' definitions, the patches that create them and every operation aimed at them;
+  - it renames every remaining reference to the merged project, in values and xpaths, and drops duplicate list entries;
+  - it writes each member's other prerequisites into the empty `researchPrerequisites` list ferny's patch gives that member's items, with the `MayRequire` ferny used for that link;
+  - it regroups ferny's availability layer. A merged project is removed when every member's item is missing or replaced (one check over all its items) or when a mod every member needs is absent.
+- **New projects** are in `Common/Defs/ResearchProjectDefs/MergedResearch.xml`, each with `MayRequireAnyOf` for its members' mods. **Folds** into projects other mods own are in `Common/Patches/MergedResearch.xml`, targeted by defName. That file sets the label and description, raises cost and bench to the members', and, for the four members that are other mods' projects (three Integrated Implants projects and Die for me's antigrain switch), removes them and moves their prerequisite links.
+- **Layout:** `Tools/New-Layout.ps1` writes tab and position into every definition. That puts 74 projects on a new Bionics tab, in 11 columns in era order, at most 12 rows per column, Y 0 to 7.7, with prerequisites to the left and no overlaps. The 5 Anomaly projects go on the Anomaly tab at X 7.5 to 8.5, right of vanilla's last column.
+- **Load cost:** 26,066 patch operations (108,753 lines of XML) against the original's 28,788 (124,557).
 
-**Checks.** `Tools/Test-All.ps1` (run by every deploy) applies the merge patch offline to every research project plus synthetic items and recipes in three cases: every mod present, some groups losing all or some members, and a fold target missing. All references must resolve, with no duplicates, no member left beside its merged project, and no group removed while a member exists. It passes. `Test-ResearchLinks.ps1` reports 0 links that can dangle and 0 loops.
+**Checks.** `Tools/Test-All.ps1` runs on every deploy. It checks that:
+- every XML file parses and every Ferny_ project named anywhere is defined;
+- no list holds a duplicate;
+- every project has a position, with no overlaps and prerequisites to the left;
+- each of the 74 availability checks removes its project when none of its items exists and keeps it when one does.
 
+`Test-ResearchLinks.ps1` reports 0 links that can dangle and 0 loops, and the inventory shows 157 projects, 79 of them ferny's.
 ## Merge table
 
 | # | Project | Era | Merge | Type | Mods | In Genesis | Members |
