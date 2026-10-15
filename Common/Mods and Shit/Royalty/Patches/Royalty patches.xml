@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AestheticNose"]</xpath>
@@ -220,7 +220,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AestheticShaper"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AestheticShaper</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_FleshShapingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -229,7 +229,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AestheticShaper"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AestheticShaper</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_FleshShapingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -256,7 +256,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_AestheticShaper"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AestheticShaper</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_FleshShapingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -265,7 +265,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_AestheticShaper"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AestheticShaper</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_FleshShapingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -304,7 +304,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ArmorskinGland"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ArmorskinGland</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SkinGlands</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -313,7 +313,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ArmorskinGland"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ArmorskinGland</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SkinGlands</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -340,7 +340,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_ArmorskinGland"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ArmorskinGland</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SkinGlands</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -349,7 +349,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_ArmorskinGland"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ArmorskinGland</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SkinGlands</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -591,7 +591,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CircadianHalfCycler"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CircadianHalfCycler</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CircadianImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -600,7 +600,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CircadianHalfCycler"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CircadianHalfCycler</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CircadianImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -627,7 +627,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_CircadianHalfCycler"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CircadianHalfCycler</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CircadianImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -636,7 +636,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_CircadianHalfCycler"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CircadianHalfCycler</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CircadianImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -878,7 +878,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DetoxifierStomach"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DetoxifierStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MetabolicStomachs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -887,7 +887,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DetoxifierStomach"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DetoxifierStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MetabolicStomachs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -914,7 +914,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_DetoxifierStomach"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DetoxifierStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MetabolicStomachs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -923,7 +923,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_DetoxifierStomach"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DetoxifierStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MetabolicStomachs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -962,7 +962,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DrillArm"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DrillArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SpecializedLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -971,7 +971,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DrillArm"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DrillArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SpecializedLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -998,7 +998,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_DrillArm"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DrillArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SpecializedLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1007,7 +1007,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_DrillArm"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DrillArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SpecializedLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1046,7 +1046,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ElbowBlade"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ElbowBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CompactWeapons</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1055,7 +1055,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ElbowBlade"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ElbowBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CompactWeapons</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1064,7 +1064,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ElbowBlade"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1073,7 +1073,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ElbowBlade"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1082,7 +1082,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_ElbowBlade"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ElbowBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CompactWeapons</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1091,7 +1091,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_ElbowBlade"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ElbowBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CompactWeapons</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1100,7 +1100,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_ElbowBlade"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1109,7 +1109,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_ElbowBlade"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1130,7 +1130,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FieldHand"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_FieldHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SpecializedLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1139,7 +1139,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FieldHand"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_FieldHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SpecializedLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1166,7 +1166,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_FieldHand"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_FieldHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SpecializedLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1175,7 +1175,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_FieldHand"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_FieldHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SpecializedLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1619,7 +1619,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HealingEnhancer"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HealingEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HealingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1628,7 +1628,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HealingEnhancer"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HealingEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HealingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1655,7 +1655,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_HealingEnhancer"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HealingEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HealingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1664,7 +1664,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_HealingEnhancer"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HealingEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HealingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1703,7 +1703,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Immunoenhancer"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_Immunoenhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MolecularImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1712,7 +1712,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Immunoenhancer"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_Immunoenhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MolecularImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1739,7 +1739,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_Immunoenhancer"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_Immunoenhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MolecularImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1748,7 +1748,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_Immunoenhancer"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_Immunoenhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MolecularImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1787,7 +1787,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="KneeSpike"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_KneeSpike</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CompactWeapons</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1796,7 +1796,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="KneeSpike"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_KneeSpike</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CompactWeapons</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1805,7 +1805,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="KneeSpike"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1814,7 +1814,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="KneeSpike"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1823,7 +1823,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_KneeSpike"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_KneeSpike</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CompactWeapons</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1832,7 +1832,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_KneeSpike"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_KneeSpike</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CompactWeapons</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1841,7 +1841,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_KneeSpike"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1850,7 +1850,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_KneeSpike"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1871,7 +1871,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LearningAssistant"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_LearningAssistant</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_NeuralImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1880,7 +1880,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LearningAssistant"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_LearningAssistant</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_NeuralImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1889,7 +1889,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LearningAssistant"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.royalty">NeuralComputation</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1898,7 +1898,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LearningAssistant"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.royalty">NeuralComputation</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1907,7 +1907,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_LearningAssistant"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_LearningAssistant</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_NeuralImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1916,7 +1916,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_LearningAssistant"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_LearningAssistant</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_NeuralImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1925,7 +1925,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_LearningAssistant"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.royalty">NeuralComputation</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1934,7 +1934,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_LearningAssistant"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.royalty">NeuralComputation</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1955,7 +1955,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LoveEnhancer"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_LoveEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_FleshShapingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1964,7 +1964,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LoveEnhancer"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_LoveEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_FleshShapingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1991,7 +1991,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_LoveEnhancer"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_LoveEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_FleshShapingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2000,7 +2000,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_LoveEnhancer"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_LoveEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_FleshShapingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2039,7 +2039,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Mindscrew"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_Mindscrew</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BrainWiringImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2048,7 +2048,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Mindscrew"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_Mindscrew</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BrainWiringImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2075,7 +2075,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_Mindscrew"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_Mindscrew</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BrainWiringImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2084,7 +2084,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_Mindscrew"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_Mindscrew</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BrainWiringImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2326,7 +2326,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="NuclearStomach"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_NuclearStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MetabolicStomachs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2335,7 +2335,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="NuclearStomach"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_NuclearStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MetabolicStomachs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2362,7 +2362,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_NuclearStomach"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_NuclearStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MetabolicStomachs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2371,7 +2371,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_NuclearStomach"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_NuclearStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MetabolicStomachs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2613,7 +2613,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="StoneskinGland"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_StoneskinGland</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SkinGlands</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2622,7 +2622,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="StoneskinGland"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_StoneskinGland</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SkinGlands</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2649,7 +2649,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_StoneskinGland"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_StoneskinGland</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SkinGlands</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2658,7 +2658,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_StoneskinGland"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_StoneskinGland</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SkinGlands</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3099,7 +3099,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VenomTalon"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VenomTalon</researchPrerequisite>
+        <researchPrerequisite Inherit="False">VenomSynthesis</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3108,7 +3108,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VenomTalon"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VenomTalon</researchPrerequisite>
+        <researchPrerequisite Inherit="False">VenomSynthesis</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3135,7 +3135,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VenomTalon"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VenomTalon</researchPrerequisite>
+        <researchPrerequisite Inherit="False">VenomSynthesis</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3144,7 +3144,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VenomTalon"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VenomTalon</researchPrerequisite>
+        <researchPrerequisite Inherit="False">VenomSynthesis</researchPrerequisite>
       </value>
     </match>
   </Operation>

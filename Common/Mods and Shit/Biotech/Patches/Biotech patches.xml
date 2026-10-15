@@ -1,139 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublink"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]</xpath>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs</xpath>
-        <value>
-          <ResearchProjectDef>
-            <defName>Ferny_ControlSublink</defName>
-            <label>control sublink (standard)</label>
-            <description>Manufacture a neural implant which gives a mechanitor an additional control group. Additionally, the sublink slightly increases the work speed of any mechanoids controlled by the mechanitor.
-
-This standard-tier sublink can only increase the control group count up to 3. To go higher, a higher-tier sublink implant must be used.
-
-It can be self-installed without surgery.
-
-This implant can be installed up to 3 times to increase its effect.</description>
-            <baseCost>1200</baseCost>
-            <techLevel>Archotech</techLevel>
-            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-            <prerequisites Inherit="False">
-              <li>BasicMechtech</li>
-            </prerequisites>
-          </ResearchProjectDef>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublink"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]/label</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]/label</xpath>
-        <value>
-          <label>control sublink (standard)</label>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]</xpath>
-        <value>
-          <label>control sublink (standard)</label>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublink"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]/description</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]/description</xpath>
-        <value>
-          <description>Manufacture a neural implant which gives a mechanitor an additional control group. Additionally, the sublink slightly increases the work speed of any mechanoids controlled by the mechanitor.
-
-This standard-tier sublink can only increase the control group count up to 3. To go higher, a higher-tier sublink implant must be used.
-
-It can be self-installed without surgery.
-
-This implant can be installed up to 3 times to increase its effect.</description>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]</xpath>
-        <value>
-          <description>Manufacture a neural implant which gives a mechanitor an additional control group. Additionally, the sublink slightly increases the work speed of any mechanoids controlled by the mechanitor.
-
-This standard-tier sublink can only increase the control group count up to 3. To go higher, a higher-tier sublink implant must be used.
-
-It can be self-installed without surgery.
-
-This implant can be installed up to 3 times to increase its effect.</description>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublink"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]/baseCost</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]/baseCost</xpath>
-        <value>
-          <baseCost>1200</baseCost>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]</xpath>
-        <value>
-          <baseCost>1200</baseCost>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublink"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]/prerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]/prerequisites</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>BasicMechtech</li>
-          </prerequisites>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>BasicMechtech</li>
-          </prerequisites>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublink"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]/hiddenPrerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]/hiddenPrerequisites</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublink"]</xpath>
     <match Class="PatchOperationConditional">
@@ -151,7 +17,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublink"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_ControlSublink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BasicMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -160,7 +26,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublink"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_ControlSublink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BasicMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -169,7 +35,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublink"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>BasicMechtech</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -178,7 +44,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublink"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>BasicMechtech</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -187,7 +53,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_ControlSublink"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_ControlSublink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BasicMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -196,7 +62,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_ControlSublink"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_ControlSublink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BasicMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -205,7 +71,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_ControlSublink"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>BasicMechtech</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -214,142 +80,8 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_ControlSublink"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>BasicMechtech</li></researchPrerequisites>
       </value>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublinkHigh"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]</xpath>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs</xpath>
-        <value>
-          <ResearchProjectDef>
-            <defName>Ferny_ControlSublinkHigh</defName>
-            <label>control sublink (high)</label>
-            <description>Manufacture a neural implant which gives a mechanitor an additional control group. Additionally, the sublink slightly increases the work speed of any mechanoids controlled by the mechanitor.
-
-This high-tier implant can increase the control group count up to 6.
-
-It can be self-installed without surgery.
-
-This implant can be installed up to 3 times to increase its effect.</description>
-            <baseCost>1200</baseCost>
-            <techLevel>Archotech</techLevel>
-            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-            <prerequisites Inherit="False">
-              <li>Ferny_ControlSublink</li>
-            </prerequisites>
-          </ResearchProjectDef>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublinkHigh"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]/label</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]/label</xpath>
-        <value>
-          <label>control sublink (high)</label>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]</xpath>
-        <value>
-          <label>control sublink (high)</label>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublinkHigh"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]/description</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]/description</xpath>
-        <value>
-          <description>Manufacture a neural implant which gives a mechanitor an additional control group. Additionally, the sublink slightly increases the work speed of any mechanoids controlled by the mechanitor.
-
-This high-tier implant can increase the control group count up to 6.
-
-It can be self-installed without surgery.
-
-This implant can be installed up to 3 times to increase its effect.</description>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]</xpath>
-        <value>
-          <description>Manufacture a neural implant which gives a mechanitor an additional control group. Additionally, the sublink slightly increases the work speed of any mechanoids controlled by the mechanitor.
-
-This high-tier implant can increase the control group count up to 6.
-
-It can be self-installed without surgery.
-
-This implant can be installed up to 3 times to increase its effect.</description>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublinkHigh"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]/baseCost</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]/baseCost</xpath>
-        <value>
-          <baseCost>1200</baseCost>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]</xpath>
-        <value>
-          <baseCost>1200</baseCost>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublinkHigh"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]/prerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]/prerequisites</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>Ferny_ControlSublink</li>
-          </prerequisites>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>Ferny_ControlSublink</li>
-          </prerequisites>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublinkHigh"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]/hiddenPrerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]/hiddenPrerequisites</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </nomatch>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
@@ -369,7 +101,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublinkHigh"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_ControlSublinkHigh</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BasicMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -378,7 +110,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ControlSublinkHigh"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_ControlSublinkHigh</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BasicMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -405,7 +137,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_ControlSublinkHigh"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_ControlSublinkHigh</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BasicMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -414,7 +146,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_ControlSublinkHigh"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_ControlSublinkHigh</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BasicMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -656,7 +388,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DetoxifierLung"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DetoxifierLung</researchPrerequisite>
+        <researchPrerequisite Inherit="False">ToxFiltration</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -665,7 +397,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DetoxifierLung"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DetoxifierLung</researchPrerequisite>
+        <researchPrerequisite Inherit="False">ToxFiltration</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -692,7 +424,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_DetoxifierLung"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DetoxifierLung</researchPrerequisite>
+        <researchPrerequisite Inherit="False">ToxFiltration</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -701,7 +433,7 @@ This implant can be installed up to 3 times to increase its effect.</description
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_DetoxifierLung"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DetoxifierLung</researchPrerequisite>
+        <researchPrerequisite Inherit="False">ToxFiltration</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -726,134 +458,6 @@ This implant can be installed up to 3 times to increase its effect.</description
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]</xpath>
     <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]</xpath>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs</xpath>
-        <value>
-          <ResearchProjectDef>
-            <defName>Ferny_MechGestationProcessor</defName>
-            <label>mech gestation processor</label>
-            <description>Manufacture an implant which increases the speed at which a mechanitor can produce mechs in a mech gestator. The processor optimizes the behavior of the mechanites in the mech forming tank.
-
-This implant can be self-installed in the same way as the mechlink.
-
-This implant can be installed up to 6 times to increase its effect.</description>
-            <baseCost>1200</baseCost>
-            <techLevel>Archotech</techLevel>
-            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-            <prerequisites Inherit="False">
-              <li>BasicMechtech</li>
-            </prerequisites>
-          </ResearchProjectDef>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]/label</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]/label</xpath>
-        <value>
-          <label>mech gestation processor</label>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]</xpath>
-        <value>
-          <label>mech gestation processor</label>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]/description</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]/description</xpath>
-        <value>
-          <description>Manufacture an implant which increases the speed at which a mechanitor can produce mechs in a mech gestator. The processor optimizes the behavior of the mechanites in the mech forming tank.
-
-This implant can be self-installed in the same way as the mechlink.
-
-This implant can be installed up to 6 times to increase its effect.</description>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]</xpath>
-        <value>
-          <description>Manufacture an implant which increases the speed at which a mechanitor can produce mechs in a mech gestator. The processor optimizes the behavior of the mechanites in the mech forming tank.
-
-This implant can be self-installed in the same way as the mechlink.
-
-This implant can be installed up to 6 times to increase its effect.</description>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]/baseCost</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]/baseCost</xpath>
-        <value>
-          <baseCost>1200</baseCost>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]</xpath>
-        <value>
-          <baseCost>1200</baseCost>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]/prerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]/prerequisites</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>BasicMechtech</li>
-          </prerequisites>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>BasicMechtech</li>
-          </prerequisites>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]/hiddenPrerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]/hiddenPrerequisites</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_MechGestationProcessor"]</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]</xpath>
-    <match Class="PatchOperationConditional">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]/recipeMaker</xpath>
       <nomatch Class="PatchOperationAdd">
         <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]</xpath>
@@ -868,7 +472,7 @@ This implant can be installed up to 6 times to increase its effect.</description
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_MechGestationProcessor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BasicMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -877,7 +481,7 @@ This implant can be installed up to 6 times to increase its effect.</description
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_MechGestationProcessor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BasicMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -886,7 +490,7 @@ This implant can be installed up to 6 times to increase its effect.</description
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>BasicMechtech</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -895,7 +499,7 @@ This implant can be installed up to 6 times to increase its effect.</description
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MechFormfeeder"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>BasicMechtech</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -904,7 +508,7 @@ This implant can be installed up to 6 times to increase its effect.</description
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_MechFormfeeder"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_MechGestationProcessor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BasicMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -913,7 +517,7 @@ This implant can be installed up to 6 times to increase its effect.</description
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_MechFormfeeder"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_MechGestationProcessor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BasicMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -922,7 +526,7 @@ This implant can be installed up to 6 times to increase its effect.</description
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_MechFormfeeder"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>BasicMechtech</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -931,136 +535,8 @@ This implant can be installed up to 6 times to increase its effect.</description
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_MechFormfeeder"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>BasicMechtech</li></researchPrerequisites>
       </value>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteRepairer"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]</xpath>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs</xpath>
-        <value>
-          <ResearchProjectDef>
-            <defName>Ferny_RemoteRepairer</defName>
-            <label>remote repairer</label>
-            <description>Manufacture a mechlink upgrade which allows the mechanitor to repair mechs from a distance. The user links with the mechanoid and uses their own brain to psychically guide its self-repair mechanites.
-
-This implant can be self-installed without surgery.
-
-This implant can be installed up to 3 times to increase its range.</description>
-            <baseCost>1200</baseCost>
-            <techLevel>Archotech</techLevel>
-            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-            <prerequisites Inherit="False">
-              <li>HighMechtech</li>
-            </prerequisites>
-          </ResearchProjectDef>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteRepairer"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]/label</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]/label</xpath>
-        <value>
-          <label>remote repairer</label>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]</xpath>
-        <value>
-          <label>remote repairer</label>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteRepairer"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]/description</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]/description</xpath>
-        <value>
-          <description>Manufacture a mechlink upgrade which allows the mechanitor to repair mechs from a distance. The user links with the mechanoid and uses their own brain to psychically guide its self-repair mechanites.
-
-This implant can be self-installed without surgery.
-
-This implant can be installed up to 3 times to increase its range.</description>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]</xpath>
-        <value>
-          <description>Manufacture a mechlink upgrade which allows the mechanitor to repair mechs from a distance. The user links with the mechanoid and uses their own brain to psychically guide its self-repair mechanites.
-
-This implant can be self-installed without surgery.
-
-This implant can be installed up to 3 times to increase its range.</description>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteRepairer"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]/baseCost</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]/baseCost</xpath>
-        <value>
-          <baseCost>1200</baseCost>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]</xpath>
-        <value>
-          <baseCost>1200</baseCost>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteRepairer"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]/prerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]/prerequisites</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>HighMechtech</li>
-          </prerequisites>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>HighMechtech</li>
-          </prerequisites>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteRepairer"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]/hiddenPrerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]/hiddenPrerequisites</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </nomatch>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
@@ -1080,7 +556,7 @@ This implant can be installed up to 3 times to increase its range.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteRepairer"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_RemoteRepairer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HighMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1089,7 +565,7 @@ This implant can be installed up to 3 times to increase its range.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteRepairer"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_RemoteRepairer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HighMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1116,7 +592,7 @@ This implant can be installed up to 3 times to increase its range.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_RemoteRepairer"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_RemoteRepairer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HighMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1125,7 +601,7 @@ This implant can be installed up to 3 times to increase its range.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_RemoteRepairer"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_RemoteRepairer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HighMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1150,140 +626,6 @@ This implant can be installed up to 3 times to increase its range.</description>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteShielder"]</xpath>
     <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]</xpath>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs</xpath>
-        <value>
-          <ResearchProjectDef>
-            <defName>Ferny_RemoteShielder</defName>
-            <label>remote shielder</label>
-            <description>Manufacture an implant which allows the mechanitor to place a personal defense shield on a mech. The mechanitor must continuously focus on the mech in order to maintain the shield.
-
-Placing a shield at a distance requires a substantial amount of focused energy. It can be used to save a mech at a critical moment.
-
-This implant can be self-installed in the same way as the mechlink.
-
-This implant can be installed up to 3 times to increase its range and shield energy.</description>
-            <baseCost>1200</baseCost>
-            <techLevel>Archotech</techLevel>
-            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-            <prerequisites Inherit="False">
-              <li>HighMechtech</li>
-            </prerequisites>
-          </ResearchProjectDef>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteShielder"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]/label</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]/label</xpath>
-        <value>
-          <label>remote shielder</label>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]</xpath>
-        <value>
-          <label>remote shielder</label>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteShielder"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]/description</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]/description</xpath>
-        <value>
-          <description>Manufacture an implant which allows the mechanitor to place a personal defense shield on a mech. The mechanitor must continuously focus on the mech in order to maintain the shield.
-
-Placing a shield at a distance requires a substantial amount of focused energy. It can be used to save a mech at a critical moment.
-
-This implant can be self-installed in the same way as the mechlink.
-
-This implant can be installed up to 3 times to increase its range and shield energy.</description>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]</xpath>
-        <value>
-          <description>Manufacture an implant which allows the mechanitor to place a personal defense shield on a mech. The mechanitor must continuously focus on the mech in order to maintain the shield.
-
-Placing a shield at a distance requires a substantial amount of focused energy. It can be used to save a mech at a critical moment.
-
-This implant can be self-installed in the same way as the mechlink.
-
-This implant can be installed up to 3 times to increase its range and shield energy.</description>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteShielder"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]/baseCost</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]/baseCost</xpath>
-        <value>
-          <baseCost>1200</baseCost>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]</xpath>
-        <value>
-          <baseCost>1200</baseCost>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteShielder"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]/prerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]/prerequisites</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>HighMechtech</li>
-          </prerequisites>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>HighMechtech</li>
-          </prerequisites>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteShielder"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]/hiddenPrerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]/hiddenPrerequisites</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteShielder"]</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteShielder"]</xpath>
-    <match Class="PatchOperationConditional">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteShielder"]/recipeMaker</xpath>
       <nomatch Class="PatchOperationAdd">
         <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteShielder"]</xpath>
@@ -1298,7 +640,7 @@ This implant can be installed up to 3 times to increase its range and shield ene
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteShielder"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_RemoteShielder</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HighMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1307,7 +649,7 @@ This implant can be installed up to 3 times to increase its range and shield ene
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RemoteShielder"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_RemoteShielder</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HighMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1334,7 +676,7 @@ This implant can be installed up to 3 times to increase its range and shield ene
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_RemoteShielder"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_RemoteShielder</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HighMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1343,7 +685,7 @@ This implant can be installed up to 3 times to increase its range and shield ene
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_RemoteShielder"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_RemoteShielder</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HighMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1388,6 +730,9 @@ This implant can be installed up to 6 times to increase its effect.</description
             <prerequisites Inherit="False">
               <li>UltraMechtech</li>
             </prerequisites>
+            <tab>Ferny_Bionics</tab>
+            <researchViewX>10.00</researchViewX>
+            <researchViewY>1.40</researchViewY>
           </ResearchProjectDef>
         </value>
       </nomatch>

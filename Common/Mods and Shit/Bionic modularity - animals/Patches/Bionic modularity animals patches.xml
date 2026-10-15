@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerCryostrikeSupportModule"]</xpath>
@@ -17,7 +17,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerCryostrikeSupportModule"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerCryostrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -26,7 +26,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerCryostrikeSupportModule"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerCryostrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -53,7 +53,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerCryostrikeSupportModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerCryostrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -62,7 +62,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerCryostrikeSupportModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerCryostrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -101,7 +101,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerLeathermakerUtilityModule"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerLeathermakerUtilityModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalProducerModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -110,7 +110,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerLeathermakerUtilityModule"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerLeathermakerUtilityModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalProducerModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -137,7 +137,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerLeathermakerUtilityModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerLeathermakerUtilityModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalProducerModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -146,7 +146,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerLeathermakerUtilityModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerLeathermakerUtilityModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalProducerModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -185,7 +185,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerMagstrikeSupportModule"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerMagstrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -194,7 +194,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerMagstrikeSupportModule"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerMagstrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -221,7 +221,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerMagstrikeSupportModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerMagstrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -230,7 +230,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerMagstrikeSupportModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerMagstrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -269,7 +269,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerMeatmakerUtilityModule"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerMeatmakerUtilityModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalProducerModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -278,7 +278,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerMeatmakerUtilityModule"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerMeatmakerUtilityModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalProducerModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -305,7 +305,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerMeatmakerUtilityModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerMeatmakerUtilityModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalProducerModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -314,7 +314,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerMeatmakerUtilityModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerMeatmakerUtilityModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalProducerModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -341,7 +341,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Assemble_BM_SpacerMonoClawCombatModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerMonoslashTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -350,7 +350,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Assemble_BM_SpacerMonoClawCombatModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerMonoslashTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -377,7 +377,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Assemble_BM_SpacerPlasmaClawCombatModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPlasmaslashTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -386,7 +386,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Assemble_BM_SpacerPlasmaClawCombatModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPlasmaslashTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -425,7 +425,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerPowerslashTailCombatModule"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPowerslashTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -434,7 +434,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerPowerslashTailCombatModule"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPowerslashTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -461,7 +461,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerPowerslashTailCombatModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPowerslashTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -470,7 +470,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerPowerslashTailCombatModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPowerslashTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -509,7 +509,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerPowerstrikeTailCombatModule"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPowerstrikeTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -518,7 +518,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerPowerstrikeTailCombatModule"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPowerstrikeTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -545,7 +545,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerPowerstrikeTailCombatModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPowerstrikeTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -554,7 +554,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerPowerstrikeTailCombatModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPowerstrikeTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -593,7 +593,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerPyrostrikeSupportModule"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPyrostrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -602,7 +602,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerPyrostrikeSupportModule"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPyrostrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -629,7 +629,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerPyrostrikeSupportModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPyrostrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -638,7 +638,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerPyrostrikeSupportModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerPyrostrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -677,7 +677,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerVenomstrikeSupportModule"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerVenomstrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -686,7 +686,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BM_SpacerVenomstrikeSupportModule"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerVenomstrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -713,7 +713,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerVenomstrikeSupportModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerVenomstrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -722,7 +722,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BM_SpacerVenomstrikeSupportModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerVenomstrikeSupportModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -749,7 +749,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Assemble_BM_SpacerZeuClawCombatModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerZeustrikeTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -758,7 +758,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Assemble_BM_SpacerZeuClawCombatModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BM_SpacerZeustrikeTailCombatModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AnimalStrikeModules</researchPrerequisite>
       </value>
     </match>
   </Operation>

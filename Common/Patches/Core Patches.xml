@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicArm"]</xpath>
@@ -226,7 +226,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicEar"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicEar</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -235,7 +235,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicEar"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicEar</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -244,7 +244,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicEar"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -253,7 +253,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicEar"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -262,7 +262,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicEar"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicEar</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -271,7 +271,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicEar"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicEar</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -280,7 +280,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicEar"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -289,7 +289,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicEar"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -310,7 +310,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicEye"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -319,7 +319,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicEye"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -328,7 +328,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicEye"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -337,7 +337,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicEye"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -346,7 +346,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicEye"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -355,7 +355,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicEye"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -364,7 +364,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicEye"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -373,7 +373,7 @@ Manufacture an advanced artificial arm. Silenced mini-servos give great strength
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicEye"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -603,7 +603,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicJaw"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -612,7 +612,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicJaw"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -621,7 +621,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicJaw"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -630,7 +630,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicJaw"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -639,7 +639,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicJaw"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -648,7 +648,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicJaw"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -657,7 +657,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicJaw"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -666,7 +666,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicJaw"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -687,7 +687,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicLeg"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -696,7 +696,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicLeg"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -705,7 +705,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicLeg"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -714,7 +714,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicLeg"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -723,7 +723,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicLeg"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -732,7 +732,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicLeg"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -741,7 +741,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicLeg"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -750,7 +750,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicLeg"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -771,7 +771,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicSpine"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -780,7 +780,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicSpine"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -789,7 +789,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicSpine"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -798,7 +798,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicSpine"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -807,7 +807,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicSpine"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -816,7 +816,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicSpine"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -825,7 +825,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicSpine"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -834,22 +834,8 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicSpine"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleProstheticHeart"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="SurrogateOrgans"]</xpath>
-      <nomatch Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BionicStomach"]/prerequisites</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>Bionics</li>
-          </prerequisites>
-        </value>
-      </nomatch>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
@@ -869,7 +855,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicStomach"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -878,7 +864,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicStomach"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -887,7 +873,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicStomach"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -896,7 +882,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicStomach"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -905,7 +891,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicStomach"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -914,7 +900,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicStomach"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -923,7 +909,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicStomach"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -932,7 +918,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicStomach"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -953,7 +939,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicTongue"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicTongue</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -962,7 +948,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicTongue"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicTongue</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -989,7 +975,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicTongue"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicTongue</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -998,7 +984,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicTongue"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicTongue</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1037,7 +1023,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CochlearImplant"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CochlearImplant</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1046,7 +1032,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CochlearImplant"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CochlearImplant</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1073,7 +1059,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_CochlearImplant"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CochlearImplant</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1082,7 +1068,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_CochlearImplant"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CochlearImplant</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1121,7 +1107,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Joywire"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_Joywire</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BrainWiringImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1130,7 +1116,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Joywire"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_Joywire</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BrainWiringImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1157,7 +1143,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_Joywire"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_Joywire</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BrainWiringImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1166,7 +1152,7 @@ Manufacture an advanced artificial heart. It has synthetic muscle fibers for a r
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_Joywire"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_Joywire</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BrainWiringImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2016,7 +2002,7 @@ Manufacture an arm prosthesis. While it lacks a neural interface, its complex ar
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleProstheticLeg"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2025,7 +2011,7 @@ Manufacture an arm prosthesis. While it lacks a neural interface, its complex ar
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleProstheticLeg"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2052,7 +2038,7 @@ Manufacture an arm prosthesis. While it lacks a neural interface, its complex ar
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SimpleProstheticLeg"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2061,7 +2047,7 @@ Manufacture an arm prosthesis. While it lacks a neural interface, its complex ar
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SimpleProstheticLeg"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>

@@ -1,120 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AnimaClaw"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]</xpath>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs</xpath>
-        <value>
-          <ResearchProjectDef>
-            <defName>Ferny_AnimaClaw</defName>
-            <label>anima claw</label>
-            <description>Manufacture an arm carved out of anima logs, with sharp clawed fingers. Increases damage, but lowers manipulation.</description>
-            <baseCost>100</baseCost>
-            <techLevel>Medieval</techLevel>
-            <prerequisites Inherit="False">
-              <li>DV_GolemResearch_GolemancyModules</li>
-            </prerequisites>
-          </ResearchProjectDef>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AnimaClaw"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]/label</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]/label</xpath>
-        <value>
-          <label>anima claw</label>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]</xpath>
-        <value>
-          <label>anima claw</label>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AnimaClaw"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]/description</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]/description</xpath>
-        <value>
-          <description>Manufacture an arm carved out of anima logs, with sharp clawed fingers. Increases damage, but lowers manipulation.</description>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]</xpath>
-        <value>
-          <description>Manufacture an arm carved out of anima logs, with sharp clawed fingers. Increases damage, but lowers manipulation.</description>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AnimaClaw"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]/baseCost</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]/baseCost</xpath>
-        <value>
-          <baseCost>100</baseCost>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]</xpath>
-        <value>
-          <baseCost>100</baseCost>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AnimaClaw"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]/prerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]/prerequisites</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>DV_GolemResearch_GolemancyModules</li>
-          </prerequisites>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>DV_GolemResearch_GolemancyModules</li>
-          </prerequisites>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AnimaClaw"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]/hiddenPrerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]/hiddenPrerequisites</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AnimaClaw"]</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AnimaClaw"]</xpath>
     <match Class="PatchOperationConditional">
@@ -132,7 +17,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AnimaClaw"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_AnimaClaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -141,7 +26,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AnimaClaw"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_AnimaClaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -168,7 +53,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_AnimaClaw"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_AnimaClaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -177,7 +62,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_AnimaClaw"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_AnimaClaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -202,121 +87,6 @@
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AttackBooster"]</xpath>
     <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]</xpath>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs</xpath>
-        <value>
-          <ResearchProjectDef>
-            <defName>Ferny_AttackBooster</defName>
-            <label>attack booster</label>
-            <description>Manufacture an anima golem module that induces more intense aggression into the psychic microorganisms, at the cost of lowering their work drive.</description>
-            <baseCost>100</baseCost>
-            <techLevel>Medieval</techLevel>
-            <prerequisites Inherit="False">
-              <li>DV_GolemResearch_GolemancyModules</li>
-            </prerequisites>
-          </ResearchProjectDef>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AttackBooster"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]/label</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]/label</xpath>
-        <value>
-          <label>attack booster</label>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]</xpath>
-        <value>
-          <label>attack booster</label>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AttackBooster"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]/description</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]/description</xpath>
-        <value>
-          <description>Manufacture an anima golem module that induces more intense aggression into the psychic microorganisms, at the cost of lowering their work drive.</description>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]</xpath>
-        <value>
-          <description>Manufacture an anima golem module that induces more intense aggression into the psychic microorganisms, at the cost of lowering their work drive.</description>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AttackBooster"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]/baseCost</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]/baseCost</xpath>
-        <value>
-          <baseCost>100</baseCost>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]</xpath>
-        <value>
-          <baseCost>100</baseCost>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AttackBooster"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]/prerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]/prerequisites</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>DV_GolemResearch_GolemancyModules</li>
-          </prerequisites>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>DV_GolemResearch_GolemancyModules</li>
-          </prerequisites>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AttackBooster"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]/hiddenPrerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]/hiddenPrerequisites</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_AttackBooster"]</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AttackBooster"]</xpath>
-    <match Class="PatchOperationConditional">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AttackBooster"]/recipeMaker</xpath>
       <nomatch Class="PatchOperationAdd">
         <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AttackBooster"]</xpath>
@@ -331,7 +101,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AttackBooster"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_AttackBooster</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -340,7 +110,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_AttackBooster"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_AttackBooster</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -367,7 +137,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_AttackBooster"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_AttackBooster</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -376,7 +146,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_AttackBooster"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_AttackBooster</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -415,7 +185,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrainModule"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DV_Golem_BrainModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -424,7 +194,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrainModule"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DV_Golem_BrainModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -451,7 +221,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_BrainModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DV_Golem_BrainModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -460,7 +230,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_BrainModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DV_Golem_BrainModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -485,121 +255,6 @@
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrickFist"]</xpath>
     <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]</xpath>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs</xpath>
-        <value>
-          <ResearchProjectDef>
-            <defName>Ferny_BrickFist</defName>
-            <label>brick fist</label>
-            <description>Manufacture an arm composed of anima branches holding a hardened clay brick. Increases damage by a lot, but drastically lowers manipulation.</description>
-            <baseCost>100</baseCost>
-            <techLevel>Medieval</techLevel>
-            <prerequisites Inherit="False">
-              <li>DV_GolemResearch_GolemancyModules</li>
-            </prerequisites>
-          </ResearchProjectDef>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrickFist"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]/label</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]/label</xpath>
-        <value>
-          <label>brick fist</label>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]</xpath>
-        <value>
-          <label>brick fist</label>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrickFist"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]/description</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]/description</xpath>
-        <value>
-          <description>Manufacture an arm composed of anima branches holding a hardened clay brick. Increases damage by a lot, but drastically lowers manipulation.</description>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]</xpath>
-        <value>
-          <description>Manufacture an arm composed of anima branches holding a hardened clay brick. Increases damage by a lot, but drastically lowers manipulation.</description>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrickFist"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]/baseCost</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]/baseCost</xpath>
-        <value>
-          <baseCost>100</baseCost>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]</xpath>
-        <value>
-          <baseCost>100</baseCost>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrickFist"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]/prerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]/prerequisites</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>DV_GolemResearch_GolemancyModules</li>
-          </prerequisites>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>DV_GolemResearch_GolemancyModules</li>
-          </prerequisites>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrickFist"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]/hiddenPrerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]/hiddenPrerequisites</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_BrickFist"]</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrickFist"]</xpath>
-    <match Class="PatchOperationConditional">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrickFist"]/recipeMaker</xpath>
       <nomatch Class="PatchOperationAdd">
         <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrickFist"]</xpath>
@@ -614,7 +269,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrickFist"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_BrickFist</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -623,7 +278,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_BrickFist"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_BrickFist</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -650,7 +305,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_BrickFist"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_BrickFist</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -659,7 +314,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_BrickFist"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_BrickFist</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -698,7 +353,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_PyrinthTalon"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_PyrinthTalon</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -707,7 +362,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_PyrinthTalon"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_PyrinthTalon</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -734,7 +389,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_PyrinthTalon"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_PyrinthTalon</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -743,7 +398,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_PyrinthTalon"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_PyrinthTalon</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -768,121 +423,6 @@
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SleepAccelerator"]</xpath>
     <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]</xpath>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs</xpath>
-        <value>
-          <ResearchProjectDef>
-            <defName>Ferny_SleepAccelerator</defName>
-            <label>sleep accelerator</label>
-            <description>Manufacture an anima golem module that increases the rest gain of the psychic microorganisms.</description>
-            <baseCost>100</baseCost>
-            <techLevel>Medieval</techLevel>
-            <prerequisites Inherit="False">
-              <li>DV_GolemResearch_GolemancyModules</li>
-            </prerequisites>
-          </ResearchProjectDef>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SleepAccelerator"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]/label</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]/label</xpath>
-        <value>
-          <label>sleep accelerator</label>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]</xpath>
-        <value>
-          <label>sleep accelerator</label>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SleepAccelerator"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]/description</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]/description</xpath>
-        <value>
-          <description>Manufacture an anima golem module that increases the rest gain of the psychic microorganisms.</description>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]</xpath>
-        <value>
-          <description>Manufacture an anima golem module that increases the rest gain of the psychic microorganisms.</description>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SleepAccelerator"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]/baseCost</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]/baseCost</xpath>
-        <value>
-          <baseCost>100</baseCost>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]</xpath>
-        <value>
-          <baseCost>100</baseCost>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SleepAccelerator"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]/prerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]/prerequisites</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>DV_GolemResearch_GolemancyModules</li>
-          </prerequisites>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>DV_GolemResearch_GolemancyModules</li>
-          </prerequisites>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SleepAccelerator"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]/hiddenPrerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]/hiddenPrerequisites</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SleepAccelerator"]</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SleepAccelerator"]</xpath>
-    <match Class="PatchOperationConditional">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SleepAccelerator"]/recipeMaker</xpath>
       <nomatch Class="PatchOperationAdd">
         <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SleepAccelerator"]</xpath>
@@ -897,7 +437,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SleepAccelerator"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_SleepAccelerator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -906,7 +446,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SleepAccelerator"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_SleepAccelerator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -933,7 +473,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_SleepAccelerator"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_SleepAccelerator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -942,7 +482,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_SleepAccelerator"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_SleepAccelerator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -967,121 +507,6 @@
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SpeedEnhancer"]</xpath>
     <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]</xpath>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs</xpath>
-        <value>
-          <ResearchProjectDef>
-            <defName>Ferny_SpeedEnhancer</defName>
-            <label>speed enhancer</label>
-            <description>Manufacture an anima golem module that helps with the coordination of the microorganisms, increasing the golem's speed.</description>
-            <baseCost>100</baseCost>
-            <techLevel>Medieval</techLevel>
-            <prerequisites Inherit="False">
-              <li>DV_GolemResearch_GolemancyModules</li>
-            </prerequisites>
-          </ResearchProjectDef>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SpeedEnhancer"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]/label</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]/label</xpath>
-        <value>
-          <label>speed enhancer</label>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]</xpath>
-        <value>
-          <label>speed enhancer</label>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SpeedEnhancer"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]/description</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]/description</xpath>
-        <value>
-          <description>Manufacture an anima golem module that helps with the coordination of the microorganisms, increasing the golem's speed.</description>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]</xpath>
-        <value>
-          <description>Manufacture an anima golem module that helps with the coordination of the microorganisms, increasing the golem's speed.</description>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SpeedEnhancer"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]/baseCost</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]/baseCost</xpath>
-        <value>
-          <baseCost>100</baseCost>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]</xpath>
-        <value>
-          <baseCost>100</baseCost>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SpeedEnhancer"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]/prerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]/prerequisites</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>DV_GolemResearch_GolemancyModules</li>
-          </prerequisites>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li>DV_GolemResearch_GolemancyModules</li>
-          </prerequisites>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SpeedEnhancer"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]/hiddenPrerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]/hiddenPrerequisites</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SpeedEnhancer"]</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SpeedEnhancer"]</xpath>
-    <match Class="PatchOperationConditional">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SpeedEnhancer"]/recipeMaker</xpath>
       <nomatch Class="PatchOperationAdd">
         <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SpeedEnhancer"]</xpath>
@@ -1096,7 +521,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SpeedEnhancer"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_SpeedEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1105,7 +530,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_SpeedEnhancer"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_SpeedEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1132,7 +557,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_SpeedEnhancer"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_SpeedEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1141,7 +566,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_DV_Golem_SpeedEnhancer"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_SpeedEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GolemModules</researchPrerequisite>
       </value>
     </match>
   </Operation>

@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_AdvancedCyberlink"]</xpath>
@@ -17,7 +17,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_AdvancedCyberlink"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedCyberlink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_AdvancedCybertech</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -26,7 +26,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_AdvancedCyberlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedCyberlink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_AdvancedCybertech</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -53,7 +53,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_AdvancedCyberlink"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedCyberlink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_AdvancedCybertech</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -62,7 +62,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_AdvancedCyberlink"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedCyberlink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_AdvancedCybertech</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -101,7 +101,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_AdvancedJammerKit"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedJammerKit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedCybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -110,7 +110,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_AdvancedJammerKit"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedJammerKit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedCybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -137,7 +137,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_AdvancedJammerKit"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedJammerKit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedCybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -146,7 +146,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_AdvancedJammerKit"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedJammerKit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedCybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -185,7 +185,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_AdvancedOptimizationModule"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedOptimizationModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedCybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -194,7 +194,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_AdvancedOptimizationModule"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedOptimizationModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedCybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -221,7 +221,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_AdvancedOptimizationModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedOptimizationModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedCybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -230,7 +230,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_AdvancedOptimizationModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedOptimizationModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedCybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -269,7 +269,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_AdvancedRemoteAccessPort"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedRemoteAccessPort</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedCybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -278,7 +278,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_AdvancedRemoteAccessPort"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedRemoteAccessPort</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedCybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -305,7 +305,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_AdvancedRemoteAccessPort"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedRemoteAccessPort</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedCybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -314,7 +314,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_AdvancedRemoteAccessPort"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_AdvancedRemoteAccessPort</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedCybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -757,7 +757,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_Disarm"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_Disarm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -766,7 +766,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_Disarm"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_Disarm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -793,7 +793,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_Disarm"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_Disarm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -802,7 +802,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_Disarm"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_Disarm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -841,7 +841,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_Discharge"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_Discharge</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -850,7 +850,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_Discharge"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_Discharge</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -877,7 +877,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_Discharge"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_Discharge</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -886,7 +886,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_Discharge"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_Discharge</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -925,7 +925,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_ForkBomb"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_ForkBomb</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -934,7 +934,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_ForkBomb"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_ForkBomb</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -961,7 +961,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_ForkBomb"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_ForkBomb</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -970,7 +970,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_ForkBomb"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_ForkBomb</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1009,7 +1009,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_HijackSubcore"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_HijackSubcore</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1018,7 +1018,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_HijackSubcore"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_HijackSubcore</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1045,7 +1045,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_HijackSubcore"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_HijackSubcore</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1054,7 +1054,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_HijackSubcore"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_HijackSubcore</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1093,7 +1093,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_ShortCircuit"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_ShortCircuit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1102,7 +1102,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_ShortCircuit"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_ShortCircuit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1129,7 +1129,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_ShortCircuit"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_ShortCircuit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1138,7 +1138,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_ShortCircuit"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_ShortCircuit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1177,7 +1177,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_VirtualICEBreaker"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_VirtualICEBreaker</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1186,7 +1186,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_VirtualICEBreaker"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_VirtualICEBreaker</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1213,7 +1213,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_VirtualICEBreaker"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_VirtualICEBreaker</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1222,7 +1222,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_VirtualICEBreaker"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_VirtualICEBreaker</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1261,7 +1261,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_Zapcode"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_Zapcode</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1270,7 +1270,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_ExecData_Zapcode"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_Zapcode</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1297,7 +1297,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_Zapcode"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_Zapcode</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1306,7 +1306,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_ExecData_Zapcode"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_ExecData_Zapcode</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ExecDataPrograms</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1345,7 +1345,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_JammerKit"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_JammerKit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1354,7 +1354,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_JammerKit"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_JammerKit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1381,7 +1381,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_JammerKit"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_JammerKit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1390,7 +1390,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_JammerKit"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_JammerKit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1429,7 +1429,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_OptimizationModule"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_OptimizationModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1438,7 +1438,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_OptimizationModule"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_OptimizationModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1465,7 +1465,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_OptimizationModule"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_OptimizationModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1474,7 +1474,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_OptimizationModule"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_OptimizationModule</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1513,7 +1513,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_RemoteAccessPort"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_RemoteAccessPort</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1522,7 +1522,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_RemoteAccessPort"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_RemoteAccessPort</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1549,7 +1549,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_RemoteAccessPort"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_RemoteAccessPort</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1558,7 +1558,7 @@ Execs are trained during hacking.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_RemoteAccessPort"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_RemoteAccessPort</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CybertechKits</researchPrerequisite>
       </value>
     </match>
   </Operation>

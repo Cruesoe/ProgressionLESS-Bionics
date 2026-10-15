@@ -1,35 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_DeathrestCapacitor"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_DeathrestCapacitor"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_HemoFangs"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_HemoFangs"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_HemogenicMicrocompressor"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_HemogenicMicrocompressor"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_CerebrexNode"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_CerebrexNode"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleJaw_HemoFangs"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleJaw_HemoFangs"]</xpath>
-    </match>
-  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleKidney_DetoxifierKidney"]</xpath>
     <match Class="PatchOperationRemove">
@@ -42,52 +12,23 @@
       <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLung_DetoxifierLung"]</xpath>
     </match>
   </Operation>
+
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_Mechwomb"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_SanguophageImplants"]</xpath>
     <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_Mechwomb"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_SanguophageImplants"]</xpath>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_RemoteDominator"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_SignalBoosters"]</xpath>
     <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_RemoteDominator"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_SignalBoosters"]</xpath>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_RemoteResurrector"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_UltraMechanitorImplants"]</xpath>
     <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_RemoteResurrector"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_SignalBooster"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_SignalBooster"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_SignalBoosterHigh"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_SignalBoosterHigh"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_SignalBoosterUltra"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_SignalBoosterUltra"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_Synthwomb"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_Synthwomb"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_WarprogrammerInterface"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_WarprogrammerInterface"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_UltraMechanitorImplants"]</xpath>
     </match>
   </Operation>
 </Patch>

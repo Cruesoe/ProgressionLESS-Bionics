@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_ArmBlade"]</xpath>
@@ -19,117 +19,15 @@
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_DartGun"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_DartGun"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_DeathGrip"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_DeathGrip"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_Fletcher"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_Fletcher"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_Gauss"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_Gauss"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_Incinerator"]</xpath>
     <match Class="PatchOperationRemove">
       <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_Incinerator"]</xpath>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_LaserArmBlade"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_LaserArmBlade"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_PlasmaClaw"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_PlasmaClaw"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_RecoilSuppression"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_RecoilSuppression"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_SMG"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_SMG"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_Shotgun"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_Shotgun"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_VibroModule"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_VibroModule"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles"]</xpath>
     <match Class="PatchOperationRemove">
       <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleEye_EyeColour"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleEye_EyeColour"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleEye_NightVision"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleEye_NightVision"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleEye_ProtectiveLens"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleEye_ProtectiveLens"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleEye_Targeting"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleEye_Targeting"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleEye_Telescopic"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleEye_Telescopic"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleJaw_GourmandTongue"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleJaw_GourmandTongue"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleJaw_HemoFangs"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleJaw_HemoFangs"]</xpath>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
@@ -145,45 +43,9 @@
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLeg_Digitigrade"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLeg_Digitigrade"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLeg_FootBlade"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLeg_FootBlade"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLeg_GravKick"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLeg_GravKick"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLeg_RetractableFlipper"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLeg_RetractableFlipper"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLeg_VenomFootBlade"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLeg_VenomFootBlade"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLung_DetoxifierLung"]</xpath>
     <match Class="PatchOperationRemove">
       <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLung_DetoxifierLung"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLung_Rebreather"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLung_Rebreather"]</xpath>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
@@ -192,76 +54,29 @@
       <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae"]</xpath>
     </match>
   </Operation>
+
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Animals"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_SkillChips"]</xpath>
     <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Animals"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_SkillChips"]</xpath>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Artistic"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_ArmModules"]</xpath>
     <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Artistic"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_ArmModules"]</xpath>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Construction"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_HeadModules"]</xpath>
     <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Construction"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_HeadModules"]</xpath>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Cooking"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LegAndLungModules"]</xpath>
     <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Cooking"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Crafting"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Crafting"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Intellectual"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Intellectual"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Medicine"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Medicine"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Melee"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Melee"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Mining"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Mining"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Plants"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Plants"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Shooting"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Shooting"]</xpath>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Social"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_SpacerSkillChip_Social"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LegAndLungModules"]</xpath>
     </match>
   </Operation>
 </Patch>

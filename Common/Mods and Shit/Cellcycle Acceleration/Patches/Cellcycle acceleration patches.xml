@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]</xpath>
@@ -17,7 +17,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CellcycleAccelerator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HealingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -26,7 +26,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CellcycleAccelerator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HealingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -53,7 +53,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_CellcycleAccelerator"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CellcycleAccelerator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HealingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -62,7 +62,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_CellcycleAccelerator"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CellcycleAccelerator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HealingImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>

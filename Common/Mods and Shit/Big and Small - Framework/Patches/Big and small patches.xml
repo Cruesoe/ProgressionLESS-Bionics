@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BS_BionicLocomotiveSpine"]</xpath>
@@ -17,7 +17,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BS_BionicLocomotiveSpine"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BS_BionicLocomotiveSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -26,7 +26,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BS_BionicLocomotiveSpine"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BS_BionicLocomotiveSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -53,7 +53,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BS_BionicLocomotiveSpine"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BS_BionicLocomotiveSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -62,7 +62,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BS_BionicLocomotiveSpine"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BS_BionicLocomotiveSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -101,7 +101,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BS_BionicStriderLeg"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BS_BionicStriderLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -110,7 +110,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BS_BionicStriderLeg"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BS_BionicStriderLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -137,7 +137,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BS_BionicStriderLeg"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BS_BionicStriderLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -146,7 +146,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BS_BionicStriderLeg"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BS_BionicStriderLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>

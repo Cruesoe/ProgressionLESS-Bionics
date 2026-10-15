@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- venom implants -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]/label</xpath><value><label>venom implants</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]</xpath><value><label>venom implants</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]/description</xpath><value><description>Synthesize venom glands that deliver toxins through implanted weapons. Covers, depending on your mods: venom fangs and venom talon.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]</xpath><value><description>Synthesize venom glands that deliver toxins through implanted weapons. Covers, depending on your mods: venom fangs and venom talon.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"][baseCost &lt; 250]/baseCost</xpath><value><baseCost>250</baseCost></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- basic implants -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/label</xpath><value><label>basic implants</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath><value><label>basic implants</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/description</xpath><value><description>Install simple implants for comfort, hormones, communication and control of captives. Covers, depending on your mods: skeletal bracing, lacto-stimulator, voicelock, comms implant, cryptosleep adaptor, internal climate control, brain detonator, brain shocker and neurostreamer.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath><value><description>Install simple implants for comfort, hormones, communication and control of captives. Covers, depending on your mods: skeletal bracing, lacto-stimulator, voicelock, comms implant, cryptosleep adaptor, internal climate control, brain detonator, brain shocker and neurostreamer.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"][baseCost &lt; 250]/baseCost</xpath><value><baseCost>250</baseCost></value></li>
+        <li Class="PatchOperationRemove"><success>Always</success><xpath>Defs/ResearchProjectDef/prerequisites[li="I_BasicImplants"]/li[.="I_BasicHormonalImplants"]</xpath></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef/prerequisites/li[.="I_BasicHormonalImplants"]</xpath><value><li>I_BasicImplants</li></value></li>
+        <li Class="PatchOperationRemove"><success>Always</success><xpath>Defs/ResearchProjectDef/hiddenPrerequisites[li="I_BasicImplants"]/li[.="I_BasicHormonalImplants"]</xpath></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[.="I_BasicHormonalImplants"]</xpath><value><li>I_BasicImplants</li></value></li>
+        <li Class="PatchOperationRemove"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_BasicHormonalImplants"]</xpath></li>
+        <li Class="PatchOperationRemove"><success>Always</success><xpath>Defs/ResearchProjectDef/prerequisites[li="I_BasicImplants"]/li[.="I_CaptiveControl"]</xpath></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef/prerequisites/li[.="I_CaptiveControl"]</xpath><value><li>I_BasicImplants</li></value></li>
+        <li Class="PatchOperationRemove"><success>Always</success><xpath>Defs/ResearchProjectDef/hiddenPrerequisites[li="I_BasicImplants"]/li[.="I_CaptiveControl"]</xpath></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[.="I_CaptiveControl"]</xpath><value><li>I_BasicImplants</li></value></li>
+        <li Class="PatchOperationRemove"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_CaptiveControl"]</xpath></li>
+        <li Class="PatchOperationRemove"><success>Always</success><xpath>Defs/ResearchProjectDef/prerequisites[li="I_BasicImplants"]/li[.="I_TelecommunicationImplants"]</xpath></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef/prerequisites/li[.="I_TelecommunicationImplants"]</xpath><value><li>I_BasicImplants</li></value></li>
+        <li Class="PatchOperationRemove"><success>Always</success><xpath>Defs/ResearchProjectDef/hiddenPrerequisites[li="I_BasicImplants"]/li[.="I_TelecommunicationImplants"]</xpath></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[.="I_TelecommunicationImplants"]</xpath><value><li>I_BasicImplants</li></value></li>
+        <li Class="PatchOperationRemove"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_TelecommunicationImplants"]</xpath></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- advanced dead man's switches -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/label</xpath><value><label>advanced dead man&apos;s switches</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]</xpath><value><label>advanced dead man&apos;s switches</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/description</xpath><value><description>Rig implants that unleash a payload when their bearer dies. Covers, depending on your mods: EMP dead mans switch, antigrain dead mans switch, firefoam dead mans switch and incendiary dead mans switch.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]</xpath><value><description>Rig implants that unleash a payload when their bearer dies. Covers, depending on your mods: EMP dead mans switch, antigrain dead mans switch, firefoam dead mans switch and incendiary dead mans switch.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"][baseCost &lt; 250]/baseCost</xpath><value><baseCost>250</baseCost></value></li>
+        <li Class="PatchOperationRemove"><success>Always</success><xpath>Defs/ResearchProjectDef/prerequisites[li="FurtherDeadManSwitch"]/li[.="AntigrainDeadManSwitch"]</xpath></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef/prerequisites/li[.="AntigrainDeadManSwitch"]</xpath><value><li>FurtherDeadManSwitch</li></value></li>
+        <li Class="PatchOperationRemove"><success>Always</success><xpath>Defs/ResearchProjectDef/hiddenPrerequisites[li="FurtherDeadManSwitch"]/li[.="AntigrainDeadManSwitch"]</xpath></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[.="AntigrainDeadManSwitch"]</xpath><value><li>FurtherDeadManSwitch</li></value></li>
+        <li Class="PatchOperationRemove"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]</xpath></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- advanced specialized limbs -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/label</xpath><value><label>advanced specialized limbs</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]</xpath><value><label>advanced specialized limbs</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/description</xpath><value><description>Manufacture bionic versions of job-specific arms. Covers, depending on your mods: advanced field hand and advanced drill arm.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]</xpath><value><description>Manufacture bionic versions of job-specific arms. Covers, depending on your mods: advanced field hand and advanced drill arm.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- bionic compact weapons -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/label</xpath><value><label>bionic compact weapons</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]</xpath><value><label>bionic compact weapons</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/description</xpath><value><description>Build bionic blades and spikes into replacement limbs. Covers, depending on your mods: bionic hand talon, bionic elbow blade and bionic knee spike.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]</xpath><value><description>Build bionic blades and spikes into replacement limbs. Covers, depending on your mods: bionic hand talon, bionic elbow blade and bionic knee spike.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- bionic tails -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="I_BionicTails"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="I_BionicTails"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="I_BionicTails"]/label</xpath><value><label>bionic tails</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="I_BionicTails"]</xpath><value><label>bionic tails</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="I_BionicTails"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="I_BionicTails"]/description</xpath><value><description>Manufacture powered artificial tails. Covers, depending on your mods: bionic tail, claw tail and venom tail.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="I_BionicTails"]</xpath><value><description>Manufacture powered artificial tails. Covers, depending on your mods: bionic tail, claw tail and venom tail.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_BionicTails"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_BionicTails"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_BionicTails"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_BionicTails"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_BionicTails"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- biomimicry -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="I_Biomimicry"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="I_Biomimicry"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="I_Biomimicry"]/label</xpath><value><label>biomimicry</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="I_Biomimicry"]</xpath><value><label>biomimicry</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="I_Biomimicry"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="I_Biomimicry"]/description</xpath><value><description>Install implants that let the body adapt to and mimic its surroundings. Covers, depending on your mods: cellular adaptor and biochameleon device.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="I_Biomimicry"]</xpath><value><description>Install implants that let the body adapt to and mimic its surroundings. Covers, depending on your mods: cellular adaptor and biochameleon device.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_Biomimicry"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_Biomimicry"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_Biomimicry"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_Biomimicry"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_Biomimicry"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- eltex augmentation -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="I_EltexAugmentation"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="I_EltexAugmentation"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="I_EltexAugmentation"]/label</xpath><value><label>eltex augmentation</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="I_EltexAugmentation"]</xpath><value><label>eltex augmentation</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="I_EltexAugmentation"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="I_EltexAugmentation"]/description</xpath><value><description>Install eltex adornments that channel and cool psychic energy. Covers, depending on your mods: eltex adornments and neural heatsink.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="I_EltexAugmentation"]</xpath><value><description>Install eltex adornments that channel and cool psychic energy. Covers, depending on your mods: eltex adornments and neural heatsink.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_EltexAugmentation"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_EltexAugmentation"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_EltexAugmentation"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_EltexAugmentation"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_EltexAugmentation"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- emergency implants -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="LTS_EmergencyImplants"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="LTS_EmergencyImplants"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="LTS_EmergencyImplants"]/label</xpath><value><label>emergency implants</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="LTS_EmergencyImplants"]</xpath><value><label>emergency implants</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="LTS_EmergencyImplants"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="LTS_EmergencyImplants"]/description</xpath><value><description>Install implants that trigger protective systems in an emergency. Covers, depending on your mods: emergency shield, emergency vac barrier and fire suppression system.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="LTS_EmergencyImplants"]</xpath><value><description>Install implants that trigger protective systems in an emergency. Covers, depending on your mods: emergency shield, emergency vac barrier and fire suppression system.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_EmergencyImplants"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_EmergencyImplants"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_EmergencyImplants"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_EmergencyImplants"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_EmergencyImplants"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- field manipulation implants -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="LTS_FieldManipulationImplants"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="LTS_FieldManipulationImplants"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="LTS_FieldManipulationImplants"]/label</xpath><value><label>field manipulation implants</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="LTS_FieldManipulationImplants"]</xpath><value><label>field manipulation implants</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="LTS_FieldManipulationImplants"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="LTS_FieldManipulationImplants"]/description</xpath><value><description>Install implants that project fields around the body. Covers, depending on your mods: shield implant and active camouflage.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="LTS_FieldManipulationImplants"]</xpath><value><description>Install implants that project fields around the body. Covers, depending on your mods: shield implant and active camouflage.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_FieldManipulationImplants"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_FieldManipulationImplants"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_FieldManipulationImplants"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_FieldManipulationImplants"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_FieldManipulationImplants"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- subdermal armor -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="I_SubdermalArmour"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="I_SubdermalArmour"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="I_SubdermalArmour"]/label</xpath><value><label>subdermal armor</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="I_SubdermalArmour"]</xpath><value><label>subdermal armor</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="I_SubdermalArmour"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="I_SubdermalArmour"]/description</xpath><value><description>Install armor plating beneath the skin. Covers, depending on your mods: subdermal armour and prestige subdermal armour.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="I_SubdermalArmour"]</xpath><value><description>Install armor plating beneath the skin. Covers, depending on your mods: subdermal armour and prestige subdermal armour.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_SubdermalArmour"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_SubdermalArmour"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_SubdermalArmour"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_SubdermalArmour"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="I_SubdermalArmour"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- synthetic repair -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticRepair"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticRepair"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticRepair"]/label</xpath><value><label>synthetic repair</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticRepair"]</xpath><value><label>synthetic repair</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticRepair"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticRepair"]/description</xpath><value><description>Grow synthetic tissue that repairs bone and nerves. Covers, depending on your mods: synthetic tissue, synthetic bone and neuromuscular framework.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticRepair"]</xpath><value><description>Grow synthetic tissue that repairs bone and nerves. Covers, depending on your mods: synthetic tissue, synthetic bone and neuromuscular framework.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticRepair"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticRepair"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticRepair"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticRepair"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticRepair"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- optimizing nanobots -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="EPOE_OrganicOptimizer"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="EPOE_OrganicOptimizer"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="EPOE_OrganicOptimizer"]/label</xpath><value><label>optimizing nanobots</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="EPOE_OrganicOptimizer"]</xpath><value><label>optimizing nanobots</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="EPOE_OrganicOptimizer"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="EPOE_OrganicOptimizer"]/description</xpath><value><description>Release nanobots that optimize the body. Covers, depending on your mods: organic optimizing nanobots and instinct optimizing nanobots.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="EPOE_OrganicOptimizer"]</xpath><value><description>Release nanobots that optimize the body. Covers, depending on your mods: organic optimizing nanobots and instinct optimizing nanobots.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_OrganicOptimizer"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_OrganicOptimizer"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_OrganicOptimizer"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_OrganicOptimizer"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_OrganicOptimizer"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- synthetic organ integration -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/label</xpath><value><label>synthetic organ integration</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]</xpath><value><label>synthetic organ integration</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/description</xpath><value><description>Grow enhanced synthetic organs that filter toxins and boost immunity. Covers, depending on your mods: synthetic detoxifier liver and synthetic immunoenhanced kidney.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]</xpath><value><description>Grow enhanced synthetic organs that filter toxins and boost immunity. Covers, depending on your mods: synthetic detoxifier liver and synthetic immunoenhanced kidney.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- toxin filtration -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]/label</xpath><value><label>toxin filtration</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]</xpath><value><label>toxin filtration</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]/description</xpath><value><description>Install organs that filter toxins from the body. Covers, depending on your mods: detoxifier kidney and detoxifier lung.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]</xpath><value><description>Install organs that filter toxins from the body. Covers, depending on your mods: detoxifier kidney and detoxifier lung.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="ToxFiltration"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="ToxFiltration"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="ToxFiltration"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- hygiene bionics -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="HygieneBionics"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="HygieneBionics"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="HygieneBionics"]/label</xpath><value><label>hygiene bionics</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="HygieneBionics"]</xpath><value><label>hygiene bionics</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="HygieneBionics"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="HygieneBionics"]/description</xpath><value><description>Install bionics that take care of bodily hygiene. Covers, depending on your mods: bionic bladder and hygiene enhancer.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="HygieneBionics"]</xpath><value><description>Install bionics that take care of bodily hygiene. Covers, depending on your mods: bionic bladder and hygiene enhancer.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="HygieneBionics"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="HygieneBionics"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="HygieneBionics"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- mechanite modules -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="BM_MechaniteModules"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="BM_MechaniteModules"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="BM_MechaniteModules"]/label</xpath><value><label>mechanite modules</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="BM_MechaniteModules"]</xpath><value><label>mechanite modules</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="BM_MechaniteModules"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="BM_MechaniteModules"]/description</xpath><value><description>Fit modular bionics with mechanites that fight disease. Covers, depending on your mods: flu immunizer module, gut worms immunizer module, lung rot immunizer module, malaria immunizer module, muscle parasites immunizer module, overdose immunizer module, plague immunizer module, scaria immunizer module, sleeping sickness immunizer module and resurrector module.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="BM_MechaniteModules"]</xpath><value><description>Fit modular bionics with mechanites that fight disease. Covers, depending on your mods: flu immunizer module, gut worms immunizer module, lung rot immunizer module, malaria immunizer module, muscle parasites immunizer module, overdose immunizer module, plague immunizer module, scaria immunizer module, sleeping sickness immunizer module and resurrector module.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="BM_MechaniteModules"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="BM_MechaniteModules"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="BM_MechaniteModules"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="BM_MechaniteModules"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="BM_MechaniteModules"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- ultratech arm modules -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="LTS_ModularBionicWeaponryUltra"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="LTS_ModularBionicWeaponryUltra"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="LTS_ModularBionicWeaponryUltra"]/label</xpath><value><label>ultratech arm modules</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="LTS_ModularBionicWeaponryUltra"]</xpath><value><label>ultratech arm modules</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="LTS_ModularBionicWeaponryUltra"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="LTS_ModularBionicWeaponryUltra"]/description</xpath><value><description>Fit modular bionics with ultratech weapons. Covers, depending on your mods: monowire whip module, arm fletcher module, laser arm blade module, plasma claw module and grav kick module.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="LTS_ModularBionicWeaponryUltra"]</xpath><value><description>Fit modular bionics with ultratech weapons. Covers, depending on your mods: monowire whip module, arm fletcher module, laser arm blade module, plasma claw module and grav kick module.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_ModularBionicWeaponryUltra"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_ModularBionicWeaponryUltra"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_ModularBionicWeaponryUltra"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_ModularBionicWeaponryUltra"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="LTS_ModularBionicWeaponryUltra"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- psychic implants -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/label</xpath><value><label>psychic implants</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]</xpath><value><label>psychic implants</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/description</xpath><value><description>Install implants that sustain and channel psychic power. Covers, depending on your mods: psychic sustainer, psychic reaper and voidlink.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]</xpath><value><description>Install implants that sustain and channel psychic power. Covers, depending on your mods: psychic sustainer, psychic reaper and voidlink.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"][baseCost &lt; 0]/baseCost</xpath><value><baseCost>0</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"][knowledgeCost &lt; 50]/knowledgeCost</xpath><value><knowledgeCost>50</knowledgeCost></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- teeth replacement -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"]/label</xpath><value><label>teeth replacement</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"]</xpath><value><label>teeth replacement</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"]/description</xpath><value><description>Replace teeth with plasteel and gold. Covers, depending on your mods: plasteel teeth replacement and golden teeth replacement.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"]</xpath><value><description>Replace teeth with plasteel and gold. Covers, depending on your mods: plasteel teeth replacement and golden teeth replacement.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"][baseCost &lt; 800]/baseCost</xpath><value><baseCost>800</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"]/requiredResearchFacilities[not(li="USH_ResearchProbe")]</xpath><value><li>USH_ResearchProbe</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_TeethRes"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>USH_ResearchProbe</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- skin replacement -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"]/label</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"]/label</xpath><value><label>skin replacement</label></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"]</xpath><value><label>skin replacement</label></value></nomatch></li>
+        <li Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"]/description</xpath>
+          <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"]/description</xpath><value><description>Replace skin with plasteel, gold and glittertech. Covers, depending on your mods: plasteel skin replacement, golden skin replacement and glitterlink.</description></value></match>
+          <nomatch Class="PatchOperationAdd"><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"]</xpath><value><description>Replace skin with plasteel, gold and glittertech. Covers, depending on your mods: plasteel skin replacement, golden skin replacement and glitterlink.</description></value></nomatch></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"][baseCost &lt; 800]/baseCost</xpath><value><baseCost>800</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"]/requiredResearchFacilities[not(li="USH_ResearchProbe")]</xpath><value><li>USH_ResearchProbe</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_SkinRes"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>USH_ResearchProbe</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- revenant invisibility -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="RevenantInvisibility"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="RevenantInvisibility"][baseCost &lt; 0]/baseCost</xpath><value><baseCost>0</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="RevenantInvisibility"][knowledgeCost &lt; 40]/knowledgeCost</xpath><value><knowledgeCost>40</knowledgeCost></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- neural casting -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="AC_NeuralCasting"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="AC_NeuralCasting"][baseCost &lt; 800]/baseCost</xpath><value><baseCost>800</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="AC_NeuralCasting"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="AC_NeuralCasting"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="AC_NeuralCasting"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="AC_NeuralCasting"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- deep mind scanning -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="USH_DeepMindScanningRes"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_DeepMindScanningRes"][baseCost &lt; 800]/baseCost</xpath><value><baseCost>800</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_DeepMindScanningRes"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_DeepMindScanningRes"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_DeepMindScanningRes"]/requiredResearchFacilities[not(li="MultiAnalyzer")]</xpath><value><li>MultiAnalyzer</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_DeepMindScanningRes"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_DeepMindScanningRes"]/requiredResearchFacilities[not(li="USH_ResearchProbe")]</xpath><value><li>USH_ResearchProbe</li></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_DeepMindScanningRes"][not(requiredResearchFacilities)]</xpath><value><requiredResearchFacilities><li>USH_ResearchProbe</li></requiredResearchFacilities></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- advanced cybertech -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="USH_AdvancedCybertech"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_AdvancedCybertech"][baseCost &lt; 500]/baseCost</xpath><value><baseCost>500</baseCost></value></li>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_AdvancedCybertech"]/requiredResearchBuilding[. != "HiTechResearchBench"]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+        <li Class="PatchOperationAdd"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="USH_AdvancedCybertech"][not(requiredResearchBuilding)]</xpath><value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- questionable food production -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="WCE2_QuestionableFoodProduction"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="WCE2_QuestionableFoodProduction"][baseCost &lt; 250]/baseCost</xpath><value><baseCost>250</baseCost></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- neutroamine incubation -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="WCE2_NeutroamineIncubation"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="WCE2_NeutroamineIncubation"][baseCost &lt; 250]/baseCost</xpath><value><baseCost>250</baseCost></value></li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- organ destabilization -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="WCE2_OrganDestabilization"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace"><success>Always</success><xpath>Defs/ResearchProjectDef[defName="WCE2_OrganDestabilization"][baseCost &lt; 250]/baseCost</xpath><value><baseCost>250</baseCost></value></li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

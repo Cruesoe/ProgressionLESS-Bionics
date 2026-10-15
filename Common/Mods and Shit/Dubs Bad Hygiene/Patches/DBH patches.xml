@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicBladder"]</xpath>
@@ -223,7 +223,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HygieneEnhancer"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HygieneEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">HygieneBionics</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -232,7 +232,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HygieneEnhancer"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HygieneEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">HygieneBionics</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -259,7 +259,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_HygieneEnhancer"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HygieneEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">HygieneBionics</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -268,7 +268,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_HygieneEnhancer"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HygieneEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">HygieneBionics</researchPrerequisite>
       </value>
     </match>
   </Operation>

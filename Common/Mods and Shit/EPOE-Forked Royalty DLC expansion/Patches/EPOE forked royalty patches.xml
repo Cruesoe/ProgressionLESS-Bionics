@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]</xpath>
@@ -17,7 +17,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_CircadianRefresher</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CircadianImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -26,7 +26,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_CircadianRefresher</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CircadianImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -53,7 +53,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_CircadianRefresher"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_CircadianRefresher</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CircadianImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -62,7 +62,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_CircadianRefresher"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_CircadianRefresher</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CircadianImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -101,7 +101,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedDrillArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedSpecializedLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -110,7 +110,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedDrillArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedSpecializedLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -137,7 +137,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedDrillArm"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedDrillArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedSpecializedLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -146,7 +146,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedDrillArm"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedDrillArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedSpecializedLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -185,7 +185,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedElbowBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedScytherLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -194,7 +194,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedElbowBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedScytherLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -221,7 +221,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedElbowBlade"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedElbowBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedScytherLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -230,7 +230,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedElbowBlade"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedElbowBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedScytherLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -268,8 +268,8 @@
             <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
             <prerequisites Inherit="False">
               <li>Bionics</li>
-              <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicHand</li>
-              <li MayRequire="ludeon.rimworld.royalty">Ferny_Bionics_FieldHand</li>
+              <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li>
+              <li MayRequire="ludeon.rimworld.royalty">Ferny_Bionics_SpecializedLimbs</li>
               <li>SpecializedLimbs</li>
             </prerequisites>
           </ResearchProjectDef>
@@ -340,8 +340,8 @@
         <value>
           <prerequisites Inherit="False">
             <li>Bionics</li>
-            <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicHand</li>
-            <li MayRequire="ludeon.rimworld.royalty">Ferny_Bionics_FieldHand</li>
+            <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li>
+            <li MayRequire="ludeon.rimworld.royalty">Ferny_Bionics_SpecializedLimbs</li>
             <li>SpecializedLimbs</li>
           </prerequisites>
         </value>
@@ -351,8 +351,8 @@
         <value>
           <prerequisites Inherit="False">
             <li>Bionics</li>
-            <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicHand</li>
-            <li MayRequire="ludeon.rimworld.royalty">Ferny_Bionics_FieldHand</li>
+            <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li>
+            <li MayRequire="ludeon.rimworld.royalty">Ferny_Bionics_SpecializedLimbs</li>
             <li>SpecializedLimbs</li>
           </prerequisites>
         </value>
@@ -478,7 +478,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedHandTalon</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedScytherLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -487,7 +487,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedHandTalon</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedScytherLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -514,7 +514,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedHandTalon"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedHandTalon</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedScytherLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -523,7 +523,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedHandTalon"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedHandTalon</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedScytherLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -562,7 +562,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedKneeSpike</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedScytherLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -571,7 +571,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedKneeSpike</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedScytherLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -598,7 +598,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedKneeSpike"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedKneeSpike</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedScytherLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -607,7 +607,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedKneeSpike"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedKneeSpike</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedScytherLimbs</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -646,7 +646,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_DetoxifierEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MolecularImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -655,7 +655,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_DetoxifierEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MolecularImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -682,7 +682,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierEnhancer"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_DetoxifierEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MolecularImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -691,7 +691,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierEnhancer"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_DetoxifierEnhancer</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MolecularImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -933,7 +933,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ImmunoenhancerSyntheticKidney</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticOrgansIntegration</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -942,7 +942,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ImmunoenhancerSyntheticKidney</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticOrgansIntegration</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -969,7 +969,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_EPOE_ImmunoenhancerSyntheticKidney"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ImmunoenhancerSyntheticKidney</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticOrgansIntegration</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -978,7 +978,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_EPOE_ImmunoenhancerSyntheticKidney"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ImmunoenhancerSyntheticKidney</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticOrgansIntegration</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1017,7 +1017,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherElbowBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedCompactWeaponry</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1026,7 +1026,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherElbowBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedCompactWeaponry</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1035,7 +1035,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="ludeon.rimworld.royalty,vat.epoeforked">Ferny_Bionics_CompactWeapons</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1044,7 +1044,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="ludeon.rimworld.royalty,vat.epoeforked">Ferny_Bionics_CompactWeapons</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1053,7 +1053,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicElbowBlade"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherElbowBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedCompactWeaponry</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1062,7 +1062,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicElbowBlade"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherElbowBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedCompactWeaponry</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1071,7 +1071,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicElbowBlade"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="ludeon.rimworld.royalty,vat.epoeforked">Ferny_Bionics_CompactWeapons</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1080,7 +1080,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicElbowBlade"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="ludeon.rimworld.royalty,vat.epoeforked">Ferny_Bionics_CompactWeapons</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1103,7 +1103,7 @@ This weapon system have been integrated into a bionic hand, at a small cost to t
             <prerequisites Inherit="False">
               <li>Bionics</li>
               <li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li>
-              <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicHand</li>
+              <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li>
             </prerequisites>
           </ResearchProjectDef>
         </value>
@@ -1178,7 +1178,7 @@ This weapon system have been integrated into a bionic hand, at a small cost to t
           <prerequisites Inherit="False">
             <li>Bionics</li>
             <li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li>
-            <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicHand</li>
+            <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li>
           </prerequisites>
         </value>
       </match>
@@ -1188,7 +1188,7 @@ This weapon system have been integrated into a bionic hand, at a small cost to t
           <prerequisites Inherit="False">
             <li>Bionics</li>
             <li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li>
-            <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicHand</li>
+            <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li>
           </prerequisites>
         </value>
       </nomatch>
@@ -1313,7 +1313,7 @@ This weapon system have been integrated into a bionic hand, at a small cost to t
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherKneeSpike</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedCompactWeaponry</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1322,7 +1322,7 @@ This weapon system have been integrated into a bionic hand, at a small cost to t
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherKneeSpike</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedCompactWeaponry</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1331,7 +1331,7 @@ This weapon system have been integrated into a bionic hand, at a small cost to t
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="ludeon.rimworld.royalty,vat.epoeforked">Ferny_Bionics_CompactWeapons</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1340,7 +1340,7 @@ This weapon system have been integrated into a bionic hand, at a small cost to t
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="ludeon.rimworld.royalty,vat.epoeforked">Ferny_Bionics_CompactWeapons</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1349,7 +1349,7 @@ This weapon system have been integrated into a bionic hand, at a small cost to t
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicKneeSpike"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherKneeSpike</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedCompactWeaponry</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1358,7 +1358,7 @@ This weapon system have been integrated into a bionic hand, at a small cost to t
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicKneeSpike"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherKneeSpike</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedCompactWeaponry</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1367,7 +1367,7 @@ This weapon system have been integrated into a bionic hand, at a small cost to t
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicKneeSpike"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="ludeon.rimworld.royalty,vat.epoeforked">Ferny_Bionics_CompactWeapons</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1376,7 +1376,7 @@ This weapon system have been integrated into a bionic hand, at a small cost to t
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicKneeSpike"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="ludeon.rimworld.royalty,vat.epoeforked">Ferny_Bionics_CompactWeapons</li></researchPrerequisites>
       </value>
     </match>
   </Operation>

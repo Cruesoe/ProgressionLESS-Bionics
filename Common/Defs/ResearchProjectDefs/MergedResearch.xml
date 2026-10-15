@@ -9,6 +9,9 @@
     <prerequisites>
       <li>Smithing</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="det.epochsgolems,det.epochspyrinth">
     <defName>Ferny_Bionics_GolemModules</defName>
@@ -19,6 +22,9 @@
     <prerequisites>
       <li>DV_GolemResearch_GolemancyModules</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Ferny_Bionics_ProstheticParts</defName>
@@ -29,6 +35,9 @@
     <prerequisites>
       <li>Prosthetics</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="vat.epoeforked">
     <defName>Ferny_Bionics_SurrogateOrgans</defName>
@@ -39,6 +48,9 @@
     <prerequisites>
       <li>SurrogateOrgans</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Ferny_Bionics_BrainWiringImplants</defName>
@@ -49,6 +61,9 @@
     <prerequisites>
       <li>BrainWiring</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="ludeon.rimworld.royalty,vat.epoeforked">
     <defName>Ferny_Bionics_CompactWeapons</defName>
@@ -56,6 +71,9 @@
     <description>Build blades and spikes small enough to implant in the body. Covers, depending on your mods: elbow blade, knee spike and scyther blade.</description>
     <baseCost>250</baseCost>
     <techLevel>Industrial</techLevel>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="ludeon.rimworld.royalty">
     <defName>Ferny_Bionics_SpecializedLimbs</defName>
@@ -66,6 +84,9 @@
     <prerequisites>
       <li>SpecializedLimbs</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalProstheticParts</defName>
@@ -76,6 +97,9 @@
     <prerequisites>
       <li MayRequire="sarg.alphaimplants">Ferny_Bionics_AI_AnimalProstheticArm</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalCombatImplants</defName>
@@ -89,6 +113,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="ushanka.hackingexpansion">
     <defName>Ferny_Bionics_CybertechKits</defName>
@@ -99,6 +126,9 @@
     <prerequisites>
       <li>USH_BasicCybertech</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="ushanka.hackingexpansion">
     <defName>Ferny_Bionics_AdvancedCybertechKits</defName>
@@ -110,6 +140,9 @@
       <li MayRequireAnyOf="ushanka.hackingexpansion">Ferny_Bionics_CybertechKits</li>
       <li>USH_AdvancedCybertech</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="ludeon.rimworld.anomaly,ludeon.rimworld.odyssey">
     <defName>Ferny_Bionics_GhoulEnhancements</defName>
@@ -123,6 +156,8 @@
     <prerequisites>
       <li MayRequire="ludeon.rimworld.anomaly">GhoulEnhancements</li>
     </prerequisites>
+    <researchViewX>7.50</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i">
     <defName>Ferny_Bionics_AdvancedGhoulEnhancements</defName>
@@ -136,6 +171,8 @@
     <prerequisites>
       <li>LTS_AdvancedGhoulEnhancements</li>
     </prerequisites>
+    <researchViewX>8.50</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Ferny_Bionics_BionicBodyParts</defName>
@@ -150,6 +187,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i,ushanka.biologicalwarfare,zwei2stein.pyrinthbionics">
     <defName>Ferny_Bionics_BionicOrgans</defName>
@@ -164,6 +204,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="vat.epoeforked">
     <defName>Ferny_Bionics_AdvancedBionicParts</defName>
@@ -178,6 +221,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="vat.epoeforkedroyalty">
     <defName>Ferny_Bionics_AdvancedScytherLimbs</defName>
@@ -193,6 +239,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.odyssey">
     <defName>Ferny_Bionics_GravshipImplants</defName>
@@ -207,6 +256,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i">
     <defName>Ferny_Bionics_SkillChips</defName>
@@ -221,6 +273,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i">
     <defName>Ferny_Bionics_SanguophageImplants</defName>
@@ -232,6 +287,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i">
     <defName>Ferny_Bionics_ShoulderWeapons</defName>
@@ -246,6 +304,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.royalty">
     <defName>Ferny_Bionics_FleshShapingImplants</defName>
@@ -260,6 +321,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.royalty,thcon.cellcycleacceleration">
     <defName>Ferny_Bionics_HealingImplants</defName>
@@ -274,6 +338,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>5.60</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.royalty,vat.epoeforkedroyalty">
     <defName>Ferny_Bionics_MolecularImplants</defName>
@@ -288,6 +355,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>6.30</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="7f.securityclearance,lts.i,ludeon.rimworld.royalty,sov.detvisorroyalty">
     <defName>Ferny_Bionics_NeuralImplants</defName>
@@ -299,6 +369,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.odyssey,ludeon.rimworld.royalty">
     <defName>Ferny_Bionics_SkinGlands</defName>
@@ -313,6 +386,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>7.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="ludeon.rimworld.royalty">
     <defName>Ferny_Bionics_MetabolicStomachs</defName>
@@ -327,6 +403,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="ludeon.rimworld.royalty,vat.epoeforkedroyalty">
     <defName>Ferny_Bionics_CircadianImplants</defName>
@@ -341,6 +420,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Ferny_Bionics_SyntheticOrganSet</defName>
@@ -355,6 +437,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="vat.epoeforked">
     <defName>Ferny_Bionics_RibImplants</defName>
@@ -369,6 +454,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="vat.epoeforked">
     <defName>Ferny_Bionics_GlitterworldImplants</defName>
@@ -383,17 +471,23 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i">
     <defName>Ferny_Bionics_SignalBoosters</defName>
     <label>signal boosters</label>
-    <description>Install signal boosters that extend a mechanitor&apos;s bandwidth. Covers, depending on your mods: signal booster (standard) and signal booster (high).</description>
+    <description>Install signal boosters that extend a mechanitor's bandwidth. Covers, depending on your mods: signal booster (standard) and signal booster (high).</description>
     <baseCost>500</baseCost>
     <techLevel>Spacer</techLevel>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i">
     <defName>Ferny_Bionics_UltraMechanitorImplants</defName>
@@ -405,14 +499,20 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>9.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="ludeon.rimworld.biotech">
     <defName>Ferny_Bionics_BasicMechanitorImplants</defName>
     <label>basic mechanitor implants</label>
-    <description>Install the first implants that extend a mechanitor&apos;s control. Covers, depending on your mods: control sublink (standard), mech gestation processor and control sublink (high).</description>
+    <description>Install the first implants that extend a mechanitor's control. Covers, depending on your mods: control sublink (standard), mech gestation processor and control sublink (high).</description>
     <baseCost>1200</baseCost>
     <techLevel>Archotech</techLevel>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="el.invmech,ludeon.rimworld.biotech">
     <defName>Ferny_Bionics_HighMechanitorImplants</defName>
@@ -424,6 +524,9 @@
     <prerequisites>
       <li MayRequire="ludeon.rimworld.biotech">HighMechtech</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_MeleeModules</defName>
@@ -438,6 +541,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_RangedWeaponModules</defName>
@@ -452,6 +558,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_GrenadeAndTrapModules</defName>
@@ -463,6 +572,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>5.60</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_DeployerModules</defName>
@@ -474,6 +586,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>6.30</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_ProjectorModules</defName>
@@ -489,6 +604,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_MobilityModules</defName>
@@ -503,6 +621,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>7.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_WorkModules</defName>
@@ -517,6 +638,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_UtilityModules</defName>
@@ -531,6 +655,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_PowerModules</defName>
@@ -545,6 +672,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_SynthesizerModules</defName>
@@ -559,6 +689,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_OrbitalModules</defName>
@@ -573,6 +706,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_ChemicalBurstModules</defName>
@@ -587,6 +723,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_SubpersonaChips</defName>
@@ -601,6 +740,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_UltratechModules</defName>
@@ -615,6 +757,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>9.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_AnomalyModules</defName>
@@ -628,6 +773,8 @@
     <prerequisites>
       <li>BM_AnomalyModules</li>
     </prerequisites>
+    <researchViewX>7.50</researchViewX>
+    <researchViewY>4.50</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularityanimals">
     <defName>Ferny_Bionics_AnimalStrikeModules</defName>
@@ -643,6 +790,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularityanimals">
     <defName>Ferny_Bionics_AnimalProducerModules</defName>
@@ -659,6 +809,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i">
     <defName>Ferny_Bionics_ArmModules</defName>
@@ -673,6 +826,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>5.60</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i">
     <defName>Ferny_Bionics_HeadModules</defName>
@@ -687,6 +843,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>6.30</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="lts.i">
     <defName>Ferny_Bionics_LegAndLungModules</defName>
@@ -701,6 +860,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalBionicParts</defName>
@@ -715,6 +877,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalBionicImplants</defName>
@@ -729,6 +894,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalMutationImplants</defName>
@@ -743,6 +911,8 @@
       <li MayRequire="sarg.alphaimplants">Ferny_Bionics_AI_AnimalBionicArm</li>
       <li MayRequire="ludeon.rimworld.anomaly">MutationWeaponry</li>
     </prerequisites>
+    <researchViewX>7.50</researchViewX>
+    <researchViewY>5.30</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalWorkChips</defName>
@@ -757,6 +927,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>7.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalNaturalWeapons</defName>
@@ -771,6 +944,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalBodyImplants</defName>
@@ -785,6 +961,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="vanillaexpanded.vgeneticse">
     <defName>Ferny_Bionics_HumanGeneticImplants</defName>
@@ -796,6 +975,9 @@
     <prerequisites>
       <li>GR_GeneticCompatibility</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="vanillaexpanded.vgeneticse">
     <defName>Ferny_Bionics_AnimalGeneticImplants</defName>
@@ -807,6 +989,9 @@
     <prerequisites>
       <li MayRequire="vanillaexpanded.vgeneticse">GR_HybridImplantology</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="vanillaracesexpanded.android">
     <defName>Ferny_Bionics_AndroidParts</defName>
@@ -821,6 +1006,9 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>9.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequireAnyOf="ushanka.hackingexpansion">
     <defName>Ferny_Bionics_ExecDataPrograms</defName>
@@ -832,5 +1020,8 @@
     <prerequisites>
       <li>USH_ExecData</li>
     </prerequisites>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
 </Defs>

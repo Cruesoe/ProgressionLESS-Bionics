@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AirFilter"]</xpath>
@@ -17,7 +17,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AirFilter"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AirFilter</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -26,7 +26,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AirFilter"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AirFilter</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -53,7 +53,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_AirFilter"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AirFilter</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -62,7 +62,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_AirFilter"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AirFilter</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -101,7 +101,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AndroidArm"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -110,7 +110,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AndroidArm"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -137,7 +137,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_AndroidArm"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -146,7 +146,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_AndroidArm"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -185,7 +185,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AndroidFoot"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -194,7 +194,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AndroidFoot"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -221,7 +221,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_AndroidFoot"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -230,7 +230,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_AndroidFoot"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -269,7 +269,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AndroidHand"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -278,7 +278,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AndroidHand"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -305,7 +305,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_AndroidHand"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -314,7 +314,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_AndroidHand"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -353,7 +353,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AndroidLeg"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -362,7 +362,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AndroidLeg"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -389,7 +389,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_AndroidLeg"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -398,7 +398,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_AndroidLeg"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AndroidLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -437,7 +437,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_ArtificialJaw"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -446,7 +446,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_ArtificialJaw"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -473,7 +473,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_ArtificialJaw"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -482,7 +482,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_ArtificialJaw"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -521,7 +521,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_ArtificialNose"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialNose</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -530,7 +530,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_ArtificialNose"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialNose</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -557,7 +557,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_ArtificialNose"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialNose</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -566,7 +566,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_ArtificialNose"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialNose</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -605,7 +605,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_ArtificialRibcage"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialRibcage</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -614,7 +614,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_ArtificialRibcage"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialRibcage</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -641,7 +641,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_ArtificialRibcage"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialRibcage</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -650,7 +650,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_ArtificialRibcage"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialRibcage</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -689,7 +689,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_ArtificialSpine"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -698,7 +698,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_ArtificialSpine"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -725,7 +725,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_ArtificialSpine"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -734,7 +734,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_ArtificialSpine"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_ArtificialSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -773,7 +773,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AudioProcessor"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AudioProcessor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -782,7 +782,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_AudioProcessor"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AudioProcessor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -809,7 +809,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_AudioProcessor"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AudioProcessor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -818,7 +818,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_AudioProcessor"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_AudioProcessor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -857,7 +857,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_MetabolismRegulator"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_MetabolismRegulator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -866,7 +866,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_MetabolismRegulator"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_MetabolismRegulator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -893,7 +893,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_MetabolismRegulator"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_MetabolismRegulator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -902,7 +902,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_MetabolismRegulator"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_MetabolismRegulator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -941,7 +941,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_NeuroPump"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_NeuroPump</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -950,7 +950,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_NeuroPump"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_NeuroPump</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -977,7 +977,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_NeuroPump"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_NeuroPump</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -986,7 +986,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_NeuroPump"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_NeuroPump</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1025,7 +1025,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_Neutrofilter"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_Neutrofilter</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1034,7 +1034,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_Neutrofilter"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_Neutrofilter</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1061,7 +1061,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_Neutrofilter"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_Neutrofilter</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1070,7 +1070,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_Neutrofilter"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_Neutrofilter</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1109,7 +1109,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_OpticalUnit"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_OpticalUnit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1118,7 +1118,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_OpticalUnit"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_OpticalUnit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1145,7 +1145,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_OpticalUnit"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_OpticalUnit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1154,7 +1154,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_OpticalUnit"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_OpticalUnit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1193,7 +1193,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_Reactor"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_Reactor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1202,7 +1202,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="VREA_Reactor"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_Reactor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1229,7 +1229,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_VREA_Reactor"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_Reactor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1238,7 +1238,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_VREA_Reactor"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_VREA_Reactor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AndroidParts</researchPrerequisite>
       </value>
     </match>
   </Operation>

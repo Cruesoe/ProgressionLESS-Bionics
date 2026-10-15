@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AIChip"]</xpath>
@@ -17,7 +17,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AIChip"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AIChip</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -26,7 +26,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AIChip"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AIChip</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -35,7 +35,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AIChip"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -44,7 +44,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AIChip"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -53,7 +53,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAIChip"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AIChip</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -62,7 +62,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAIChip"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AIChip</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -71,7 +71,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAIChip"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -80,7 +80,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAIChip"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -101,7 +101,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdrenalineRib"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdrenalineRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -110,7 +110,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdrenalineRib"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdrenalineRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -137,7 +137,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdrenalineRib"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdrenalineRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -146,7 +146,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdrenalineRib"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdrenalineRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -394,7 +394,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicEar"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicEar</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -403,7 +403,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicEar"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicEar</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -412,7 +412,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicEar"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -421,7 +421,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicEar"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -430,7 +430,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicEar"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicEar</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -439,7 +439,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicEar"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicEar</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -448,7 +448,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicEar"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -457,7 +457,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicEar"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -478,7 +478,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicEye"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -487,7 +487,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicEye"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -496,7 +496,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicEye"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -505,7 +505,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicEye"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -514,7 +514,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicEye"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -523,7 +523,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicEye"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -532,7 +532,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicEye"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -541,7 +541,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicEye"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -562,7 +562,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicFoot"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -571,7 +571,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicFoot"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -580,7 +580,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicFoot"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -589,7 +589,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicFoot"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -598,7 +598,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicFoot"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -607,7 +607,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicFoot"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -616,7 +616,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicFoot"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -625,7 +625,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicFoot"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -646,7 +646,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicHand"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -655,7 +655,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicHand"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -664,7 +664,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicHand"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -673,7 +673,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicHand"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -682,7 +682,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicHand"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -691,7 +691,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicHand"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -700,7 +700,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicHand"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -709,7 +709,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicHand"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -730,7 +730,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicJaw"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -739,7 +739,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicJaw"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -748,7 +748,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicJaw"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -757,7 +757,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicJaw"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -766,7 +766,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicJaw"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -775,7 +775,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicJaw"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -784,7 +784,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicJaw"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -793,7 +793,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicJaw"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -814,7 +814,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicLeg"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -823,7 +823,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicLeg"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -832,7 +832,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicLeg"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -841,7 +841,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicLeg"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -850,7 +850,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicLeg"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -859,7 +859,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicLeg"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicLeg</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -868,7 +868,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicLeg"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -877,7 +877,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicLeg"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -898,7 +898,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicSpine"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -907,7 +907,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicSpine"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -916,7 +916,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicSpine"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -925,7 +925,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedBionicSpine"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -934,7 +934,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicSpine"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -943,7 +943,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicSpine"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -952,7 +952,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicSpine"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -961,7 +961,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedBionicSpine"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_BionicBodyParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -982,7 +982,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedPowerArm"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedPowerArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -991,7 +991,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedPowerArm"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedPowerArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1000,7 +1000,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedPowerArm"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>Ferny_Bionics_PowerArm</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1009,7 +1009,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AdvancedPowerArm"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>Ferny_Bionics_PowerArm</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1018,7 +1018,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedPowerArm"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedPowerArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1027,7 +1027,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedPowerArm"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedPowerArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1036,7 +1036,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedPowerArm"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>Ferny_Bionics_PowerArm</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1045,7 +1045,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateAdvancedPowerArm"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>Ferny_Bionics_PowerArm</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1066,7 +1066,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ArtificialNose"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ArtificialNose</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1075,7 +1075,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ArtificialNose"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ArtificialNose</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1102,7 +1102,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_ArtificialNose"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ArtificialNose</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1111,7 +1111,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_ArtificialNose"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ArtificialNose</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1150,7 +1150,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicFinger"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicFinger</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1159,7 +1159,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicFinger"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicFinger</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1168,7 +1168,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicFinger"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1177,7 +1177,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicFinger"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1186,7 +1186,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicFinger"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicFinger</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1195,7 +1195,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicFinger"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicFinger</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1204,7 +1204,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicFinger"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1213,7 +1213,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicFinger"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1234,7 +1234,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicFoot"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1243,7 +1243,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicFoot"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1252,7 +1252,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicFoot"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1261,7 +1261,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicFoot"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1270,7 +1270,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicFoot"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1279,7 +1279,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicFoot"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1288,7 +1288,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicFoot"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1297,7 +1297,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicFoot"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1318,7 +1318,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicHand"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1327,7 +1327,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicHand"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1336,7 +1336,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicHand"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1345,7 +1345,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicHand"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1354,7 +1354,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicHand"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1363,7 +1363,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicHand"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1372,7 +1372,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicHand"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1381,7 +1381,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicHand"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1402,7 +1402,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicToe"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicToe</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1411,7 +1411,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicToe"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicToe</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1420,7 +1420,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicToe"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1429,7 +1429,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BionicToe"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1438,7 +1438,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicToe"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicToe</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1447,7 +1447,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicToe"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicToe</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1456,7 +1456,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BionicToe"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1465,7 +1465,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BionicToe"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequire="vat.epoeforked">Ferny_Bionics_ProstheticParts</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -1486,7 +1486,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BrainStimulator"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BrainStimulator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1495,7 +1495,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BrainStimulator"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BrainStimulator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1522,7 +1522,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_BrainStimulator"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BrainStimulator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1531,7 +1531,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_BrainStimulator"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_BrainStimulator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1570,7 +1570,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CoagulatorRib"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CoagulatorRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1579,7 +1579,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CoagulatorRib"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CoagulatorRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1606,7 +1606,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateCoagulatorRib"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CoagulatorRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1615,7 +1615,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateCoagulatorRib"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CoagulatorRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1654,7 +1654,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CoolerRib"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CoolerRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1663,7 +1663,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CoolerRib"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CoolerRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1690,7 +1690,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeCoolingRib"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CoolerRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1699,7 +1699,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeCoolingRib"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_CoolerRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1738,7 +1738,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DruggedRib"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DruggedRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1747,7 +1747,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DruggedRib"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DruggedRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1774,7 +1774,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateDruggedRib"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DruggedRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1783,7 +1783,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateDruggedRib"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_DruggedRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1822,7 +1822,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_AuxiliaryAI_Combat"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_AuxiliaryAI_Combat</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GlitterworldImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1831,7 +1831,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_AuxiliaryAI_Combat"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_AuxiliaryAI_Combat</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GlitterworldImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1858,7 +1858,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_AuxiliaryAI_Combat"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_AuxiliaryAI_Combat</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GlitterworldImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1867,7 +1867,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_AuxiliaryAI_Combat"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_AuxiliaryAI_Combat</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GlitterworldImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1906,7 +1906,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_AuxiliaryAI_Worker"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_AuxiliaryAI_Worker</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GlitterworldImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1915,7 +1915,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_AuxiliaryAI_Worker"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_AuxiliaryAI_Worker</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GlitterworldImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1942,7 +1942,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_AuxiliaryAI_Worker"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_AuxiliaryAI_Worker</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GlitterworldImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1951,7 +1951,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_AuxiliaryAI_Worker"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_AuxiliaryAI_Worker</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GlitterworldImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1990,7 +1990,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_ProtectiveExoskeleton"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_ProtectiveExoskeleton</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -1999,7 +1999,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_ProtectiveExoskeleton"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_ProtectiveExoskeleton</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2026,7 +2026,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_ProtectiveExoskeleton"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_ProtectiveExoskeleton</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2035,7 +2035,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_ProtectiveExoskeleton"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_ProtectiveExoskeleton</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2074,7 +2074,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_ScytherBlade"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_ScytherBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CompactWeapons</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2083,7 +2083,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_ScytherBlade"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_ScytherBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CompactWeapons</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2092,7 +2092,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_ScytherBlade"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>Prosthetics</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -2101,7 +2101,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_ScytherBlade"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>Prosthetics</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -2110,7 +2110,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_ScytherBlade"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_ScytherBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CompactWeapons</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2119,7 +2119,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_ScytherBlade"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_ScytherBlade</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CompactWeapons</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2128,7 +2128,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_ScytherBlade"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>Prosthetics</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -2137,7 +2137,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_ScytherBlade"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li>Prosthetics</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -2158,7 +2158,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_SyntheticBone"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_SyntheticBone</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticRepair</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2167,7 +2167,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_SyntheticBone"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_SyntheticBone</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticRepair</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2194,7 +2194,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_SyntheticBone"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_SyntheticBone</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticRepair</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2203,7 +2203,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_SyntheticBone"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_SyntheticBone</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticRepair</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2242,7 +2242,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_TacticalBionicEye"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_TacticalBionicEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GlitterworldImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2251,7 +2251,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_TacticalBionicEye"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_TacticalBionicEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GlitterworldImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2278,7 +2278,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_TacticalBionicEye"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_TacticalBionicEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GlitterworldImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2287,7 +2287,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_EPIA_TacticalBionicEye"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_TacticalBionicEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GlitterworldImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2326,7 +2326,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_InstinctOptimizingNanobots"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_InstinctOptimizingNanobots</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_OrganicOptimizer</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2335,7 +2335,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_InstinctOptimizingNanobots"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_InstinctOptimizingNanobots</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_OrganicOptimizer</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2362,7 +2362,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_EPOE_InstinctOptimizingNanobots"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_InstinctOptimizingNanobots</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_OrganicOptimizer</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2371,7 +2371,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_EPOE_InstinctOptimizingNanobots"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_InstinctOptimizingNanobots</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_OrganicOptimizer</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2613,7 +2613,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ExoskeletonSuit"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ExoskeletonSuit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2622,7 +2622,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="ExoskeletonSuit"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ExoskeletonSuit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2649,7 +2649,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_ExoskeletonSuit"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ExoskeletonSuit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2658,7 +2658,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_ExoskeletonSuit"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_ExoskeletonSuit</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_AdvancedBionicParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2697,7 +2697,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="GoldenEye"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_GoldenEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2706,7 +2706,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="GoldenEye"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_GoldenEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2733,7 +2733,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_GoldenEye"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_GoldenEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2742,7 +2742,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_GoldenEye"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_GoldenEye</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2781,7 +2781,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HeaterRib"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HeaterRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2790,7 +2790,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HeaterRib"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HeaterRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2817,7 +2817,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeHeatingRib"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HeaterRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2826,7 +2826,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="EPIA_UpgradeHeatingRib"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HeaterRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2865,7 +2865,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HookHand"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HookHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MedievalProsthetics</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2874,7 +2874,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HookHand"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HookHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MedievalProsthetics</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2901,7 +2901,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_HookHand"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HookHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MedievalProsthetics</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2910,7 +2910,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_HookHand"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HookHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MedievalProsthetics</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2949,7 +2949,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HydraulicJaw"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HydraulicJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2958,7 +2958,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HydraulicJaw"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HydraulicJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2985,7 +2985,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_HydraulicJaw"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HydraulicJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -2994,7 +2994,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_HydraulicJaw"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_HydraulicJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3033,7 +3033,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LightReceptor"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_LightReceptor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3042,7 +3042,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LightReceptor"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_LightReceptor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3069,7 +3069,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_LightReceptor"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_LightReceptor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3078,7 +3078,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_LightReceptor"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_LightReceptor</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3117,7 +3117,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MedicalRib"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_MedicalRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3126,7 +3126,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MedicalRib"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_MedicalRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3153,7 +3153,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateMedicalRib"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_MedicalRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3162,7 +3162,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateMedicalRib"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_MedicalRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3201,7 +3201,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MuscleStimulator"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_MuscleStimulator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3210,7 +3210,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MuscleStimulator"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_MuscleStimulator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3237,7 +3237,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_MuscleStimulator"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_MuscleStimulator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3246,7 +3246,7 @@ Manufacture an ultra advanced artificial arm, further improved from the standard
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_MuscleStimulator"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_MuscleStimulator</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3491,7 +3491,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="NeuromuscularFramework"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_NeuromuscularFramework</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticRepair</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3500,7 +3500,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="NeuromuscularFramework"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_NeuromuscularFramework</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticRepair</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3527,7 +3527,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_NeuromuscularFramework"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_NeuromuscularFramework</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticRepair</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3536,7 +3536,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_NeuromuscularFramework"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_NeuromuscularFramework</researchPrerequisite>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticRepair</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3575,7 +3575,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PainkillerRib"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_PainkillerRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3584,7 +3584,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PainkillerRib"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_PainkillerRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3611,7 +3611,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreatePainkillerRib"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_PainkillerRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3620,7 +3620,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreatePainkillerRib"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_PainkillerRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3743,7 +3743,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RespirationRib"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_RespirationRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3752,7 +3752,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="RespirationRib"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_RespirationRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3779,7 +3779,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateRespirationRib"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_RespirationRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3788,7 +3788,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateRespirationRib"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_RespirationRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3827,7 +3827,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SilentJaw"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SilentJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3836,7 +3836,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SilentJaw"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SilentJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3863,7 +3863,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SilentJaw"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SilentJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3872,7 +3872,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SilentJaw"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SilentJaw</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_BionicBodyParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3911,7 +3911,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleProstheticFinger"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticFinger</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3920,7 +3920,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleProstheticFinger"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticFinger</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3947,7 +3947,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SimpleProstheticFinger"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticFinger</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3956,7 +3956,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SimpleProstheticFinger"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticFinger</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -3995,7 +3995,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleProstheticFoot"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4004,7 +4004,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleProstheticFoot"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4031,7 +4031,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SimpleProstheticFoot"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4040,7 +4040,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SimpleProstheticFoot"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticFoot</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4079,7 +4079,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleProstheticHand"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4088,7 +4088,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleProstheticHand"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4115,7 +4115,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SimpleProstheticHand"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4124,7 +4124,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SimpleProstheticHand"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticHand</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4163,7 +4163,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleProstheticToe"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticToe</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4172,7 +4172,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleProstheticToe"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticToe</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4199,7 +4199,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SimpleProstheticToe"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticToe</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4208,7 +4208,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SimpleProstheticToe"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleProstheticToe</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4450,7 +4450,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleSpine"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4459,7 +4459,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SimpleSpine"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4486,7 +4486,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SimpleSpine"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4495,7 +4495,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SimpleSpine"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SimpleSpine</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_ProstheticParts</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4534,7 +4534,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SteelArm"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SteelArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MedievalProsthetics</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4543,7 +4543,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SteelArm"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SteelArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MedievalProsthetics</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4570,7 +4570,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SteelArm"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SteelArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MedievalProsthetics</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4579,7 +4579,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SteelArm"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SteelArm</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_MedievalProsthetics</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4618,7 +4618,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SurrogateKidney"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateKidney</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4627,7 +4627,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SurrogateKidney"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateKidney</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4654,7 +4654,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SurrogateKidney"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateKidney</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4663,7 +4663,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SurrogateKidney"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateKidney</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4702,7 +4702,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SurrogateLiver"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateLiver</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4711,7 +4711,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SurrogateLiver"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateLiver</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4738,7 +4738,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SurrogateLiver"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateLiver</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4747,7 +4747,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SurrogateLiver"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateLiver</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4786,7 +4786,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SurrogateLung"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateLung</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4795,7 +4795,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SurrogateLung"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateLung</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4822,7 +4822,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SurrogateLung"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateLung</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4831,7 +4831,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SurrogateLung"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateLung</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4870,7 +4870,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SurrogateStomach"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4879,7 +4879,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SurrogateStomach"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4906,7 +4906,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SurrogateStomach"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4915,7 +4915,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SurrogateStomach"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateStomach</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SurrogateOrgans</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4954,7 +4954,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SyntheticKidney"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticKidney</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4963,7 +4963,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SyntheticKidney"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticKidney</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4972,7 +4972,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SyntheticKidney"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -4981,7 +4981,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SyntheticKidney"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -4990,7 +4990,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SyntheticKidney"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticKidney</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -4999,7 +4999,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SyntheticKidney"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticKidney</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -5008,7 +5008,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SyntheticKidney"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -5017,7 +5017,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SyntheticKidney"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -5038,7 +5038,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SyntheticLiver"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticLiver</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -5047,7 +5047,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SyntheticLiver"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticLiver</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -5056,7 +5056,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SyntheticLiver"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -5065,7 +5065,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SyntheticLiver"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -5074,7 +5074,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SyntheticLiver"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticLiver</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -5083,7 +5083,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SyntheticLiver"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticLiver</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -5092,7 +5092,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SyntheticLiver"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -5101,7 +5101,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SyntheticLiver"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -5122,7 +5122,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SyntheticLung"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticLung</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -5131,7 +5131,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SyntheticLung"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticLung</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -5140,7 +5140,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SyntheticLung"]/recipeMaker/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -5149,7 +5149,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SyntheticLung"]/recipeMaker[not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -5158,7 +5158,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SyntheticLung"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticLung</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -5167,7 +5167,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SyntheticLung"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticLung</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SyntheticOrganSet</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -5176,7 +5176,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_SyntheticLung"]/researchPrerequisites</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -5185,7 +5185,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_SyntheticLung"][not(researchPrerequisites)]</xpath>
       <value>
-        <researchPrerequisites Inherit="False" />
+        <researchPrerequisites Inherit="False"><li MayRequireAnyOf="vat.epoeforked">Ferny_Bionics_SurrogateOrgans</li></researchPrerequisites>
       </value>
     </match>
   </Operation>
@@ -5612,7 +5612,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="WakeUpRib"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_WakeUpRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -5621,7 +5621,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="WakeUpRib"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_WakeUpRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -5648,7 +5648,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="CreateWakeUpRib"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_WakeUpRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -5657,7 +5657,7 @@ Requires Brain Surgery research to use.</description>
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="CreateWakeUpRib"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_WakeUpRib</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_RibImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>

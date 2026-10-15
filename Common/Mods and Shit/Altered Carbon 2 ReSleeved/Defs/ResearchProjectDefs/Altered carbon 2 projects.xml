@@ -1,17 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ResearchProjectDef>
-    <defName>Ferny_Bionics_AC_RemoteStack</defName>
-    <label>neural receiver</label>
-    <description>Manufacture an ultratech implant which allows for a neural stack to cast its stored human consciousness remotely into the body it is installed in. It is required for a sleeve to become a viable needlecasting target.</description>
-    <baseCost>800</baseCost>
-    <techLevel>Ultra</techLevel>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <prerequisites>
-      <li>AC_NeuralCasting</li>
-    </prerequisites>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-  </ResearchProjectDef>
 </Defs>

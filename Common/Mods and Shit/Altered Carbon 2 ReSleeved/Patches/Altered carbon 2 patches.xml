@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AC_Dreamcatcher"]</xpath>
@@ -629,7 +629,7 @@ Extremely rare, heavily restricted and hard to produce, these implants are rare 
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AC_RemoteStack"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AC_RemoteStack</researchPrerequisite>
+        <researchPrerequisite Inherit="False">AC_NeuralCasting</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -638,7 +638,7 @@ Extremely rare, heavily restricted and hard to produce, these implants are rare 
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AC_RemoteStack"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AC_RemoteStack</researchPrerequisite>
+        <researchPrerequisite Inherit="False">AC_NeuralCasting</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -665,7 +665,7 @@ Extremely rare, heavily restricted and hard to produce, these implants are rare 
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_AC_RemoteStack"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AC_RemoteStack</researchPrerequisite>
+        <researchPrerequisite Inherit="False">AC_NeuralCasting</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -674,7 +674,7 @@ Extremely rare, heavily restricted and hard to produce, these implants are rare 
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_AC_RemoteStack"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_AC_RemoteStack</researchPrerequisite>
+        <researchPrerequisite Inherit="False">AC_NeuralCasting</researchPrerequisite>
       </value>
     </match>
   </Operation>

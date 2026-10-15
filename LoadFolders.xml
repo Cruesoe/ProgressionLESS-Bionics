@@ -1,7 +1,5 @@
 <loadFolders>
   <v1.6>
-    <!-- Listed first so its patches run after every other folder's -->
-    <li>Common/Merged</li>
     <li>/</li>
     <li>Common</li>
     <li IfModActive="7f.securityclearance">Common/Mods and Shit/Security Clearance</li>
@@ -59,8 +57,6 @@
     <li>Common/Mods and Shit/Research Availability/Resolve Prerequisites</li>
   </v1.6>
   <v1.7>
-    <!-- Listed first so its patches run after every other folder's -->
-    <li>Common/Merged</li>
     <li>/</li>
     <li>Common</li>
     <li IfModActive="7f.securityclearance">Common/Mods and Shit/Security Clearance</li>

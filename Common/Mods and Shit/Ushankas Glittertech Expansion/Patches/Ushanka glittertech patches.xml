@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_CryogenicNexus"]</xpath>
@@ -227,7 +227,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_Glitterlink"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_Glitterlink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_SkinRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -236,7 +236,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_Glitterlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_Glitterlink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_SkinRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -263,7 +263,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_Glitterlink"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_Glitterlink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_SkinRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -272,7 +272,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_Glitterlink"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_Glitterlink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_SkinRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -311,7 +311,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_GoldenSkinReplacement"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_GoldenSkinReplacement</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_SkinRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -320,7 +320,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_GoldenSkinReplacement"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_GoldenSkinReplacement</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_SkinRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -347,7 +347,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_GoldenSkinReplacement"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_GoldenSkinReplacement</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_SkinRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -356,7 +356,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_GoldenSkinReplacement"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_GoldenSkinReplacement</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_SkinRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -395,7 +395,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_GoldenTeethReplacement"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_GoldenTeethReplacement</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_TeethRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -404,7 +404,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_GoldenTeethReplacement"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_GoldenTeethReplacement</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_TeethRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -431,7 +431,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_GoldenTeethReplacement"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_GoldenTeethReplacement</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_TeethRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -440,7 +440,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_GoldenTeethReplacement"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_GoldenTeethReplacement</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_TeethRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -479,7 +479,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_MemoryProjector"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_MemoryProjector</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_DeepMindScanningRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -488,7 +488,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="USH_MemoryProjector"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_MemoryProjector</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_DeepMindScanningRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -515,7 +515,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_MemoryProjector"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_MemoryProjector</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_DeepMindScanningRes</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -524,7 +524,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_MemoryProjector"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_MemoryProjector</researchPrerequisite>
+        <researchPrerequisite Inherit="False">USH_DeepMindScanningRes</researchPrerequisite>
       </value>
     </match>
   </Operation>

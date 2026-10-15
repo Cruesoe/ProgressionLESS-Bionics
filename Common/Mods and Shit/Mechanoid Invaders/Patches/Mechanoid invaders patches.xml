@@ -1,133 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IM_SystemInterlink"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]</xpath>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs</xpath>
-        <value>
-          <ResearchProjectDef>
-            <defName>Ferny_SystemInterlink</defName>
-            <label>system interlink</label>
-            <description>Manufacture a mechlink upgrade which allows the mechanitor to interface with a mechanoid to boost its performance and reduce incoming damage. The user psychically links with their target, using their own brain as a backup for critical subsystems.
-
-This implant can be self-installed without surgery.
-
-This implant can be installed up to 3 times to boost its range, reduce cooldown and increase the number of ability charges.</description>
-            <baseCost>1200</baseCost>
-            <techLevel>Archotech</techLevel>
-            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-            <prerequisites Inherit="False">
-              <li MayRequire="ludeon.rimworld.biotech">HighMechtech</li>
-            </prerequisites>
-          </ResearchProjectDef>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IM_SystemInterlink"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]/label</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]/label</xpath>
-        <value>
-          <label>system interlink</label>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]</xpath>
-        <value>
-          <label>system interlink</label>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IM_SystemInterlink"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]/description</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]/description</xpath>
-        <value>
-          <description>Manufacture a mechlink upgrade which allows the mechanitor to interface with a mechanoid to boost its performance and reduce incoming damage. The user psychically links with their target, using their own brain as a backup for critical subsystems.
-
-This implant can be self-installed without surgery.
-
-This implant can be installed up to 3 times to boost its range, reduce cooldown and increase the number of ability charges.</description>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]</xpath>
-        <value>
-          <description>Manufacture a mechlink upgrade which allows the mechanitor to interface with a mechanoid to boost its performance and reduce incoming damage. The user psychically links with their target, using their own brain as a backup for critical subsystems.
-
-This implant can be self-installed without surgery.
-
-This implant can be installed up to 3 times to boost its range, reduce cooldown and increase the number of ability charges.</description>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IM_SystemInterlink"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]/baseCost</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]/baseCost</xpath>
-        <value>
-          <baseCost>1200</baseCost>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]</xpath>
-        <value>
-          <baseCost>1200</baseCost>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IM_SystemInterlink"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]/prerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]/prerequisites</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li MayRequire="ludeon.rimworld.biotech">HighMechtech</li>
-          </prerequisites>
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]</xpath>
-        <value>
-          <prerequisites Inherit="False">
-            <li MayRequire="ludeon.rimworld.biotech">HighMechtech</li>
-          </prerequisites>
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IM_SystemInterlink"]</xpath>
-    <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]/hiddenPrerequisites</xpath>
-      <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]/hiddenPrerequisites</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </match>
-      <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]</xpath>
-        <value>
-          <hiddenPrerequisites Inherit="False" />
-        </value>
-      </nomatch>
-    </match>
-  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IM_SystemInterlink"]</xpath>
     <match Class="PatchOperationConditional">
@@ -145,7 +17,7 @@ This implant can be installed up to 3 times to boost its range, reduce cooldown 
     <match Class="PatchOperationReplace">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IM_SystemInterlink"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_SystemInterlink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HighMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -154,7 +26,7 @@ This implant can be installed up to 3 times to boost its range, reduce cooldown 
     <match Class="PatchOperationAdd">
       <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IM_SystemInterlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_SystemInterlink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HighMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -181,7 +53,7 @@ This implant can be installed up to 3 times to boost its range, reduce cooldown 
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_IM_SystemInterlink"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_SystemInterlink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HighMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -190,7 +62,7 @@ This implant can be installed up to 3 times to boost its range, reduce cooldown 
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_IM_SystemInterlink"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Ferny_SystemInterlink</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_HighMechanitorImplants</researchPrerequisite>
       </value>
     </match>
   </Operation>

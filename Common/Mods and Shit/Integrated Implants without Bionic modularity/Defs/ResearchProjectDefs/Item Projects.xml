@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ResearchProjectDef>
     <defName>Ferny_Bionics_LTS_ModuleArm_ArmBlade</defName>
@@ -15,6 +15,9 @@ Modules can be self-installed into modified bionic or archotech parts, but can o
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Ferny_Bionics_LTS_ModuleArm_BionicClaw</defName>
@@ -31,6 +34,9 @@ Modules can be self-installed into modified bionic or archotech parts, but can o
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles</defName>
@@ -47,6 +53,9 @@ Modules can be self-installed into modified bionic or archotech parts, but can o
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>5.60</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Ferny_Bionics_LTS_ModuleJaw_VenomFangs</defName>
@@ -63,6 +72,9 @@ Modules can be self-installed into modified bionic or archotech parts, but can o
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>6.30</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Ferny_Bionics_LTS_ModuleKidney_DetoxifierKidney</defName>
@@ -79,6 +91,9 @@ Modules can be self-installed into modified bionic or archotech parts, but can o
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Ferny_Bionics_LTS_ModuleLung_DetoxifierLung</defName>
@@ -95,6 +110,9 @@ Modules can be self-installed into modified bionic or archotech parts, but can o
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>7.70</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae</defName>
@@ -111,5 +129,8 @@ Modules can be self-installed into modified bionic or archotech parts, but can o
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 </Defs>

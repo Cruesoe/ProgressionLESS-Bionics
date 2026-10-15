@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="LTS_ModuleSpine_RevenantVertebrae"]</xpath>
@@ -81,7 +81,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerRevenantVertebraeAbilityModule</li>
+                <li>Ferny_Bionics_AnomalyModules</li>
               </value>
             </match>
           </li>
@@ -90,7 +90,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerRevenantVertebraeAbilityModule</li>
+                <li>Ferny_Bionics_AnomalyModules</li>
               </value>
             </match>
           </li>
@@ -189,7 +189,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleJaw_VenomFangs"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerVenomFangsCombatModule</li>
+                <li>Ferny_Bionics_MeleeModules</li>
               </value>
             </match>
           </li>
@@ -198,7 +198,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleJaw_VenomFangs"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerVenomFangsCombatModule</li>
+                <li>Ferny_Bionics_MeleeModules</li>
               </value>
             </match>
           </li>
@@ -296,7 +296,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleKidney_DetoxifierKidney"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerDetoxifierUtilityModule</li>
+                <li>Ferny_Bionics_UtilityModules</li>
               </value>
             </match>
           </li>
@@ -305,7 +305,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleKidney_DetoxifierKidney"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerDetoxifierUtilityModule</li>
+                <li>Ferny_Bionics_UtilityModules</li>
               </value>
             </match>
           </li>
@@ -403,7 +403,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleLung_DetoxifierLung"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerAtmofilterUtilityModule</li>
+                <li>Ferny_Bionics_UtilityModules</li>
               </value>
             </match>
           </li>
@@ -412,7 +412,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleLung_DetoxifierLung"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerAtmofilterUtilityModule</li>
+                <li>Ferny_Bionics_UtilityModules</li>
               </value>
             </match>
           </li>
@@ -518,7 +518,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_BionicClaw"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerPowerClawCombatModule</li>
+                <li>Ferny_Bionics_MeleeModules</li>
               </value>
             </match>
           </li>
@@ -527,7 +527,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_BionicClaw"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerPowerClawCombatModule</li>
+                <li>Ferny_Bionics_MeleeModules</li>
               </value>
             </match>
           </li>
@@ -633,7 +633,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_ArmBlade"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerElbowBladeCombatModule</li>
+                <li>Ferny_Bionics_MeleeModules</li>
               </value>
             </match>
           </li>
@@ -642,7 +642,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_ArmBlade"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerElbowBladeCombatModule</li>
+                <li>Ferny_Bionics_MeleeModules</li>
               </value>
             </match>
           </li>
@@ -748,7 +748,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerZeusfistCombatModule</li>
+                <li>Ferny_Bionics_UltratechModules</li>
               </value>
             </match>
           </li>
@@ -757,7 +757,7 @@
             <match Class="PatchOperationReplace">
               <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles"]</xpath>
               <value>
-                <li>Ferny_Bionics_BM_SpacerZeusfistCombatModule</li>
+                <li>Ferny_Bionics_UltratechModules</li>
               </value>
             </match>
           </li>

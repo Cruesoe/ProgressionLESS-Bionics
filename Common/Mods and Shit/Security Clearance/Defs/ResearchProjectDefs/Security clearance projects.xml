@@ -1,31 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ResearchProjectDef>
-    <defName>Ferny_Bionics_SecurityClearanceBrainImplant</defName>
-    <label>security clearance brain interface</label>
-    <description>Manufacture a set of nanoelectrodes and antennas which can be used by any sentient biological being to open clearance-locked doors remotely. Clearance level is programmed onto the set during installation, and cannot be changed until it is removed.
-
-For humanlike pawns with natural arms, a hand-implanted version can be used instead.</description>
-    <baseCost>500</baseCost>
-    <techLevel>Spacer</techLevel>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <prerequisites>
-      <li>Bionics</li>
-    </prerequisites>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-  </ResearchProjectDef>
-  <ResearchProjectDef>
-    <defName>Ferny_Bionics_SecurityClearanceChipImplant</defName>
-    <label>programmable security clearance microchip</label>
-    <description>Manufacture a hand-implantable microchip that can act as a security keycard. Clearance level is programmed onto the chip during installation, and cannot be changed until it is removed.
-
-Pawns with bionic arms and animals can use the brain interface version instead.</description>
-    <baseCost>250</baseCost>
-    <techLevel>Industrial</techLevel>
-    <prerequisites>
-      <li>Prosthetics</li>
-    </prerequisites>
-  </ResearchProjectDef>
 </Defs>

@@ -1,17 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ResearchProjectDef>
-    <defName>Ferny_Bionics_USH_IronLung</defName>
-    <label>iron lung</label>
-    <description>Manufacture an advanced artificial lung with specialized mesh filters that greatly enhances users' environmental toxic resistance. This makes it a perfect candidate for installation in soldiers wielding biological weapons.</description>
-    <baseCost>500</baseCost>
-    <techLevel>Spacer</techLevel>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <prerequisites>
-      <li>Bionics</li>
-    </prerequisites>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-  </ResearchProjectDef>
 </Defs>

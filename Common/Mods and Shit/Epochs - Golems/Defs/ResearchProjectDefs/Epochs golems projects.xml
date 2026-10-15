@@ -1,13 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ResearchProjectDef>
-    <defName>Ferny_Bionics_DV_Golem_BrainModule</defName>
-    <label>brain module</label>
-    <description>Manufacture an anima golem module that increases the manipulative ability of golems, at the cost of a lowered locomotor coordination.</description>
-    <baseCost>100</baseCost>
-    <techLevel>Medieval</techLevel>
-    <prerequisites>
-      <li>DV_GolemResearch_GolemancyModules</li>
-    </prerequisites>
-  </ResearchProjectDef>
 </Defs>
