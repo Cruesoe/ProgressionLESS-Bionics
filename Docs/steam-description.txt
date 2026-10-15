@@ -1,0 +1,45 @@
+[b]All the Progression goodness, less research.[/b]
+
+[i]This is a fork of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3819707781]Progression: Bionics[/url] by ferny. Huge thanks to ferny for the original mod and all the Progression work this builds on. For a really good modpack, check out [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3521297585]The Progression Modpack[/url].[/i]
+
+[h2]Features[/h2]
+[list]
+[*]Overhauls bionics research, so every prosthetic, bionic, implant and organ has a place in the research tree.
+[*]Prosthetics come before bionics, and bionics before advanced bionics: each upgrade still needs the part it improves on.
+[*]Covers everything from hook hands and steel arms to synthetic organs, skill chips, modular bionics, genetic implants, android parts and mechanitor implants, for colonists and animals alike.
+[/list]
+
+[h2]Why "LESS"?[/h2]
+Progression: Bionics adds up to [b]562 research projects[/b] depending on your mods. This fork groups them into [b]at most 86[/b]:
+[list]
+[*][b]Medieval:[/b] Medieval prosthetics, Golem modules
+[*][b]Industrial prosthetics:[/b] Prosthetic parts, Surrogate organs, Specialized limbs, Compact weapons, Brain wiring implants, Basic implants, Advanced dead man's switches
+[*][b]Industrial animals and hacking:[/b] Animal prosthetic parts, Animal combat implants, Cybertech kits, Advanced cybertech kits
+[*][b]Bionics:[/b] Bionic body parts, Bionic organs, Advanced bionic parts, Advanced scyther limbs, Bionic compact weapons, Advanced specialized limbs, Gravship implants, Shoulder weapons
+[*][b]Spacer implants:[/b] Flesh shaping, Healing, Molecular, Neural and Circadian implants, Skin glands, Metabolic stomachs, Skill chips, Sanguophage implants, Bionic tails, Subdermal armor, Emergency and Field manipulation implants
+[*][b]Synthetic organs:[/b] Synthetic organ set, Rib implants, Glitterworld implants, Synthetic repair, Optimizing nanobots
+[*][b]Modular bionics:[/b] Melee, Ranged weapon, Grenade and trap, Deployer, Projector, Mobility, Work, Utility, Power, Synthesizer, Orbital, Chemical burst, Mechanite and Ultratech modules, Subpersona chips
+[*][b]Integrated Implants modules:[/b] Arm, Head, Leg and lung, and Ultratech arm modules
+[*][b]Animals:[/b] Animal bionic parts, Animal bionic implants, Animal natural weapons, Animal body implants, Animal work chips, Animal strike and producer modules
+[*][b]Genetics and androids:[/b] Human genetic implants, Animal genetic implants, Android parts, Teeth and Skin replacement
+[*][b]Mechanitor:[/b] Signal boosters, Basic, High and Ultra mechanitor implants
+[*][b]Anomaly:[/b] Ghoul enhancements, Advanced ghoul enhancements, Anomaly modules, Animal mutation implants, Psychic implants
+[/list]
+Parts from different mods share a project when they share a family and a stage, so a bionic eye from one mod unlocks alongside the bionic legs and spines of others.
+
+Everything stays in the same era, and still needs the other research it did before: a bionic hand still needs the prosthetic hand, and each weapon module still needs its weapon research.
+
+[h2]Compatibility[/h2]
+Keeps all of the original's mod support:
+[list]
+[*]Royalty, Biotech, Anomaly and Odyssey
+[*]Expanded Prosthetics and Organ Engineering - Forked and its Royalty expansion
+[*]Integrated Implants, Bionic modularity and Bionic modularity - animals
+[*]Alpha Implants, Alpha Mechs, Vanilla Genetics Expanded (and More Lab Stuff), Vanilla Races Expanded - Android
+[*]Ushanka's Hacking, Glittertech and Biological Warfare expansions
+[*]Pyrinth Bionics, Epochs - Golems, Big and Small, Altered Carbon 2 ReSleeved, Cellcycle Acceleration, Chimera Creation, Die for me, Dubs Bad Hygiene, Faction - Orbiters, Mechanoid Invaders, Royalty eye bionic, Security Clearance and War Crimes Expanded 2
+[/list]
+
+[b]Replaces the original. Don't use both.[/b]
+
+[b]Switching mid-game isn't recommended.[/b] Many of the original's research projects are merged or removed, so swapping Progression: Bionics for this fork in an existing save can lose research progress. Start a new game when you switch.
