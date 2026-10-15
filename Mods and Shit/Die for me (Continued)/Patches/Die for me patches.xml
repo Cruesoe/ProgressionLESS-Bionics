@@ -1,0 +1,768 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>AntigrainDeadManSwitch</defName>
+            <label>antigrain dead mans switch</label>
+            <description>Manufacture an implanted antigrain charge that detonates when its host dies, killing others across a large surrounding area.</description>
+            <baseCost>250</baseCost>
+            <techLevel>Industrial</techLevel>
+            <prerequisites Inherit="False">
+              <li>FurtherDeadManSwitch</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]/label</xpath>
+        <value>
+          <label>antigrain dead mans switch</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]</xpath>
+        <value>
+          <label>antigrain dead mans switch</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]/description</xpath>
+        <value>
+          <description>Manufacture an implanted antigrain charge that detonates when its host dies, killing others across a large surrounding area.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]</xpath>
+        <value>
+          <description>Manufacture an implanted antigrain charge that detonates when its host dies, killing others across a large surrounding area.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]/baseCost</xpath>
+        <value>
+          <baseCost>250</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]</xpath>
+        <value>
+          <baseCost>250</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>FurtherDeadManSwitch</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>FurtherDeadManSwitch</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AntigrainDeadManSwitch"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">AntigrainDeadManSwitch</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">AntigrainDeadManSwitch</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AntigrainDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_AntigrainDeadManSwitch_Item"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_AntigrainDeadManSwitch_Item"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">AntigrainDeadManSwitch</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_AntigrainDeadManSwitch_Item"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_AntigrainDeadManSwitch_Item"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">AntigrainDeadManSwitch</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_AntigrainDeadManSwitch_Item"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_AntigrainDeadManSwitch_Item"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_AntigrainDeadManSwitch_Item"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_AntigrainDeadManSwitch_Item"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>FurtherDeadManSwitch</defName>
+            <label>EMP dead mans switch</label>
+            <description>Manufacture an implanted electromagnetic charge that activates when its host dies, disabling nearby electronics and turrets.</description>
+            <baseCost>250</baseCost>
+            <techLevel>Industrial</techLevel>
+            <prerequisites Inherit="False">
+              <li>ExplosiveDeadManSwitch</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/label</xpath>
+        <value>
+          <label>EMP dead mans switch</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]</xpath>
+        <value>
+          <label>EMP dead mans switch</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/description</xpath>
+        <value>
+          <description>Manufacture an implanted electromagnetic charge that activates when its host dies, disabling nearby electronics and turrets.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]</xpath>
+        <value>
+          <description>Manufacture an implanted electromagnetic charge that activates when its host dies, disabling nearby electronics and turrets.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/baseCost</xpath>
+        <value>
+          <baseCost>250</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]</xpath>
+        <value>
+          <baseCost>250</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>ExplosiveDeadManSwitch</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>ExplosiveDeadManSwitch</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="FurtherDeadManSwitch"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">FurtherDeadManSwitch</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">FurtherDeadManSwitch</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EMPDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EMPDeadManSwitch_Item"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_EMPDeadManSwitch_Item"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">FurtherDeadManSwitch</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EMPDeadManSwitch_Item"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_EMPDeadManSwitch_Item"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">FurtherDeadManSwitch</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EMPDeadManSwitch_Item"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_EMPDeadManSwitch_Item"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EMPDeadManSwitch_Item"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_EMPDeadManSwitch_Item"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FirefoamDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FirefoamDeadManSwitch_Item"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FirefoamDeadManSwitch_Item"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FirefoamDeadManSwitch_Item"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FirefoamDeadManSwitch_Item"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_FirefoamDeadManSwitch_Item</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FirefoamDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FirefoamDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_FirefoamDeadManSwitch_Item</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FirefoamDeadManSwitch_Item"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FirefoamDeadManSwitch_Item"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FirefoamDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="FirefoamDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_FirefoamDeadManSwitch_Item"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_FirefoamDeadManSwitch_Item"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_FirefoamDeadManSwitch_Item</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_FirefoamDeadManSwitch_Item"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_FirefoamDeadManSwitch_Item"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_FirefoamDeadManSwitch_Item</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_FirefoamDeadManSwitch_Item"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_FirefoamDeadManSwitch_Item"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_FirefoamDeadManSwitch_Item"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_FirefoamDeadManSwitch_Item"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>ExplosiveDeadManSwitch</defName>
+            <label>high explosive dead mans switch</label>
+            <description>Manufacture an implanted explosive charge that detonates when its host dies.</description>
+            <baseCost>250</baseCost>
+            <techLevel>Industrial</techLevel>
+            <prerequisites Inherit="False">
+              <li>MicroelectronicsBasics</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]/label</xpath>
+        <value>
+          <label>high explosive dead mans switch</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]</xpath>
+        <value>
+          <label>high explosive dead mans switch</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]/description</xpath>
+        <value>
+          <description>Manufacture an implanted explosive charge that detonates when its host dies.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]</xpath>
+        <value>
+          <description>Manufacture an implanted explosive charge that detonates when its host dies.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]/baseCost</xpath>
+        <value>
+          <baseCost>250</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]</xpath>
+        <value>
+          <baseCost>250</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>MicroelectronicsBasics</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>MicroelectronicsBasics</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="ExplosiveDeadManSwitch"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">ExplosiveDeadManSwitch</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">ExplosiveDeadManSwitch</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HighExplosiveDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HighExplosiveDeadManSwitch_Item"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_HighExplosiveDeadManSwitch_Item"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">ExplosiveDeadManSwitch</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HighExplosiveDeadManSwitch_Item"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_HighExplosiveDeadManSwitch_Item"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">ExplosiveDeadManSwitch</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HighExplosiveDeadManSwitch_Item"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_HighExplosiveDeadManSwitch_Item"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HighExplosiveDeadManSwitch_Item"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_HighExplosiveDeadManSwitch_Item"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IncendiaryDeadManSwitch_Item"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IncendiaryDeadManSwitch_Item"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IncendiaryDeadManSwitch_Item"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IncendiaryDeadManSwitch_Item"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IncendiaryDeadManSwitch_Item"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_IncendiaryDeadManSwitch_Item</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IncendiaryDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IncendiaryDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_IncendiaryDeadManSwitch_Item</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IncendiaryDeadManSwitch_Item"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IncendiaryDeadManSwitch_Item"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IncendiaryDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="IncendiaryDeadManSwitch_Item"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_IncendiaryDeadManSwitch_Item"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_IncendiaryDeadManSwitch_Item"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_IncendiaryDeadManSwitch_Item</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_IncendiaryDeadManSwitch_Item"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_IncendiaryDeadManSwitch_Item"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_IncendiaryDeadManSwitch_Item</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_IncendiaryDeadManSwitch_Item"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_IncendiaryDeadManSwitch_Item"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_IncendiaryDeadManSwitch_Item"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_IncendiaryDeadManSwitch_Item"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+</Patch>

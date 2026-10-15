@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CellcycleAccelerator</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CellcycleAccelerator</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="CellcycleAccelerator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_CellcycleAccelerator"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_CellcycleAccelerator"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CellcycleAccelerator</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_CellcycleAccelerator"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_CellcycleAccelerator"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_CellcycleAccelerator</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_CellcycleAccelerator"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_CellcycleAccelerator"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_CellcycleAccelerator"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_CellcycleAccelerator"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+</Patch>

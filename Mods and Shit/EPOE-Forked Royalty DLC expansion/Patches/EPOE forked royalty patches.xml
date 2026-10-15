@@ -1,0 +1,1383 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_CircadianRefresher</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_CircadianRefresher</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPIA_CircadianRefresher"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPIA_CircadianRefresher"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_EPIA_CircadianRefresher"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_CircadianRefresher</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPIA_CircadianRefresher"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_EPIA_CircadianRefresher"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPIA_CircadianRefresher</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPIA_CircadianRefresher"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_EPIA_CircadianRefresher"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPIA_CircadianRefresher"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_EPIA_CircadianRefresher"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedDrillArm</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedDrillArm</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedDrillArm"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedDrillArm"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedDrillArm"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedDrillArm</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedDrillArm"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedDrillArm"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedDrillArm</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedDrillArm"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedDrillArm"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedDrillArm"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedDrillArm"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedElbowBlade</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedElbowBlade</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedElbowBlade"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedElbowBlade"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedElbowBlade"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedElbowBlade</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedElbowBlade"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedElbowBlade"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedElbowBlade</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedElbowBlade"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedElbowBlade"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedElbowBlade"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedElbowBlade"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>EPOE_AdvancedSpecializedLimbs</defName>
+            <label>advanced field hand</label>
+            <description>Manufacture a compact agricultural hand replacement with telescoping tools that sow several holes or harvest multiple points at once. A general-purpose manipulator handles other tasks, and the assembly folds away to avoid the movement penalty of the older design.</description>
+            <baseCost>500</baseCost>
+            <techLevel>Spacer</techLevel>
+            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+            <prerequisites Inherit="False">
+              <li>Bionics</li>
+              <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicHand</li>
+              <li MayRequire="ludeon.rimworld.royalty">Ferny_Bionics_FieldHand</li>
+              <li>SpecializedLimbs</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/label</xpath>
+        <value>
+          <label>advanced field hand</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]</xpath>
+        <value>
+          <label>advanced field hand</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/description</xpath>
+        <value>
+          <description>Manufacture a compact agricultural hand replacement with telescoping tools that sow several holes or harvest multiple points at once. A general-purpose manipulator handles other tasks, and the assembly folds away to avoid the movement penalty of the older design.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]</xpath>
+        <value>
+          <description>Manufacture a compact agricultural hand replacement with telescoping tools that sow several holes or harvest multiple points at once. A general-purpose manipulator handles other tasks, and the assembly folds away to avoid the movement penalty of the older design.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/baseCost</xpath>
+        <value>
+          <baseCost>500</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]</xpath>
+        <value>
+          <baseCost>500</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>Bionics</li>
+            <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicHand</li>
+            <li MayRequire="ludeon.rimworld.royalty">Ferny_Bionics_FieldHand</li>
+            <li>SpecializedLimbs</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>Bionics</li>
+            <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicHand</li>
+            <li MayRequire="ludeon.rimworld.royalty">Ferny_Bionics_FieldHand</li>
+            <li>SpecializedLimbs</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedSpecializedLimbs"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedSpecializedLimbs</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedSpecializedLimbs</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedFieldHand"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedFieldHand"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedFieldHand"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedSpecializedLimbs</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedFieldHand"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedFieldHand"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedSpecializedLimbs</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedFieldHand"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedFieldHand"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedFieldHand"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedFieldHand"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedHandTalon</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedHandTalon</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedHandTalon"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedHandTalon"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedHandTalon"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedHandTalon</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedHandTalon"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedHandTalon"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedHandTalon</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedHandTalon"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedHandTalon"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedHandTalon"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedHandTalon"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedKneeSpike</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedKneeSpike</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_AdvancedKneeSpike"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedKneeSpike"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedKneeSpike"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedKneeSpike</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedKneeSpike"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedKneeSpike"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_AdvancedKneeSpike</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedKneeSpike"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedKneeSpike"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedKneeSpike"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeAdvancedKneeSpike"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_DetoxifierEnhancer</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_DetoxifierEnhancer</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierEnhancer"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierEnhancer"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierEnhancer"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_DetoxifierEnhancer</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierEnhancer"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierEnhancer"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_DetoxifierEnhancer</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierEnhancer"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierEnhancer"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierEnhancer"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierEnhancer"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>EPOE_SyntheticOrgansIntegration</defName>
+            <label>synthetic detoxifier liver</label>
+            <description>Manufacture an enhanced liver augmented with synthetic fibres to decrease rejection rate. Upgraded further by integrating the detoxifier enhancer implant into it.</description>
+            <baseCost>500</baseCost>
+            <techLevel>Spacer</techLevel>
+            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.royalty">MolecularAnalysis</li>
+              <li>SyntheticOrgans</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/label</xpath>
+        <value>
+          <label>synthetic detoxifier liver</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]</xpath>
+        <value>
+          <label>synthetic detoxifier liver</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/description</xpath>
+        <value>
+          <description>Manufacture an enhanced liver augmented with synthetic fibres to decrease rejection rate. Upgraded further by integrating the detoxifier enhancer implant into it.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]</xpath>
+        <value>
+          <description>Manufacture an enhanced liver augmented with synthetic fibres to decrease rejection rate. Upgraded further by integrating the detoxifier enhancer implant into it.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/baseCost</xpath>
+        <value>
+          <baseCost>500</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]</xpath>
+        <value>
+          <baseCost>500</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.royalty">MolecularAnalysis</li>
+            <li>SyntheticOrgans</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.royalty">MolecularAnalysis</li>
+            <li>SyntheticOrgans</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_SyntheticOrgansIntegration"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticOrgansIntegration</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticOrgansIntegration</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_DetoxifierSyntheticLiver"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierSyntheticLiver"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierSyntheticLiver"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticOrgansIntegration</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierSyntheticLiver"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierSyntheticLiver"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">EPOE_SyntheticOrgansIntegration</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierSyntheticLiver"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierSyntheticLiver"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierSyntheticLiver"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_EPOE_DetoxifierSyntheticLiver"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ImmunoenhancerSyntheticKidney</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ImmunoenhancerSyntheticKidney</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ImmunoenhancerSyntheticKidney"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPOE_ImmunoenhancerSyntheticKidney"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_EPOE_ImmunoenhancerSyntheticKidney"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ImmunoenhancerSyntheticKidney</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPOE_ImmunoenhancerSyntheticKidney"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_EPOE_ImmunoenhancerSyntheticKidney"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ImmunoenhancerSyntheticKidney</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPOE_ImmunoenhancerSyntheticKidney"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_EPOE_ImmunoenhancerSyntheticKidney"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_EPOE_ImmunoenhancerSyntheticKidney"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_EPOE_ImmunoenhancerSyntheticKidney"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherElbowBlade</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherElbowBlade</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherElbowBlade"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicElbowBlade"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicElbowBlade"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherElbowBlade</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicElbowBlade"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicElbowBlade"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherElbowBlade</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicElbowBlade"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicElbowBlade"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicElbowBlade"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicElbowBlade"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>EPOE_AdvancedCompactWeaponry</defName>
+            <label>bionic hand talon</label>
+            <description>Manufacture a razor-sharp talon which extends from a hidden opening between the middle and ring fingers. The talon is longer than the palm, but it becomes flexible upon retracting, allowing the user to curl it up and conceal it inside the palm of the bionic hand.
+
+This weapon system have been integrated into a bionic hand, at a small cost to the efficiency of the original bionic hand. No longer needing to be careful in not injuring the user's biological hand, the hand talons are now sharper than ever.</description>
+            <baseCost>500</baseCost>
+            <techLevel>Spacer</techLevel>
+            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+            <prerequisites Inherit="False">
+              <li>Bionics</li>
+              <li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li>
+              <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicHand</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/label</xpath>
+        <value>
+          <label>bionic hand talon</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]</xpath>
+        <value>
+          <label>bionic hand talon</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/description</xpath>
+        <value>
+          <description>Manufacture a razor-sharp talon which extends from a hidden opening between the middle and ring fingers. The talon is longer than the palm, but it becomes flexible upon retracting, allowing the user to curl it up and conceal it inside the palm of the bionic hand.
+
+This weapon system have been integrated into a bionic hand, at a small cost to the efficiency of the original bionic hand. No longer needing to be careful in not injuring the user's biological hand, the hand talons are now sharper than ever.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]</xpath>
+        <value>
+          <description>Manufacture a razor-sharp talon which extends from a hidden opening between the middle and ring fingers. The talon is longer than the palm, but it becomes flexible upon retracting, allowing the user to curl it up and conceal it inside the palm of the bionic hand.
+
+This weapon system have been integrated into a bionic hand, at a small cost to the efficiency of the original bionic hand. No longer needing to be careful in not injuring the user's biological hand, the hand talons are now sharper than ever.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/baseCost</xpath>
+        <value>
+          <baseCost>500</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]</xpath>
+        <value>
+          <baseCost>500</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>Bionics</li>
+            <li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li>
+            <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicHand</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>Bionics</li>
+            <li MayRequire="ludeon.rimworld.royalty">CompactWeaponry</li>
+            <li MayRequire="vat.epoeforked">Ferny_Bionics_BionicHand</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="EPOE_AdvancedCompactWeaponry"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedCompactWeaponry</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedCompactWeaponry</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherHandTalon"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicHandTalon"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicHandTalon"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedCompactWeaponry</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicHandTalon"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicHandTalon"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">EPOE_AdvancedCompactWeaponry</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicHandTalon"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicHandTalon"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicHandTalon"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicHandTalon"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherKneeSpike</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherKneeSpike</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="EPOE_ScytherKneeSpike"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicKneeSpike"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicKneeSpike"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherKneeSpike</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicKneeSpike"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicKneeSpike"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_EPOE_ScytherKneeSpike</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicKneeSpike"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicKneeSpike"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicKneeSpike"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="EPIA_UpgradeBionicKneeSpike"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+</Patch>

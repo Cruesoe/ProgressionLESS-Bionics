@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_WCE2_GrowthStimulator</defName>
+    <label>growth stimulator</label>
+    <description>Manufacture the specialized components and surgical tools needed to install a device that stimulates bodily growth.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>WCE2_QuestionableFoodProduction</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_WCE2_NeutroamineIncubator</defName>
+    <label>neutroamine incubator</label>
+    <description>Manufacture the specialized components and surgical tools needed to install a device for incubating neutroamine inside a host.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>WCE2_NeutroamineIncubation</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_WCE2_OrganModificationKit</defName>
+    <label>organ modification kit</label>
+    <description>Manufacture a single-use set of specialized components and tools for surgically modifying organs.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>WCE2_OrganDestabilization</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BloodWarmer"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BloodWarmer"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_DeadlifeVenomClaw"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_DeadlifeVenomClaw"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_GhoulBioferriteExtractor"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_GhoulBioferriteExtractor"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_GhoulMetabolicEngine"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_GhoulMetabolicEngine"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_Incinerator"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_Incinerator"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_PsychicReaper"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_PsychicReaper"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_Voidlink"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_Voidlink"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_NerveShredderClaw"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_NerveShredderClaw"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_StalkerSkull"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_StalkerSkull"]</xpath>
+    </match>
+  </Operation>
+</Patch>

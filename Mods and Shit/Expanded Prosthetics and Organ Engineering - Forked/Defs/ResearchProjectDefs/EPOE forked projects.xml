@@ -1,0 +1,694 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_AIChip</defName>
+    <label>AI chip</label>
+    <description>Manufacture a neural chip that uses chemical stimulation and electrical impulses to restore consciousness and mobility. Installation requires brain surgery research.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Ferny_Bionics_BrainStimulator</li>
+      <li>SyntheticOrgans</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_AdrenalineRib</defName>
+    <label>adrenaline rib implant</label>
+    <description>Manufacture an artificial rib, equipped with little adrenaline-dispensers to keep the user fit and awake.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>RibReplacements</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_AdvancedBionicEar</defName>
+    <label>advanced bionic ear</label>
+    <description>Manufacture an ultra advanced artificial ear implant, further improved from the standard models. A collection of invisible subdermal microphones capture sound and transmit it to a biogel nerve interface that links directly with the auditory nerve. It's sensitive enough to hear a cat before you see it, can't be damaged by loud noise, and automatically tunes itself to pick out meaningful sounds in noisy environments.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>AdvancedBionics</li>
+      <li>Ferny_Bionics_BionicEar</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_AdvancedBionicEye</defName>
+    <label>advanced bionic eye</label>
+    <description>Manufacture an ultra advanced artifical eye, further improved from the standard models. With its biogel nerve-link, internal signal pre-processor, and wide-spectrum sensors, it is better than a biological eye in almost every way. A lattice-dust healing system allows it to recover from damage.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>AdvancedBionics</li>
+      <li>Ferny_Bionics_BionicEye</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_AdvancedBionicFoot</defName>
+    <label>advanced bionic foot</label>
+    <description>Manufacture an ultra advanced artificial foot, further improved from the standard models. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological foot in almost every way.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>AdvancedBionics</li>
+      <li>Ferny_Bionics_BionicFoot</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_AdvancedBionicHand</defName>
+    <label>advanced bionic hand</label>
+    <description>Manufacture an ultra advanced artificial hand, further improved from the standard models. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological hand in almost every way.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>AdvancedBionics</li>
+      <li>Ferny_Bionics_BionicHand</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_AdvancedBionicJaw</defName>
+    <label>advanced bionic jaw</label>
+    <description>Manufacture an ultra advanced artificial jaw, further improved from the standard models. Silenced mini-servos give great jaw strength, while a voice modulator gives exquisite fine tuning to speech. A lattice-dust healing system allows it to recover from damage. It is better than a biological jaw in almost every way.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>AdvancedBionics</li>
+      <li>Ferny_Bionics_BionicJaw</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_AdvancedBionicLeg</defName>
+    <label>advanced bionic leg</label>
+    <description>Manufacture an ultra advanced artificial leg, further improved from the standard models. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>AdvancedBionics</li>
+      <li>Ferny_Bionics_BionicLeg</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_AdvancedBionicSpine</defName>
+    <label>advanced bionic spine</label>
+    <description>Manufacture an ultra advanced artificial spine, further improved from the standard models. A biogel nerve bundle runs down an articulated plasteel core, surrounded by a lattice-dust healing system. It is better than a biological spine in almost every way.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>AdvancedBionics</li>
+      <li>Ferny_Bionics_BionicSpine</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_AdvancedPowerArm</defName>
+    <label>advanced power arm</label>
+    <description>Manufacture a ultra advanced combat-oriented arm replacement consisting of a mechanical hand with a hooked claw on each finger. It cuts deep, and it is strong enough to crush a skull like a hand crushes an egg. The claws can be retracted, making it as useful as a natural hand for non-combat tasks.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>AdvancedBionics</li>
+      <li>Ferny_Bionics_PowerArm</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_ArtificialNose</defName>
+    <label>artificial nose</label>
+    <description>Manufacture a facial prosthesis that covers the site of a missing nose.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Prosthetics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_BionicFinger</defName>
+    <label>bionic finger</label>
+    <description>Manufacture an advanced artificial finger. Delicate sensors and high-speed wireless transmitters running through the thick, yet lightweight plasteel casing ensure the best precision and grip, far surpassing that of a biological finger.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+      <li>Ferny_Bionics_SimpleProstheticFinger</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_BionicFoot</defName>
+    <label>bionic foot</label>
+    <description>Manufacture an advanced artificial foot. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological foot in almost every way.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+      <li>Ferny_Bionics_SimpleProstheticFoot</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_BionicHand</defName>
+    <label>bionic hand</label>
+    <description>Manufacture an advanced artificial hand. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological hand in almost every way.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+      <li>Ferny_Bionics_SimpleProstheticHand</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_BionicToe</defName>
+    <label>bionic toe</label>
+    <description>Manufacture an advanced artificial toe. Delicate sensors and high-speed wireless transmitters running through the thick, yet lightweight plasteel casing make these toes unrivalled when it comes to movement and control, far surpassing that of biological toes.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+      <li>Ferny_Bionics_SimpleProstheticToe</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_BrainStimulator</defName>
+    <label>brain stimulator</label>
+    <description>Manufacture a small device that does its best to stimulate the remaining areas of the brain. Recommended for severe brain damage only. Requires brain surgery research before installing.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SurrogateOrgans</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_CoagulatorRib</defName>
+    <label>coagulator rib implant</label>
+    <description>Manufacture an artificial rib, equipped with little coagulator-dispensers that responds to blood loss, which will make the blood clot easier, in an effort to reduce bleeding.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>RibReplacements</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_CoolerRib</defName>
+    <label>cooling rib implant</label>
+    <description>Manufacture an artificial rib with a micro coolant system, increasing the effectiveness of heat exchange via dermal exhausts.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>RibReplacements</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_DruggedRib</defName>
+    <label>drugged rib implant</label>
+    <description>Manufacture an artificial rib, equipped with little flake-dispensers to keep the user happy. Side effects of feeling high and unfocused.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>RibReplacements</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPIA_AuxiliaryAI_Combat</defName>
+    <label>auxiliary AI (combat)</label>
+    <description>Manufacture a specialized combat AI assistant system designed for greatly increasing the user's proficiency in their specific assigned roles. Due to the sophisticated nature of the system that focuses and streamlines most cerebral processes, it cannot be used with other auxiliary AI.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>EPOE_Glitterworld_Implants</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPIA_AuxiliaryAI_Worker</defName>
+    <label>auxiliary AI (worker)</label>
+    <description>Manufacture a neural artificial intelligence that guides its host through complex work, reducing the need for extensive education and training. Installation requires brain surgery research.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>EPOE_Glitterworld_Implants</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPIA_ProtectiveExoskeleton</defName>
+    <label>protective exoskeleton</label>
+    <description>Manufacture a high tech device made out of a light skeletal structure and servomotors to support itself and the damage mitigation system used to protect the user.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>AdvancedBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPIA_ScytherBlade</defName>
+    <label>scyther blade</label>
+    <description>Manufacture a telescoping hand weapon from a restored scyther cutting blade. The installation is uncomfortable but effective in close combat.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Prosthetics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPIA_SyntheticBone</defName>
+    <label>synthetic bone</label>
+    <description>Manufacture an adjustable engineered bone that is ready to transform and mold into a replacement bone that has been lost or missing. Once installed, the engineered bone's shape is permanently set and the material composition starts altering to become closer to the real thing, making it almost indistinguishable from the rest of the skeletal structure.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>EPOE_SyntheticRepair</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPIA_TacticalBionicEye</defName>
+    <label>tactical bionic eye</label>
+    <description>Manufacture a Glitterworld combat orientated bionic eye which provides the user with additional information about potential targets and suggests a perfect firing angle.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>EPOE_Glitterworld_Implants</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPOE_InstinctOptimizingNanobots</defName>
+    <label>instinct optimizing nanobots</label>
+    <description>Manufacture nanomachines that imprint beneficial instinctive reactions into organic tissue. Over four days they improve the performance of the eyes and hands before dissolving, demanding additional rest and food during treatment. Transhumanists strongly dislike the resulting organic changes.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>EPOE_OrganicOptimizer</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_ExoskeletonSuit</defName>
+    <label>exoskeleton suit</label>
+    <description>Manufacture a high tech device made out of two components: a light skeletal structure to relieve the back and servomotors to make the user stronger.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>AdvancedBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GoldenEye</defName>
+    <label>golden eye</label>
+    <description>Manufacture an eye prosthesis made out of gold. An exorbitant way to cover up a missing eye.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Prosthetics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_HeaterRib</defName>
+    <label>heating rib implant</label>
+    <description>Manufacture an artificial rib, containing a micro-reactor powered, heat inducing spiral to warm the body from the inside.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>RibReplacements</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_HookHand</defName>
+    <label>hook hand</label>
+    <description>Manufacture a curved metal replacement for a missing hand.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_HydraulicJaw</defName>
+    <label>hydraulic jaw</label>
+    <description>Manufacture a jaw prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Food is crushed and chewed more efficiently, but the finer details of speaking is slightly lacking.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Prosthetics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LightReceptor</defName>
+    <label>light receptor</label>
+    <description>Manufacture an eye prosthesis. The optic nerves recieve stimulation from the light sensors and signal processors, creating a sensation of vision. It's not as good as a natural eye, but it's a lot better than being blind.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Prosthetics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_MedicalRib</defName>
+    <label>medical rib implant</label>
+    <description>Manufacture an artificial rib, equipped with little blood filters and antibiotics-dispensers to keep the user healthy.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>RibReplacements</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_MuscleStimulator</defName>
+    <label>muscle stimulator</label>
+    <description>Manufacture a neural chip that stimulates muscle tissue with chemicals and electrical impulses, pushing it beyond its normal performance.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>SyntheticOrgans</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_NeuromuscularFramework</defName>
+    <label>neuromuscular framework</label>
+    <description>Manufacture a set of synthetic muscles and artificial nerves capable of perfectly recreating the function of a healthy torso.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>EPOE_SyntheticRepair</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_PainkillerRib</defName>
+    <label>painkiller rib implant</label>
+    <description>Manufacture an artificial rib, equipped with little morphine-dispensers to numb the user's pain.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>RibReplacements</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_PowerArm</defName>
+    <label>power arm</label>
+    <description>Manufacture a combat-oriented arm replacement consisting of a mechanical hand with a hooked claw on each finger. It cuts deep, and it is strong enough to crush a skull like a hand crushes an egg. The claws can be retracted, making it as useful as a natural hand for non-combat tasks.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+      <li>SpecializedLimbs</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_RespirationRib</defName>
+    <label>respiration rib implant</label>
+    <description>Manufacture an artificial rib, that works with the diaphragm to assist with regulating breathing pattern for increased efficiency and coping with stress.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>RibReplacements</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SilentJaw</defName>
+    <label>silent jaw</label>
+    <description>Manufacture an advanced artificial jaw. Silenced mini-servos give great jaw strength, but this version comes without a voice modulator. A lattice-dust healing system allows it to recover from damage. Useful for abrasive patients.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SimpleProstheticFinger</defName>
+    <label>prosthetic finger</label>
+    <description>Manufacture a crude mechanical replacement for a missing digit. It restores basic function but remains inefficient and uncomfortable.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Prosthetics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SimpleProstheticFoot</defName>
+    <label>prosthetic foot</label>
+    <description>Manufacture a foot prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real foot.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Prosthetics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SimpleProstheticHand</defName>
+    <label>prosthetic hand</label>
+    <description>Manufacture a hand prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real hand.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Prosthetics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SimpleProstheticToe</defName>
+    <label>prosthetic toe</label>
+    <description>Manufacture a crude replacement for a missing foot digit. It restores basic function but is uncomfortable, inefficient and noisy when walking.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Prosthetics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SimpleSpine</defName>
+    <label>replacement spine</label>
+    <description>Manufacture a spine prosthesis. Highly advanced for its time, can be considered as an early bionic prototype with the first sophisticated application of neural interface in a prosthesis. Still, it is inferior to a real spine.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Prosthetics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SteelArm</defName>
+    <label>steel arm</label>
+    <description>Manufacture a crude metal upper-limb replacement with poor function and comfort.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SurrogateKidney</defName>
+    <label>surrogate kidney</label>
+    <description>Manufacture a kidney prosthesis. It contains artificial filters and removes waste products from the blood. Users often report feeling slightly unwell, but it's better than the alternative.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SurrogateOrgans</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SurrogateLiver</defName>
+    <label>surrogate liver</label>
+    <description>Manufacture a liver prosthesis. It contains chemical synthesizers to imitate the liver's role in metabolism. Users often report feeling slightly unwell, but it's better than the alternative.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SurrogateOrgans</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SurrogateLung</defName>
+    <label>surrogate lung</label>
+    <description>Manufacture a lung prosthesis. It contains an electric motor that expands and contracts the prosthesis for gas exchanges, simulating breathing. Users often report feeling tired, but it's better than the alternative.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SurrogateOrgans</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SurrogateStomach</defName>
+    <label>surrogate stomach</label>
+    <description>Manufacture a stomach prosthesis. It contains chemical synthesizers that can digest most foodstuff, the strength of them is limited as to not dissolve the prosthesis itself. It is rather inefficient at the job, but it is better than the alternative.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SurrogateOrgans</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SyntheticKidney</defName>
+    <label>synthetic kidney</label>
+    <description>Manufacture an artificial renal replacement with sensors and synthetic filters that efficiently remove waste from the blood, exceeding the performance of a biological organ.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Ferny_Bionics_SurrogateKidney</li>
+      <li>SyntheticOrgans</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SyntheticLiver</defName>
+    <label>synthetic liver</label>
+    <description>Manufacture an artificial metabolic organ with sensors and chemical synthesizers that adapt immediately to changes in the body, exceeding the performance of a biological organ.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Ferny_Bionics_SurrogateLiver</li>
+      <li>SyntheticOrgans</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SyntheticLung</defName>
+    <label>synthetic lung</label>
+    <description>Manufacture an advanced artificial lung. It has synthetic muscle fibers for a realistic breathing, plus a high-flow pump for rapid deep breathes during intensive activities. It is better than a biological lung in almost every way.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Ferny_Bionics_SurrogateLung</li>
+      <li>SyntheticOrgans</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_WakeUpRib</defName>
+    <label>wake-up rib implant</label>
+    <description>Manufacture an artificial rib, equipped with little wake-up-dispensers to keep the user awake and focused.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>RibReplacements</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+</Defs>

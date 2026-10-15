@@ -1,0 +1,786 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ModuleSpine_RevenantVertebrae"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="BM_SpacerRevenantVertebraeAbilityModule"]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <ReplaceLib.ReplacerDef>
+                <defName>Ferny_Bionics_Replace_LTS_ModuleSpine_RevenantVertebrae</defName>
+                <replacers>
+                  <li>
+                    <replace>LTS_ModuleSpine_RevenantVertebrae</replace>
+                    <with>BM_SpacerRevenantVertebraeAbilityModule</with>
+                  </li>
+                </replacers>
+              </ReplaceLib.ReplacerDef>
+            </value>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="LTS_ModuleSpine_RevenantVertebrae"]/recipeMaker</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleSpine_RevenantVertebrae"]/recipeMaker</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleSpine_RevenantVertebrae"]</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleSpine_RevenantVertebrae"]</xpath>
+            <match Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleSpine_RevenantVertebrae"]</xpath>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerRevenantVertebraeAbilityModule"]/comps/li[@Class="CompProperties_Usable"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerRevenantVertebraeAbilityModule"]/comps</xpath>
+              <value>
+                <li Class="CompProperties_Usable">
+                  <compClass>EBSGFramework.CompUsable_HediffModule</compClass>
+                  <useJob>EBSG_InstallItem</useJob>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerRevenantVertebraeAbilityModule"]/comps/li[@Class="EBSGFramework.CompProperties_UseEffectHediffModule"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerRevenantVertebraeAbilityModule"]/comps</xpath>
+              <value>
+                <li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+                  <ejectable>false</ejectable>
+                  <installSound>Standard_Reload</installSound>
+                  <ejectSound>Standard_Reload</ejectSound>
+                  <requiredCapacity>1</requiredCapacity>
+                  <slotIDs>
+                    <li>LTS_SpineModuleSlot</li>
+                  </slotIDs>
+                  <hediffs>
+                    <li>LTS_ModuleSpine_RevenantVertebrae</li>
+                  </hediffs>
+                  <excludeIDs>
+                    <li>LTS_ModuleSpine_RevenantVertebrae</li>
+                  </excludeIDs>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerRevenantVertebraeAbilityModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerRevenantVertebraeAbilityModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/HediffDef[defName="LTS_ModuleSpine_RevenantVertebrae"]/spawnThingOnRemoved</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/HediffDef[defName="LTS_ModuleSpine_RevenantVertebrae"]/spawnThingOnRemoved</xpath>
+              <value>
+                <spawnThingOnRemoved>BM_SpacerRevenantVertebraeAbilityModule</spawnThingOnRemoved>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ModuleJaw_VenomFangs"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="BM_SpacerVenomFangsCombatModule"]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <ReplaceLib.ReplacerDef>
+                <defName>Ferny_Bionics_Replace_LTS_ModuleJaw_VenomFangs</defName>
+                <replacers>
+                  <li>
+                    <replace>LTS_ModuleJaw_VenomFangs</replace>
+                    <with>BM_SpacerVenomFangsCombatModule</with>
+                  </li>
+                </replacers>
+              </ReplaceLib.ReplacerDef>
+            </value>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="LTS_ModuleJaw_VenomFangs"]/recipeMaker</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleJaw_VenomFangs"]/recipeMaker</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleJaw_VenomFangs"]</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleJaw_VenomFangs"]</xpath>
+            <match Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleJaw_VenomFangs"]</xpath>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerVenomFangsCombatModule"]/comps/li[@Class="CompProperties_Usable"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerVenomFangsCombatModule"]/comps</xpath>
+              <value>
+                <li Class="CompProperties_Usable">
+                  <compClass>EBSGFramework.CompUsable_HediffModule</compClass>
+                  <useJob>EBSG_InstallItem</useJob>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerVenomFangsCombatModule"]/comps/li[@Class="EBSGFramework.CompProperties_UseEffectHediffModule"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerVenomFangsCombatModule"]/comps</xpath>
+              <value>
+                <li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+                  <ejectable>false</ejectable>
+                  <installSound>Standard_Reload</installSound>
+                  <ejectSound>Standard_Reload</ejectSound>
+                  <requiredCapacity>1</requiredCapacity>
+                  <slotIDs>
+                    <li>LTS_JawModuleSlot</li>
+                  </slotIDs>
+                  <hediffs>
+                    <li>LTS_ModuleJaw_VenomFangs</li>
+                  </hediffs>
+                  <excludeIDs>
+                    <li>LTS_ModuleJaw_VenomFangs</li>
+                    <li>LTS_ModuleJaw_HemoFangs</li>
+                  </excludeIDs>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleJaw_VenomFangs"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleJaw_VenomFangs"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerVenomFangsCombatModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleJaw_VenomFangs"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleJaw_VenomFangs"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerVenomFangsCombatModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/HediffDef[defName="LTS_ModuleJaw_VenomFangs"]/spawnThingOnRemoved</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/HediffDef[defName="LTS_ModuleJaw_VenomFangs"]/spawnThingOnRemoved</xpath>
+              <value>
+                <spawnThingOnRemoved>BM_SpacerVenomFangsCombatModule</spawnThingOnRemoved>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ModuleKidney_DetoxifierKidney"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="BM_SpacerDetoxifierUtilityModule"]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <ReplaceLib.ReplacerDef>
+                <defName>Ferny_Bionics_Replace_LTS_ModuleKidney_DetoxifierKidney</defName>
+                <replacers>
+                  <li>
+                    <replace>LTS_ModuleKidney_DetoxifierKidney</replace>
+                    <with>BM_SpacerDetoxifierUtilityModule</with>
+                  </li>
+                </replacers>
+              </ReplaceLib.ReplacerDef>
+            </value>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="LTS_ModuleKidney_DetoxifierKidney"]/recipeMaker</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleKidney_DetoxifierKidney"]/recipeMaker</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleKidney_DetoxifierKidney"]</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleKidney_DetoxifierKidney"]</xpath>
+            <match Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleKidney_DetoxifierKidney"]</xpath>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerDetoxifierUtilityModule"]/comps/li[@Class="CompProperties_Usable"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerDetoxifierUtilityModule"]/comps</xpath>
+              <value>
+                <li Class="CompProperties_Usable">
+                  <compClass>EBSGFramework.CompUsable_HediffModule</compClass>
+                  <useJob>EBSG_InstallItem</useJob>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerDetoxifierUtilityModule"]/comps/li[@Class="EBSGFramework.CompProperties_UseEffectHediffModule"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerDetoxifierUtilityModule"]/comps</xpath>
+              <value>
+                <li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+                  <ejectable>false</ejectable>
+                  <installSound>Standard_Reload</installSound>
+                  <ejectSound>Standard_Reload</ejectSound>
+                  <requiredCapacity>1</requiredCapacity>
+                  <slotIDs>
+                    <li>LTS_KidneyModuleSlot</li>
+                  </slotIDs>
+                  <hediffs>
+                    <li>LTS_ModuleKidney_DetoxifierKidney</li>
+                  </hediffs>
+                  <excludeIDs>
+                    <li>LTS_ModuleKidney_DetoxifierKidney</li>
+                  </excludeIDs>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleKidney_DetoxifierKidney"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleKidney_DetoxifierKidney"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerDetoxifierUtilityModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleKidney_DetoxifierKidney"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleKidney_DetoxifierKidney"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerDetoxifierUtilityModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/HediffDef[defName="LTS_ModuleKidney_DetoxifierKidney"]/spawnThingOnRemoved</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/HediffDef[defName="LTS_ModuleKidney_DetoxifierKidney"]/spawnThingOnRemoved</xpath>
+              <value>
+                <spawnThingOnRemoved>BM_SpacerDetoxifierUtilityModule</spawnThingOnRemoved>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ModuleLung_DetoxifierLung"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="BM_SpacerAtmofilterUtilityModule"]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <ReplaceLib.ReplacerDef>
+                <defName>Ferny_Bionics_Replace_LTS_ModuleLung_DetoxifierLung</defName>
+                <replacers>
+                  <li>
+                    <replace>LTS_ModuleLung_DetoxifierLung</replace>
+                    <with>BM_SpacerAtmofilterUtilityModule</with>
+                  </li>
+                </replacers>
+              </ReplaceLib.ReplacerDef>
+            </value>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="LTS_ModuleLung_DetoxifierLung"]/recipeMaker</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleLung_DetoxifierLung"]/recipeMaker</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleLung_DetoxifierLung"]</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleLung_DetoxifierLung"]</xpath>
+            <match Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleLung_DetoxifierLung"]</xpath>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerAtmofilterUtilityModule"]/comps/li[@Class="CompProperties_Usable"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerAtmofilterUtilityModule"]/comps</xpath>
+              <value>
+                <li Class="CompProperties_Usable">
+                  <compClass>EBSGFramework.CompUsable_HediffModule</compClass>
+                  <useJob>EBSG_InstallItem</useJob>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerAtmofilterUtilityModule"]/comps/li[@Class="EBSGFramework.CompProperties_UseEffectHediffModule"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerAtmofilterUtilityModule"]/comps</xpath>
+              <value>
+                <li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+                  <ejectable>false</ejectable>
+                  <installSound>Standard_Reload</installSound>
+                  <ejectSound>Standard_Reload</ejectSound>
+                  <requiredCapacity>1</requiredCapacity>
+                  <slotIDs>
+                    <li>LTS_LungModuleSlot</li>
+                  </slotIDs>
+                  <hediffs>
+                    <li>LTS_ModuleLung_DetoxifierLung</li>
+                  </hediffs>
+                  <excludeIDs>
+                    <li>LTS_ModuleLung_DetoxifierLung</li>
+                  </excludeIDs>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleLung_DetoxifierLung"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleLung_DetoxifierLung"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerAtmofilterUtilityModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleLung_DetoxifierLung"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleLung_DetoxifierLung"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerAtmofilterUtilityModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/HediffDef[defName="LTS_ModuleLung_DetoxifierLung"]/spawnThingOnRemoved</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/HediffDef[defName="LTS_ModuleLung_DetoxifierLung"]/spawnThingOnRemoved</xpath>
+              <value>
+                <spawnThingOnRemoved>BM_SpacerAtmofilterUtilityModule</spawnThingOnRemoved>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ModuleArm_BionicClaw"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="BM_SpacerPowerClawCombatModule"]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <ReplaceLib.ReplacerDef>
+                <defName>Ferny_Bionics_Replace_LTS_ModuleArm_BionicClaw</defName>
+                <replacers>
+                  <li>
+                    <replace>LTS_ModuleArm_BionicClaw</replace>
+                    <with>BM_SpacerPowerClawCombatModule</with>
+                  </li>
+                </replacers>
+              </ReplaceLib.ReplacerDef>
+            </value>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="LTS_ModuleArm_BionicClaw"]/recipeMaker</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleArm_BionicClaw"]/recipeMaker</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleArm_BionicClaw"]</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_BionicClaw"]</xpath>
+            <match Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_BionicClaw"]</xpath>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerPowerClawCombatModule"]/comps/li[@Class="CompProperties_Usable"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerPowerClawCombatModule"]/comps</xpath>
+              <value>
+                <li Class="CompProperties_Usable">
+                  <compClass>EBSGFramework.CompUsable_HediffModule</compClass>
+                  <useJob>EBSG_InstallItem</useJob>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerPowerClawCombatModule"]/comps/li[@Class="EBSGFramework.CompProperties_UseEffectHediffModule"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerPowerClawCombatModule"]/comps</xpath>
+              <value>
+                <li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+                  <ejectable>false</ejectable>
+                  <installSound>Standard_Reload</installSound>
+                  <ejectSound>Standard_Reload</ejectSound>
+                  <requiredCapacity>1</requiredCapacity>
+                  <slotIDs>
+                    <li>LTS_ArmModuleSlot</li>
+                  </slotIDs>
+                  <hediffs>
+                    <li>LTS_ModuleArm_BionicClaw</li>
+                  </hediffs>
+                  <excludeIDs>
+                    <li>LTS_ModuleArm_ArmBlade</li>
+                    <li>LTS_ModuleArm_BionicClaw</li>
+                    <li>LTS_ModuleArm_Monowire</li>
+                    <li>LTS_ModuleArm_ZeusKnuckles</li>
+                    <li>LTS_ModuleArm_PlasmaClaw</li>
+                    <li>LTS_ModuleArm_LaserArmBlade</li>
+                    <li>LTS_ModuleArm_FieldHand</li>
+                    <li>LTS_ModuleArm_DrillHand</li>
+                    <li>LTS_ModuleArm_CryptoClaw</li>
+                  </excludeIDs>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_BionicClaw"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_BionicClaw"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerPowerClawCombatModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_BionicClaw"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_BionicClaw"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerPowerClawCombatModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/HediffDef[defName="LTS_ModuleArm_BionicClaw"]/spawnThingOnRemoved</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/HediffDef[defName="LTS_ModuleArm_BionicClaw"]/spawnThingOnRemoved</xpath>
+              <value>
+                <spawnThingOnRemoved>BM_SpacerPowerClawCombatModule</spawnThingOnRemoved>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ModuleArm_ArmBlade"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="BM_SpacerElbowBladeCombatModule"]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <ReplaceLib.ReplacerDef>
+                <defName>Ferny_Bionics_Replace_LTS_ModuleArm_ArmBlade</defName>
+                <replacers>
+                  <li>
+                    <replace>LTS_ModuleArm_ArmBlade</replace>
+                    <with>BM_SpacerElbowBladeCombatModule</with>
+                  </li>
+                </replacers>
+              </ReplaceLib.ReplacerDef>
+            </value>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="LTS_ModuleArm_ArmBlade"]/recipeMaker</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleArm_ArmBlade"]/recipeMaker</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleArm_ArmBlade"]</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ArmBlade"]</xpath>
+            <match Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ArmBlade"]</xpath>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerElbowBladeCombatModule"]/comps/li[@Class="CompProperties_Usable"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerElbowBladeCombatModule"]/comps</xpath>
+              <value>
+                <li Class="CompProperties_Usable">
+                  <compClass>EBSGFramework.CompUsable_HediffModule</compClass>
+                  <useJob>EBSG_InstallItem</useJob>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerElbowBladeCombatModule"]/comps/li[@Class="EBSGFramework.CompProperties_UseEffectHediffModule"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerElbowBladeCombatModule"]/comps</xpath>
+              <value>
+                <li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+                  <ejectable>false</ejectable>
+                  <installSound>Standard_Reload</installSound>
+                  <ejectSound>Standard_Reload</ejectSound>
+                  <requiredCapacity>1</requiredCapacity>
+                  <slotIDs>
+                    <li>LTS_ArmModuleSlot</li>
+                  </slotIDs>
+                  <hediffs>
+                    <li>LTS_ModuleArm_ArmBlade</li>
+                  </hediffs>
+                  <excludeIDs>
+                    <li>LTS_ModuleArm_ArmBlade</li>
+                    <li>LTS_ModuleArm_BionicClaw</li>
+                    <li>LTS_ModuleArm_Monowire</li>
+                    <li>LTS_ModuleArm_ZeusKnuckles</li>
+                    <li>LTS_ModuleArm_PlasmaClaw</li>
+                    <li>LTS_ModuleArm_LaserArmBlade</li>
+                    <li>LTS_ModuleArm_FieldHand</li>
+                    <li>LTS_ModuleArm_DrillHand</li>
+                    <li>LTS_ModuleArm_CryptoClaw</li>
+                  </excludeIDs>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_ArmBlade"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_ArmBlade"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerElbowBladeCombatModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_ArmBlade"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_ArmBlade"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerElbowBladeCombatModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/HediffDef[defName="LTS_ModuleArm_ArmBlade"]/spawnThingOnRemoved</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/HediffDef[defName="LTS_ModuleArm_ArmBlade"]/spawnThingOnRemoved</xpath>
+              <value>
+                <spawnThingOnRemoved>BM_SpacerElbowBladeCombatModule</spawnThingOnRemoved>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ModuleArm_ZeusKnuckles"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="BM_SpacerZeusfistCombatModule"]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <ReplaceLib.ReplacerDef>
+                <defName>Ferny_Bionics_Replace_LTS_ModuleArm_ZeusKnuckles</defName>
+                <replacers>
+                  <li>
+                    <replace>LTS_ModuleArm_ZeusKnuckles</replace>
+                    <with>BM_SpacerZeusfistCombatModule</with>
+                  </li>
+                </replacers>
+              </ReplaceLib.ReplacerDef>
+            </value>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="LTS_ModuleArm_ZeusKnuckles"]/recipeMaker</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleArm_ZeusKnuckles"]/recipeMaker</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="LTS_ModuleArm_ZeusKnuckles"]</xpath>
+              <value>
+                <recipeMaker IsNull="True" Inherit="False" />
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ZeusKnuckles"]</xpath>
+            <match Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ZeusKnuckles"]</xpath>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerZeusfistCombatModule"]/comps/li[@Class="CompProperties_Usable"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerZeusfistCombatModule"]/comps</xpath>
+              <value>
+                <li Class="CompProperties_Usable">
+                  <compClass>EBSGFramework.CompUsable_HediffModule</compClass>
+                  <useJob>EBSG_InstallItem</useJob>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="BM_SpacerZeusfistCombatModule"]/comps/li[@Class="EBSGFramework.CompProperties_UseEffectHediffModule"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="BM_SpacerZeusfistCombatModule"]/comps</xpath>
+              <value>
+                <li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+                  <ejectable>false</ejectable>
+                  <installSound>Standard_Reload</installSound>
+                  <ejectSound>Standard_Reload</ejectSound>
+                  <requiredCapacity>1</requiredCapacity>
+                  <slotIDs>
+                    <li>LTS_ArmModuleSlot</li>
+                  </slotIDs>
+                  <hediffs>
+                    <li>LTS_ModuleArm_ZeusKnuckles</li>
+                  </hediffs>
+                  <excludeIDs>
+                    <li>LTS_ModuleArm_ArmBlade</li>
+                    <li>LTS_ModuleArm_BionicClaw</li>
+                    <li>LTS_ModuleArm_Monowire</li>
+                    <li>LTS_ModuleArm_ZeusKnuckles</li>
+                    <li>LTS_ModuleArm_PlasmaClaw</li>
+                    <li>LTS_ModuleArm_LaserArmBlade</li>
+                    <li>LTS_ModuleArm_FieldHand</li>
+                    <li>LTS_ModuleArm_DrillHand</li>
+                    <li>LTS_ModuleArm_CryptoClaw</li>
+                  </excludeIDs>
+                </li>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerZeusfistCombatModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles"]</xpath>
+              <value>
+                <li>Ferny_Bionics_BM_SpacerZeusfistCombatModule</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/HediffDef[defName="LTS_ModuleArm_ZeusKnuckles"]/spawnThingOnRemoved</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/HediffDef[defName="LTS_ModuleArm_ZeusKnuckles"]/spawnThingOnRemoved</xpath>
+              <value>
+                <spawnThingOnRemoved>BM_SpacerZeusfistCombatModule</spawnThingOnRemoved>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/HediffDef[defName="LTS_ModuleArm_ZeusKnuckles"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li/power</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/HediffDef[defName="LTS_ModuleArm_ZeusKnuckles"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li/power</xpath>
+              <value>
+                <power>22</power>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+</Patch>

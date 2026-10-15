@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GS_RoyalEye</defName>
+    <label>royal eye</label>
+    <description>Manufacture a prestigious yet advanced artificial eye. A complex mannerism analyzer compares and studies the body language and speech patterns of users, suggesting to the implantee the best ways to respond or react. With its biogel nerve-link, internal signal pre-processor, and wide-spectrum sensors, it is better than a biological eye in almost every way.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">NeuralComputation</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+</Defs>

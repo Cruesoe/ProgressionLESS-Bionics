@@ -1,0 +1,1292 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_BiochameleonDevice</defName>
+    <label>biochameleon device</label>
+    <description>Manufacture a collection of advanced mechanites able to temporarily reprogram and reconstruct small portions of the body down to the DNA level, in order to spoof Biolocks, Biocoding and other biometric tests. Commonly used by ultratech inflitrators and assassins.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_Biomimicry</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_BiotunerImplant</defName>
+    <label>bio-tuner</label>
+    <description>Manufacture an array of tiny computers and bio-status measuring devices that collect and store biological information in order to improve biosculping speeds.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">MolecularAnalysis</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_CryptoWakeImplant</defName>
+    <label>cryptosleep adaptor</label>
+    <description>Manufacture an array of advanced pumps and artificial glands placed throughout the body, designed to rapidly tune metabolic levels to normal rates after exiting cryptobiotic stasis.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>I_BasicHormonalImplants</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_DeadlifeVenomClaw</defName>
+    <label>deadlife venom claw</label>
+    <description>Manufacture a bioferrite power claw that can be surgically installed on a ghoul, granting it a powerful attack. Each of the nerve shredder's jagged digits contain a resevoir of deadlife dust filled fluid that, while not inherently harmful, will raise anyone killed with it as a shambler allied to the ghoul. These clawed hands are harder to hold things with.
+
+Due to the extremely painful nature of the prosthetic, only ghouls can tolerate this enhancement.</description>
+    <baseCost>0</baseCost>
+    <techLevel>Industrial</techLevel>
+    <knowledgeCategory>Advanced</knowledgeCategory>
+    <knowledgeCost>60</knowledgeCost>
+    <tab>Anomaly</tab>
+    <prerequisites>
+      <li>LTS_AdvancedGhoulEnhancements</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_DeathrestCapacitor</defName>
+    <label>deathrest capacitor</label>
+    <description>Manufacture an implant that supplies sanguine chemicals and specialized mechanites to slow the deterioration of deathrest benefits. Installation requires the deathrest gene.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Deathrest</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GhoulBioferriteExtractor</defName>
+    <label>ghoul bioferrite extractor</label>
+    <description>Manufacture a bulky, miniaturised bioferrite harvester that can be surgically installed on a ghoul. A series of tubes implanted throughout the body slowly drain excess biomass to be converted into bioferrite. This consumption of bioferrite increases the ghoul's appetite.
+
+Due to the extremely painful nature of the prosthetic, only ghouls can tolerate this enhancement.</description>
+    <baseCost>0</baseCost>
+    <techLevel>Industrial</techLevel>
+    <knowledgeCategory>Advanced</knowledgeCategory>
+    <knowledgeCost>60</knowledgeCost>
+    <tab>Anomaly</tab>
+    <prerequisites>
+      <li>LTS_AdvancedGhoulEnhancements</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GhoulMetabolicEngine</defName>
+    <label>metabolic engine</label>
+    <description>Manufacture a bioferrite combustion engine that can be surgically installed in a ghoul, increasing it's speed. The engine burns a portion of the ghoul's naturally generated bioferrite to increase it's movement and attack speed. This consumption of bioferrite drastically increases the ghoul's appetite.
+
+Due to the extremely painful nature of the prosthetic, only ghouls can tolerate this enhancement.</description>
+    <baseCost>0</baseCost>
+    <techLevel>Industrial</techLevel>
+    <knowledgeCategory>Advanced</knowledgeCategory>
+    <knowledgeCost>60</knowledgeCost>
+    <tab>Anomaly</tab>
+    <prerequisites>
+      <li>LTS_AdvancedGhoulEnhancements</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_HackingPortImplant</defName>
+    <label>hacking port</label>
+    <description>Manufacture an extendable multi-band data cable with an adaptive port, linked directly to the nervous system via a biogel nerve-link.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">NeuralComputation</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_HemoFangs</defName>
+    <label>hemo-fangs</label>
+    <description>Manufacture a pair of retractable, spring-loaded plasteel canines, connected to a vaccum pump. The user can bite an enemy, extend the fangs, and suck the blood from the target, converting it directly into a moderate amount of hemogen.
+
+Can only be installed on pawns with the hemogenic gene.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SanguophageImplants</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_HemogenicMicrocompressor</defName>
+    <label>hemogenic microcompressor</label>
+    <description>Manufacture an advanced biorefinery that folds and compresses hemogen into a denser state, allowing a sangophage to store more within their body.
+
+Can only be installed on pawns with the hemogenic gene.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SanguophageImplants</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_InternalClimateControlImplant</defName>
+    <label>internal climate control</label>
+    <description>Manufacture a set of advanced miniature heating and cooling elements able to directly heat or vent heat from the blood stream.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>I_BasicImplants</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_BionicKidney</defName>
+    <label>bionic kidney</label>
+    <description>Manufacture an advanced artificial kidney. With its self-cleaning filters, synthetic glands and lattice-dust healing system, it is better than a biological kidney in almost every way.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+      <li MayRequire="vat.epoeforked">Ferny_Bionics_SurrogateKidney</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_BionicLiver</defName>
+    <label>bionic liver</label>
+    <description>Manufacture an advanced artificial liver. With its self-cleaning filters and lattice-dust healing system capable of repairing chemical damage, it is better than a biological liver in almost every way.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+      <li MayRequire="vat.epoeforked">Ferny_Bionics_SurrogateLiver</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_BionicLung</defName>
+    <label>bionic lung</label>
+    <description>Manufacture an advanced artificial lung. It has synthetic muscle fibers for a realistic breathing, plus fractal diffusion chambers for higher oxygen absorbtion. It is better than a biological lung in almost every way.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+      <li MayRequire="vat.epoeforked">Ferny_Bionics_SurrogateLung</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_BionicNose</defName>
+    <label>bionic nose</label>
+    <description>Manufacture an advanced artificial nose. With its biogel nerve-link, ultradense chemical receptors and lattice-dust healing system, it is better than a biological nose in almost every way.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_BrainDetonator</defName>
+    <label>brain detonator</label>
+    <description>Manufacture a miniature explosive device installed at the base of the brainstem, designed to remotely terminate it's victim.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>I_CaptiveControl</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_CerebrexNode</defName>
+    <label>cerebrex node implant</label>
+    <description>Manufacture an interlink node scavenged from the cerebrex core of a mechhive. It can be used to summon mechanoids or mechanoid transport pods from the planet-wide mechanoid satellite network.
+
+This implant is self-installable but since it interlaces deep within the brain tissue, it can only be removed after death.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_CryptoCoagulator</defName>
+    <label>cryptocoagulator</label>
+    <description>Manufacture a high-tech, advanced model of coagulator incorperating embedded cryptocasket technology that uses a stasis effect in response to blood loss to slow one's bleeding.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">HealingFactors</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_EmergencyVacseal</defName>
+    <label>emergency vac barrier</label>
+    <description>Manufacture an implanted implant, An ultrasonic barrier that prevents depressurization in space. The field compresses air molecules near the threshold, preventing gases from escaping. The device can be activated while the pawn is down, though it can only hold a limited number of charges and will need refueling with chemfuel between uses.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_EmergencyImplants</li>
+      <li MayRequire="ludeon.rimworld.odyssey">OrbitalTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_FireSupressionSystem</defName>
+    <label>fire suppression system</label>
+    <description>Manufacture an implanted implant, designed to cover the user in firefoam when necessary. The device automatically activates if the user catches fire.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Firefoam</li>
+      <li>LTS_EmergencyImplants</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_GourmandTongue</defName>
+    <label>gourmand tongue</label>
+    <description>Manufacture an artificial tongue with an absorbent sensory mesh and a processor that emphasizes pleasant flavors while suppressing less palatable signals. Micro-servomotors provide a prehensile range of motion and up to 30 cm of extension; an integral straw is also included.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">MolecularAnalysis</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_Gravlifter</defName>
+    <label>personal grav engine</label>
+    <description>Manufacture a miniature grav engine with a set of tiny thrusters that can create a weak field of altered gravity around it, allowing a person to hover over difficult terrain or through the vacuum of space.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.odyssey">StandardGravtech</li>
+      <li>Bionics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_GunneryAssistant</defName>
+    <label>gunnery assistant</label>
+    <description>Manufacture a neural interface that connects a gunner's brain directly to a weapon system, enhancing the gunners's control and accuracy.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.odyssey">AdvancedGravtech</li>
+      <li>Bionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_JotunnskinGland</defName>
+    <label>jotunnskin gland</label>
+    <description>Manufacture an implanted gland that uses chemicals and nanomachines to form thermoregulating structures across the skin. The resulting insulating sheath prevents frostbite and greatly improves resistance to extreme temperatures.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">SkinHardening</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ManipulationTail</defName>
+    <label>claw tail</label>
+    <description>Manufacture an advanced artificial tail. Silenced mini-servos give great strength, while a biogel nerve-extension on the Coccyx gives exquisit control. It's extended support structures and enhanced mini-servos give the user unrivaled versatility when it comes to carying and moving objects.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_BionicTails</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_MemoryDatabank</defName>
+    <label>memory databank</label>
+    <description>Manufacture an implanted data storage device and neural interface, able to store and instantly recall specific memories.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">NeuralComputation</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_CryptoClaw</defName>
+    <label>crypto claw module</label>
+    <description>Manufacture a bionic module that allows the user to extend retractable cryogenic-coated claws. On impact, they inflicts deep frostburns, flash-freezing flesh and lacing wounds with cryptofreeze, slowing movement and dealing substantial hypothermic damage over time.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Ferny_Bionics_LTS_ModuleArm_BionicClaw</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_DartGun</defName>
+    <label>arm dart gun module</label>
+    <description>Manufacture a bionic module that allows the user to extend a miniature dart gun from their forearm. An internal autoloader slowly but autonomously reloads the weapon.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+      <li MayRequire="vanillaexpanded.vwenl">VWE_NonLethal</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_DeathGrip</defName>
+    <label>death grip module</label>
+    <description>Manufacture a bionic module that locks the fingers in place when mobility is no longer detected, helping injured soldiers retain their weaponry.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_Fletcher</defName>
+    <label>arm fletcher module</label>
+    <description>Manufacture a bionic module that allows the user to extend a miniature fletcher from their forearm. An internal autoloader slowly but autonomously reloads the weapon.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionicWeaponryUltra</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_Gauss</defName>
+    <label>arm gauss lance module</label>
+    <description>Manufacture a bionic module that allows the user to extend a miniature gauss lance from their forearm. Internal capacitors slowly but autonomously recharge the weapon.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+      <li MayRequire="vanillaexpanded.vwec">VWE_MassDrivers</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_Incinerator</defName>
+    <label>arm incinerator module</label>
+    <description>Manufacture a bionic module that allows the user to extend a compact flamethrower from their forearm. An internal pump slowly but autonomously refills the weapon.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>0</baseCost>
+    <techLevel>Spacer</techLevel>
+    <knowledgeCategory>Basic</knowledgeCategory>
+    <knowledgeCost>60</knowledgeCost>
+    <tab>Anomaly</tab>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.anomaly">BioferriteIgnition</li>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_LaserArmBlade</defName>
+    <label>laser arm blade module</label>
+    <description>Manufacture a bionic module that allows the user to extend a laser sword from an emitter within their forearm.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionicWeaponryUltra</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_PlasmaClaw</defName>
+    <label>plasma claw module</label>
+    <description>Manufacture a bionic module that allows the user to extend retractable metal-cored claws from each of their digits. Plasma is wrapped around each of the cores, held in place by an energy field. Targets are both sliced by the metal core, as well as burned or ignited by the plasma sheath.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionicWeaponryUltra</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_RecoilSuppression</defName>
+    <label>recoil suppression module</label>
+    <description>Manufacture a bionic module that uses hydraulic stabilisers to reduce the effects of recoil, shortening the user's recovery period after firing.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_SMG</defName>
+    <label>arm SMG module</label>
+    <description>Manufacture a bionic module that allows the user to extend a high capacity submachinegun from their forearm. An internal autoloader slowly but autonomously reloads the weapon.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>BlowbackOperation</li>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_Shotgun</defName>
+    <label>arm shotgun module</label>
+    <description>Manufacture a bionic module that allows the user to extend a high gauge, double barrel shotgun from their forearm. An internal autoloader slowly but autonomously reloads the weapon.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Gunsmithing</li>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_VibroModule</defName>
+    <label>vibro-module</label>
+    <description>Manufacture a bionic module that allows the user to vibrate their arms and weapons at a frequency that aids in penetrating armour.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleEye_EyeColour</defName>
+    <label>eye colour module</label>
+    <description>Manufacture a bionic module that allows the user to control the appearence of their eye at will. At the most basic level, this can simply alter the hue of the iris, though it can also change the colour of the scalera and pupil, form patterns or symbols, or even change depending on the uses's mood.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleEye_NightVision</defName>
+    <label>night vision module</label>
+    <description>Manufacture a bionic module that uses digital light intensification and an infrared sensor to provide enhanced low light vision.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleEye_ProtectiveLens</defName>
+    <label>protective lens module</label>
+    <description>Manufacture a bionic module that adds a retractable, self-cleaning lens to protect the user's eye from sand, gravel and water etc...
+
+Modules can be directly installed into bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleEye_Targeting</defName>
+    <label>targeting module</label>
+    <description>Manufacture a bionic module that uses an aim assistant computer to stream target data and a firing HUD directly into the optic nerve. It can account for environmental challenges, allowing the user to ignore the accuracy penalty from bad weather and smoke.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleEye_Telescopic</defName>
+    <label>telescopic sight module</label>
+    <description>Manufacture a bionic module that allows the user to zoom their vision, allowing them to aquire more distant targets.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleJaw_GourmandTongue</defName>
+    <label>gourmand tongue module</label>
+    <description>Manufacture a bionic jaw module consisting of a bionic tongue that enhances the sense of taste. It is made of synthetic smooth-fibres, coated in an ultrafine absorbent mesh capable of detecting even the slightest trace of flavour. A microprocessor formats the chemical signals, elevating the richness and nuances of the meal and suppressing the less palatable inputs, before sending the sense data to the brain via a nerve-link interface. The tongue can be extended up to 30 cm, if desired, is granted a full prehensile range of motion by an array of micro-servomotors and even features an integral straw.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleJaw_HemoFangs</defName>
+    <label>hemo-fangs module</label>
+    <description>Manufacture a bionic module consisting of a pair of retractable, spring-loaded plasteel canines, connected to a vaccum pump. The user can bite an enemy, extend the fangs, and suck the blood from the target, converting it directly into a moderate amount of hemogen, if the user is hemogenic.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleLeg_Digitigrade</defName>
+    <label>digitigrade module</label>
+    <description>Manufacture a bionic module that converts the user's leg into a digitigrade format, granting increased speed to the detriment of the user's ability to climb and traverse rough terrain.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleLeg_FootBlade</defName>
+    <label>foot blade module</label>
+    <description>Manufacture a bionic module that allows the user to extend concealed blades from the front or back of the foot.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleLeg_GravKick</defName>
+    <label>grav kick module</label>
+    <description>Manufacture a bionic module that allows the user to utilise a miniature repulsor generator to kick a target several meters back.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionicWeaponryUltra</li>
+      <li MayRequire="ludeon.rimworld.odyssey">StandardGravtech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleLeg_RetractableFlipper</defName>
+    <label>retractable flipper module</label>
+    <description>Manufacture a bionic module that installs a retractable flipper to the foot, drastically decreasing the effect water has on their speed without hindering their movement on land.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleLeg_VenomFootBlade</defName>
+    <label>venom foot blade module</label>
+    <description>Manufacture a bionic module that allows the user to extend concealed blades connected to a venom pump in the calf. The user can stab an enemy while squirting venom into the wound
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleLung_Rebreather</defName>
+    <label>rebreather module</label>
+    <description>Manufacture a bionic lung module that creates a closed-loop system that recycles exhaled gas, scrubs carbon dioxide, and replenishing oxygen. This allows the user to survive longer in low or non-breathable environments.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_NeuralStunner</defName>
+    <label>brain shocker</label>
+    <description>Manufacture a miniature electrical emitter installed at the base of the brainstem, designed to emit an incapacitating series of electrical pulses.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>I_CaptiveControl</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_Neurostreamer</defName>
+    <label>neurostreamer</label>
+    <description>Manufacture a neural implant capable of simulating audio-visual stimuli. Picks up transmissions from ancient satelites and ubiquitous data cards.
+
+This implant allows it's user to recreationally stream music or vidtube anywhere without the use of additional infrastructure.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>I_TelecommunicationImplants</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_PrestigeSubdermalArmour</defName>
+    <label>prestige subdermal armour</label>
+    <description>Manufacture a suit of subdermally installed, lightly powered armour, formed of thin, semi-flexible plasteel plates and substituted by hyperweave where higher degrees of movement are necessary. Slim neuro-memetic assistors allow the user to move naturally.
+
+Expensive and beauty accentuating, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SubdermalArmour</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_PsychicReaper</defName>
+    <label>psychic reaper</label>
+    <description>Manufacture an implant that attunes its user to rip the psychic energies from slain foes. The implant uses dark archotechnology to harvest psyfocus from death, allowing its user to repurpose this energy, if they are capable.</description>
+    <baseCost>0</baseCost>
+    <techLevel>Spacer</techLevel>
+    <knowledgeCategory>Advanced</knowledgeCategory>
+    <knowledgeCost>50</knowledgeCost>
+    <tab>Anomaly</tab>
+    <prerequisites>
+      <li>PsychicSustainer</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ScorpionTail</defName>
+    <label>venom tail</label>
+    <description>Manufacture an advanced artificial tail. Silenced mini-servos give great strength, while a biogel nerve-extension spliced into the tailbone gives exquisit control. The user can stab the stinger into their enemies and inject venom into the wound.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_BionicTails</li>
+      <li MayRequire="ludeon.rimworld.royalty">VenomSynthesis</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ShoulderBeamTurret</defName>
+    <label>shoulder beam turret</label>
+    <description>Manufacture a miniature, retractable beam turret implanted on the shoulder. It's AI allows it to autonomously fire, even on the move, though it's size limits it's effectiveness.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.odyssey">BeamWeapons</li>
+      <li>I_ShoulderTurrets</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ShoulderChargeTurret</defName>
+    <label>shoulder charge turret</label>
+    <description>Manufacture a miniature, retractable charge turret implanted on the shoulder. It's AI allows it to autonomously fire, even on the move, though it's size limits it's effectiveness.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>ChargedShot</li>
+      <li>I_ShoulderTurrets</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ShoulderMortar</defName>
+    <label>shoulder mortar</label>
+    <description>Manufacture a miniature mortar implanted on the shoulder. It can only hold a limited amount of ammo and must be reloaded with 30 steel after use.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_ShoulderTurrets</li>
+      <li>Mortars</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_SpacerSkillChip_Animals</defName>
+    <label>skill chip (animals)</label>
+    <description>Manufacture a neural data processor loaded with technical knowledge that grants +4 to the animals skill. An implanted interface port is required for insertion and removal.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SkillChipPort</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_SpacerSkillChip_Artistic</defName>
+    <label>skill chip (artistic)</label>
+    <description>Manufacture a neural data processor loaded with technical knowledge that grants +4 to the artistic skill. An implanted interface port is required for insertion and removal.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SkillChipPort</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_SpacerSkillChip_Construction</defName>
+    <label>skill chip (construction)</label>
+    <description>Manufacture a neural data processor loaded with technical knowledge that grants +4 to the construction skill. An implanted interface port is required for insertion and removal.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SkillChipPort</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_SpacerSkillChip_Cooking</defName>
+    <label>skill chip (cooking)</label>
+    <description>Manufacture a neural data processor loaded with technical knowledge that grants +4 to the cooking skill. An implanted interface port is required for insertion and removal.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SkillChipPort</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_SpacerSkillChip_Crafting</defName>
+    <label>skill chip (crafting)</label>
+    <description>Manufacture a neural data processor loaded with technical knowledge that grants +4 to the crafting skill. An implanted interface port is required for insertion and removal.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SkillChipPort</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_SpacerSkillChip_Intellectual</defName>
+    <label>skill chip (intellectual)</label>
+    <description>Manufacture a neural data processor loaded with technical knowledge that grants +4 to the intellectual skill. An implanted interface port is required for insertion and removal.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SkillChipPort</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_SpacerSkillChip_Medicine</defName>
+    <label>skill chip (medical)</label>
+    <description>Manufacture a neural data processor loaded with technical knowledge that grants +4 to the medical skill. An implanted interface port is required for insertion and removal.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SkillChipPort</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_SpacerSkillChip_Melee</defName>
+    <label>skill chip (melee)</label>
+    <description>Manufacture a neural data processor loaded with technical knowledge that grants +4 to the melee skill. An implanted interface port is required for insertion and removal.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SkillChipPort</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_SpacerSkillChip_Mining</defName>
+    <label>skill chip (mining)</label>
+    <description>Manufacture a neural data processor loaded with technical knowledge that grants +4 to the mining skill. An implanted interface port is required for insertion and removal.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SkillChipPort</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_SpacerSkillChip_Plants</defName>
+    <label>skill chip (plants)</label>
+    <description>Manufacture a neural data processor loaded with technical knowledge that grants +4 to the plants skill. An implanted interface port is required for insertion and removal.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SkillChipPort</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_SpacerSkillChip_Shooting</defName>
+    <label>skill chip (shooting)</label>
+    <description>Manufacture a neural data processor loaded with technical knowledge that grants +4 to the shooting skill. An implanted interface port is required for insertion and removal.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SkillChipPort</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_SpacerSkillChip_Social</defName>
+    <label>skill chip (social)</label>
+    <description>Manufacture a neural data processor loaded with technical knowledge that grants +4 to the social skill. An implanted interface port is required for insertion and removal.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_SkillChipPort</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_StealthSystem</defName>
+    <label>active camouflage</label>
+    <description>Manufacture an implanted stealth system that uses holographic illusions to shroud the user in implant, making them harder to hit at range. In an emergency, the user can overcharge the implant to gain a brief window of total invisibility, but this will disable the passive effect until it fully recharges.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_FieldManipulationImplants</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_Voidlink</defName>
+    <label>voidlink</label>
+    <description>Manufacture an implant that attunes its user to the monolith. The implant uses dark archotechnology to allow its user to hear the whispers of the void. The greater the void's link to reality, the greater the user's psychic sensitivity and madness grows.</description>
+    <baseCost>0</baseCost>
+    <techLevel>Spacer</techLevel>
+    <knowledgeCategory>Advanced</knowledgeCategory>
+    <knowledgeCost>50</knowledgeCost>
+    <tab>Anomaly</tab>
+    <prerequisites>
+      <li>PsychicSustainer</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_Mechwomb</defName>
+    <label>mechwomb</label>
+    <description>Manufacture a miniaturised, implanted mechanoid gestator that allows the mechanitor to produce reinforcements in the field, without infrastructure or complex components.
+
+This implant can be self-installed without surgery.
+
+This implant can be installed up to 6 times to increase its capacity.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="sarg.alphamechs">AM_QuantumPulseMessaging</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_NerveShredderClaw</defName>
+    <label>nerve shredder claw</label>
+    <description>Manufacture a bioferrite power claw that can be surgically installed on a ghoul, granting it a powerful, paralytic attack. Each of the nerve shredder's jagged digits contain a resevoir of paralytic biotoxin. These clawed hands are harder to hold things with.
+
+Due to the extremely painful nature of the prosthetic, only ghouls can tolerate this enhancement.</description>
+    <baseCost>0</baseCost>
+    <techLevel>Industrial</techLevel>
+    <knowledgeCategory>Advanced</knowledgeCategory>
+    <knowledgeCost>60</knowledgeCost>
+    <tab>Anomaly</tab>
+    <prerequisites>
+      <li>LTS_AdvancedGhoulEnhancements</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_NeuralHeatsink</defName>
+    <label>neural heatsink</label>
+    <description>Manufacture a device of incredibly complex and esoteric construction, able to safely absorb and normalise chaotic psychic energies.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>I_EltexAugmentation</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_RemoteDominator</defName>
+    <label>remote dominator</label>
+    <description>Manufacture an implant which allows the mechanitor to psychically attack and override a mechs IFF protocol, taking them under their control, provided the mechanoid is susceptible to psychic attack and the mechanitor has sufficient bandwidth.
+
+This implant can be self-installed without surgery.
+
+This implant can be installed up to 3 times to increase its range.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="sarg.alphamechs">AM_Cryptoharmonization</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_RemoteResurrector</defName>
+    <label>remote resurrector</label>
+    <description>Manufacture an implant which allows the mechanitor to externally supercharging a recently-killed, allied mechanoid's self-repair processes, provided they have enough bandwidth to take that mech under their control. The mechanoid will come back with some but not all of its wounds healed.
+
+This implant can be self-installed without surgery.
+
+This implant can be installed up to 3 times to increase its range.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SignalBooster</defName>
+    <label>signal booster (standard)</label>
+    <description>Manufacture a neural implant which increases the signal radius of the mechanitor by 3 tiles.
+
+This standard-tier signal booster can only increase the radius by up to 9. To go higher, a higher-tier signal booster implant must be used.
+
+It can be self-installed without surgery.
+
+This implant can be installed up to 3 times to increase its effect.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.biotech">StandardMechtech</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SignalBoosterHigh</defName>
+    <label>signal booster (high)</label>
+    <description>Manufacture a neural implant which increases the signal radius of the mechanitor by 3 tiles.
+
+This standard-tier signal booster can only increase the radius by up to 18. To go higher, a higher-tier signal booster implant must be used.
+
+It can be self-installed without surgery.
+
+This implant can be installed up to 3 times to increase its effect.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Ferny_Bionics_SignalBooster</li>
+      <li MayRequire="ludeon.rimworld.biotech">HighMechtech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_SignalBoosterUltra</defName>
+    <label>signal booster (ultra)</label>
+    <description>Manufacture a neural implant which increases the signal radius of the mechanitor by 3 tiles.
+
+This standard-tier signal booster can only increase the radius by up to 27.
+
+It can be self-installed without surgery.
+
+This implant can be installed up to 3 times to increase its effect.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Ferny_Bionics_SignalBoosterHigh</li>
+      <li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_StalkerSkull</defName>
+    <label>stalker skull</label>
+    <description>Manufacture a bioferrite helmet fitted with advanced optics that can be surgically attached to a ghoul, improving it's vision and protecting it's head. This irremovable helmet performs complex combat calculations and utilises a brute force biogel nerve-link to influence it's user's movements. Some find it's lifeless mechanical lense less unsettling that the twisted, ghoulified face of someone they once knew.
+
+Due to the extremely painful nature of the prosthetic, only ghouls can tolerate this enhancement.</description>
+    <baseCost>0</baseCost>
+    <techLevel>Industrial</techLevel>
+    <knowledgeCategory>Advanced</knowledgeCategory>
+    <knowledgeCost>60</knowledgeCost>
+    <tab>Anomaly</tab>
+    <prerequisites>
+      <li>LTS_AdvancedGhoulEnhancements</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_StrengthEnhancer</defName>
+    <label>strength enhancer</label>
+    <description>Manufacture a sophisticated package of hormonal and mechanite influences shapes the muscles and fat on the body, adding additional muscle mass where needed to achieve greater physical capabilities.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">FleshShaping</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_Synthmarrow</defName>
+    <label>synthmarrow</label>
+    <description>Manufacture a flexible strip housing a matrix of hyperactive, artificial haematopoietic stem cells, manufactured, maintained and cultivated by mechanites.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">HealingFactors</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_Synthwomb</defName>
+    <label>bionic womb</label>
+    <description>Manufacture an advanced artificial womb. It can monitor and optimise nutrient level and apply growth stimulators to improve gestation speed, it's articulated construction allows for safer labor and it has a mechanite based sperm sorting system to enhance fertility. It is better than a biological womb in almost every way.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_WarprogrammerInterface</defName>
+    <label>warprogrammer interface</label>
+    <description>Manufacture a neural implant which allows for the uploading of specialised tactical protocols to any mechanoids controlled by the mechanitor. The bonuses granted to mechs melee and ranged abilities further scale with the mechanitor's own intellectual skill.
+
+It can be self-installed without surgery.
+
+This implant can be installed up to 3 times to increase its effect.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_WiredReflex</defName>
+    <label>wired reflexes</label>
+    <description>Manufacture a non-intelligent microcomputer connected to various muscles around the body by an array of synthetic fibre-optic nerves. It allows the body to autonomously dodge danger before the user can even process it.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">NeuralComputation</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+</Defs>

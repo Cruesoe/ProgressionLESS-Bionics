@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_AestheticShaper</defName>
+    <label>aesthetic shaper</label>
+    <description>Manufacture a sophisticated package of hormonal and mechanite influences shapes the muscles and fat on the body, adding non-functional aesthetic tissue where needed to achieve a desired appearance. This implant can be configured to form various body shapes according to the user's taste - or that of their partner.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>FleshShaping</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_ArmorskinGland</defName>
+    <label>armorskin gland</label>
+    <description>Manufacture an implanted gland that uses chemicals and nanomachines to toughen the skin and form flexible keratin armor beneath it. The added protection covers the whole body, but gives the skin an unattractive leathery, wrinkled appearance.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>SkinHardening</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_CircadianHalfCycler</defName>
+    <label>circadian half-cycler</label>
+    <description>Manufacture a signal redirector which isolates half of the brain, allowing the other half to sleep while the user remains outwardly awake. By alternating brain halves, the user never needs to sleep. Unfortunately, two hemispheres are better than one - working with half a brain causes a reduction in consciousness.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>CircadianInfluence</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_DetoxifierStomach</defName>
+    <label>sterilizing stomach</label>
+    <description>Manufacture an artificial stomach replacement with a broad-spectrum filtration and sterilization system. It allows the user to eat almost anything without ever worrying about food poisoning.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>ArtificialMetabolism</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_DrillArm</defName>
+    <label>drill arm</label>
+    <description>Manufacture a mechanical arm replacement for speeding up mining. It has a built-in snake drill, which allows the miner to rapidly find and exploit weak lines in the rock. It also has a general-purpose manipulator. It is somewhat ungainly, which slows down movement slightly.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SpecializedLimbs</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_ElbowBlade</defName>
+    <label>elbow blade</label>
+    <description>Manufacture a razor-sharp blade that extends at will from a hidden opening at the end of the ulna. Appearing without warning, it can be used for devastating slice attacks.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>CompactWeaponry</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_FieldHand</defName>
+    <label>field hand</label>
+    <description>Manufacture an agricultural hand replacement with telescoping tools that sow several holes or harvest multiple points at once. A general-purpose manipulator handles other tasks, though the bulky assembly slightly slows movement.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SpecializedLimbs</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_HealingEnhancer</defName>
+    <label>healing enhancer</label>
+    <description>Manufacture an implant that releases nanomachines and healing factors to accelerate wound recovery. It treats physical injuries, not diseases or other health conditions.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>HealingFactors</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_Immunoenhancer</defName>
+    <label>immunoenhancer</label>
+    <description>Manufacture an analysis computer inspects the bloodstream, classifies pathogens, and rapidly prompts the body's natural immune system to respond to them faster than it could alone. This speeds immunity gain significantly.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>MolecularAnalysis</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_KneeSpike</defName>
+    <label>knee spike</label>
+    <description>Manufacture a spike that extends at will from a hidden opening on the front of the knee. Appearing without warning, it can be used for devastating stabbing attacks which penetrate even thick armor.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>CompactWeaponry</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LearningAssistant</defName>
+    <label>learning assistant</label>
+    <description>Manufacture a sensory recording system that replays important experiences during sleep, strengthening the formation of new memories.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>NeuralComputation</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LoveEnhancer</defName>
+    <label>love enhancer</label>
+    <description>Manufacture an adaptive implant that changes the body's physical and chemical responses to increase sexual pleasure for both partners. The unit can accommodate either sex.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>FleshShaping</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_Mindscrew</defName>
+    <label>mindscrew</label>
+    <description>Manufacture a neural implant that subjects its host to continuous pain, whether imposed as punishment or endured as a demonstration of devotion.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>BrainWiring</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_NuclearStomach</defName>
+    <label>nuclear stomach</label>
+    <description>Manufacture a micro-nuclear reactor combined with complex chemical synthesis replaces the body's need for food energy. Food is required only to replace matter lost from the body, reducing the user's intake needs significantly. This artificial stomach cannot get food poisoning. However, there is little room to shield the reactor, so the radiation increases the risk of cancer.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>ArtificialMetabolism</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_StoneskinGland</defName>
+    <label>stoneskin gland</label>
+    <description>Manufacture an implanted gland that thickens the skin and grows jointed keratin plates into a permanent suit of armor. It offers substantial protection against injury and burns, but the hardened skin and facial plates reduce physical attractiveness.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>SkinHardening</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VenomTalon</defName>
+    <label>venom talon</label>
+    <description>Manufacture a retractable finger talon connected to a venom pump in the lower arm. The user can scratch an enemy while squirting venom into the wound. The talon is designed to be installed in the middle finger. It's fast, but poor at penetrating armor.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>VenomSynthesis</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

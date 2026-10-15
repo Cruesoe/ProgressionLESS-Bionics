@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ArmBlade"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ArmBlade"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ArmBlade"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ArmBlade"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ArmBlade"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleArm_ArmBlade</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ArmBlade"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ArmBlade"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleArm_ArmBlade</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ArmBlade"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ArmBlade"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ArmBlade"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ArmBlade"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ArmBlade"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ArmBlade"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleArm_ArmBlade</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ArmBlade"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ArmBlade"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleArm_ArmBlade</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ArmBlade"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ArmBlade"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ArmBlade"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ArmBlade"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_BionicClaw"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_BionicClaw"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_BionicClaw"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_BionicClaw"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_BionicClaw"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleArm_BionicClaw</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_BionicClaw"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_BionicClaw"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleArm_BionicClaw</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_BionicClaw"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_BionicClaw"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_BionicClaw"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_BionicClaw"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_BionicClaw"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_BionicClaw"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleArm_BionicClaw</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_BionicClaw"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_BionicClaw"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleArm_BionicClaw</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_BionicClaw"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_BionicClaw"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_BionicClaw"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_BionicClaw"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ZeusKnuckles"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ZeusKnuckles"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ZeusKnuckles"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ZeusKnuckles"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ZeusKnuckles"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ZeusKnuckles"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ZeusKnuckles"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ZeusKnuckles"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ZeusKnuckles"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ZeusKnuckles"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleArm_ZeusKnuckles"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ZeusKnuckles"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ZeusKnuckles"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ZeusKnuckles"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ZeusKnuckles"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ZeusKnuckles"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ZeusKnuckles"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ZeusKnuckles"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleArm_ZeusKnuckles"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleJaw_VenomFangs"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleJaw_VenomFangs"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleJaw_VenomFangs"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleJaw_VenomFangs"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleJaw_VenomFangs"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleJaw_VenomFangs</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleJaw_VenomFangs"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleJaw_VenomFangs"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleJaw_VenomFangs</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleJaw_VenomFangs"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleJaw_VenomFangs"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleJaw_VenomFangs"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleJaw_VenomFangs"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleJaw_VenomFangs"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleJaw_VenomFangs"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleJaw_VenomFangs</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleJaw_VenomFangs"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleJaw_VenomFangs"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleJaw_VenomFangs</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleJaw_VenomFangs"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleJaw_VenomFangs"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleJaw_VenomFangs"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleJaw_VenomFangs"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleKidney_DetoxifierKidney"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleKidney_DetoxifierKidney"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleKidney_DetoxifierKidney"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleKidney_DetoxifierKidney"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleKidney_DetoxifierKidney"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleKidney_DetoxifierKidney</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleKidney_DetoxifierKidney"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleKidney_DetoxifierKidney"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleKidney_DetoxifierKidney</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleKidney_DetoxifierKidney"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleKidney_DetoxifierKidney"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleKidney_DetoxifierKidney"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleKidney_DetoxifierKidney"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleKidney_DetoxifierKidney"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleKidney_DetoxifierKidney"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleKidney_DetoxifierKidney</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleKidney_DetoxifierKidney"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleKidney_DetoxifierKidney"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleKidney_DetoxifierKidney</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleKidney_DetoxifierKidney"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleKidney_DetoxifierKidney"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleKidney_DetoxifierKidney"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleKidney_DetoxifierKidney"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleLung_DetoxifierLung"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleLung_DetoxifierLung"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleLung_DetoxifierLung"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleLung_DetoxifierLung"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleLung_DetoxifierLung"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleLung_DetoxifierLung</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleLung_DetoxifierLung"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleLung_DetoxifierLung"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleLung_DetoxifierLung</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleLung_DetoxifierLung"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleLung_DetoxifierLung"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleLung_DetoxifierLung"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleLung_DetoxifierLung"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleLung_DetoxifierLung"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleLung_DetoxifierLung"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleLung_DetoxifierLung</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleLung_DetoxifierLung"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleLung_DetoxifierLung"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleLung_DetoxifierLung</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleLung_DetoxifierLung"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleLung_DetoxifierLung"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleLung_DetoxifierLung"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleLung_DetoxifierLung"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleSpine_RevenantVertebrae"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleSpine_RevenantVertebrae"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleSpine_RevenantVertebrae"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleSpine_RevenantVertebrae"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleSpine_RevenantVertebrae"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleSpine_RevenantVertebrae"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleSpine_RevenantVertebrae"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleSpine_RevenantVertebrae"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleSpine_RevenantVertebrae"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleSpine_RevenantVertebrae"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="LTS_ModuleSpine_RevenantVertebrae"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleSpine_RevenantVertebrae"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleSpine_RevenantVertebrae"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleSpine_RevenantVertebrae"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleSpine_RevenantVertebrae"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleSpine_RevenantVertebrae"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleSpine_RevenantVertebrae"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleSpine_RevenantVertebrae"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_ModuleSpine_RevenantVertebrae"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+</Patch>

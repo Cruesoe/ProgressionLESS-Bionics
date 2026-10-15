@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_CerebrexNode"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_CerebrexNode"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_EmergencyVacseal"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_EmergencyVacseal"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_Gravlifter"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_Gravlifter"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLeg_GravKick"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLeg_GravKick"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLung_Rebreather"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleLung_Rebreather"]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ShoulderBeamTurret"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ShoulderBeamTurret"]</xpath>
+    </match>
+  </Operation>
+</Patch>

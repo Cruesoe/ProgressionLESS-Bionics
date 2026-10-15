@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_BearClaws</defName>
+    <label>bear claws</label>
+    <description>Manufacture an improvement over the bionic Power Claw, these claws have been vat-grown with a mixture of human and bear DNA, and replace the subject's hand with versatile, non-retractable claws.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_BearLeg</defName>
+    <label>animal bear leg</label>
+    <description>Manufacture a prosthetic animal leg strengthened with bear muscles, and ending in sharp bear claws that add a powerful melee attack.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_BearLiver</defName>
+    <label>animal bear liver</label>
+    <description>Manufacture an implant that uses bear genes to improve function of the liver. Specially useful for those alcoholic chickens.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_BearMuscleTissue</defName>
+    <label>bear muscle tissue</label>
+    <description>Manufacture muscle grafts using ursine tissue to improve manipulation when integrated into the torso.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_BoomalopeHeart</defName>
+    <label>animal boomalope heart</label>
+    <description>Manufacture an implant that uses chemfuel to pump blood through the animal's body. This implant is intended for creatures whose heart is failing catastrophically, since it is less efficient than a natural heart.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_BoomalopeNodules</defName>
+    <label>boomalope nodules</label>
+    <description>Manufacture explosive skin grafts that integrate into a human torso and detonate if the host dies violently.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_BoomalopeStomach</defName>
+    <label>animal boomalope stomach</label>
+    <description>Manufacture an implant that uses boomalope genes to improve function of the stomach.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_CanidEye</defName>
+    <label>animal canid eye</label>
+    <description>Manufacture an eye implant that uses genetic splicing with canid genes to give an old (or damaged) eye decent vision. This implant is not meant to replace healthy eyes.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_CatEye</defName>
+    <label>cat eye</label>
+    <description>Manufacture a hybrid human-feline visual implant that improves night vision at the expense of some outdoor and daytime sharpness.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_CatTail</defName>
+    <label>animal cat tail</label>
+    <description>Manufacture a tail implant that uses genetic splicing with feline genes to substitute a broken or missing tail. This implant is not meant to replace a healthy tail. Note that only creatures with a natural tail can use this.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_ChemfuelHeart</defName>
+    <label>chemfuel heart</label>
+    <description>Manufacture a reinforced bionic heart that acts like a miniature 4-stroke internal combustion engine powered by chemfuel to pump blood through the body.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_ChemfuelStomach</defName>
+    <label>chemfuel stomach</label>
+    <description>Manufacture a reinforced bionic stomach that uses a combination of gastric acid and chemfuel to efficiently digest food.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_ChickenBrains</defName>
+    <label>animal chicken brains</label>
+    <description>Manufacture an implant that uses chicken brain tissue to patch damaged neurological pathways. This implant is intended for brain-dead creatures.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_ChitinousHeart</defName>
+    <label>animal chitinous heart</label>
+    <description>Manufacture a bionic heart implant using a reinforced shell of insectoid chitin for protection. This is a heart designed to take a beating. Pun intended, but it's the last one, I promise.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_CompoundEye</defName>
+    <label>compound insectoid eye</label>
+    <description>Manufacture a hybrid human-insectoid visual implant that detects a wider range of wavelengths, including light outside normal human perception.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_CrocodileSpine</defName>
+    <label>animal crocodile spine</label>
+    <description>Manufacture a bionic implant adding a sturdy crocodile spine to the creature's skeletal system.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_DevouringJaws</defName>
+    <label>devouring jaws</label>
+    <description>Manufacture a set of improved teeth designed to rapidly chew and ingest any kind of food. Leaves kind of a mess, though...</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_DiggingBearClaws</defName>
+    <label>digging mole claws</label>
+    <description>Manufacture powerful hand-mounted digging blades adapted for mining, improving both excavation speed and yield.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_HibernationModule</defName>
+    <label>hibernation module</label>
+    <description>Manufacture a biochip that modifies the brain to increase consciousness and reduce the need for sleep.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_HumanThrumboHorn</defName>
+    <label>thrumbo horn</label>
+    <description>Manufacture a genetically modified cranial spike derived from a thrumbo, suitable for implantation in a human forehead.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_IguanaScales</defName>
+    <label>iguana scales</label>
+    <description>Manufacture a synthetic skin substitute that is much thicker and a much better insulator than human skin. This provides a measure of defense but, more importantly, makes the subject more resistant to high temperatures.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_InsectMandibles</defName>
+    <label>animal insect mandibles</label>
+    <description>Manufacture a bionic implant adding insect mandibles to the creature's face. Insect mandibles improve manipulation and eating, while also working as an offensive weapon</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_InsectileEye</defName>
+    <label>animal insectile eye</label>
+    <description>Manufacture a bionic implant which gives the creature compound insectile eyes. Compared with simple eyes, compound eyes possess a very large view angle, and can detect fast movement.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_InsectoidAntennae</defName>
+    <label>insectoid receptor</label>
+    <description>Manufacture hybrid sensory receptors for implantation in the nose. They alter how the host perceives the surrounding world, with a risk of overwhelming sensory input.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_InsectoidPheromones</defName>
+    <label>animal insectoid pheromones</label>
+    <description>Manufacture an implant that uses genetic splicing with insectoid genes to give the ability to detect pheromones, thus improving the olfactory system. Can't be installed on birds and (ironically) insects.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_KidneyToxicFilters</defName>
+    <label>kidney toxic filters</label>
+    <description>Manufacture a bioelectronic renal prosthesis that incorporates insectoid tissue to improve filtration and resistance to toxic substances.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_LizardLeg</defName>
+    <label>animal lizard leg</label>
+    <description>Manufacture a bionic animal leg reinforced with tough lizard skin.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MechaHeart</defName>
+    <label>animal reinforced bionic heart</label>
+    <description>Manufacture a bionic heart strengthened by the action of active mechanites.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MechaReceptors</defName>
+    <label>animal elephant auditory receptor</label>
+    <description>Manufacture an auditory implant based on elephant anatomy that detects a broad range of frequencies.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MechaSpine</defName>
+    <label>animal reinforced bionic spine</label>
+    <description>Manufacture a bionic implant adding a plasteel structure with active mechanites to the creature's skeletal system.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MechaTail</defName>
+    <label>animal reinforced tail</label>
+    <description>Manufacture an advanced animal tail, even more powerful than a natural one. Note that only creatures with a natural tail can use this.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MiniatureThrumboHorn</defName>
+    <label>animal miniature thrumbo horn</label>
+    <description>Manufacture a bionic implant adding a small thrumbo horn where the creature's nose used to be. This implant acts as a nose, allowing the creature to breathe and smell, and can be used by the creature in melee. Birds, insects, and creatures that already have a thrumbo horn don't have enough space on their skull to install this implant.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MoleratNerveDampener</defName>
+    <label>mole-rat nerve dampener</label>
+    <description>Manufacture a biochip that reduces pain sensitivity, allowing the subject to survive pain shock.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MonitorLizardBrain</defName>
+    <label>animal monitor lizard brain</label>
+    <description>Manufacture a bionic implant using monitor lizard brain tissue. This highly intelligent reptile has very quick reflexes.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MothTympanalOrgan</defName>
+    <label>animal moth tympanal organ</label>
+    <description>Manufacture a bionic implant adding a moth tympanal organ to the creature's ear. Moths can hear sounds of a higher frequency than any bat can produce.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MousePheromones</defName>
+    <label>mouse pheromones</label>
+    <description>Manufacture a bionic vomeronasal organ that allows the subject pheromonal communication with other animals, increasing the chance of taming and training them successfully.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MuffaloLung</defName>
+    <label>animal muffalo lung</label>
+    <description>Manufacture an implant that uses muffalo genes to increase breathing capacity.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MuffaloMammaries</defName>
+    <label>muffalo mammaries</label>
+    <description>Manufacture mammary tissue grafts that allow a human host to produce milk for collection.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MuffaloMuscles</defName>
+    <label>muffalo strengthened muscles</label>
+    <description>Manufacture muscle grafts woven from muffalo tissue to increase strength, resilience and carrying capacity.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MuffaloSkin</defName>
+    <label>muffalo skin</label>
+    <description>Manufacture a synthetic skin substitute that is much thicker and a much better insulator than human skin. This provides a measure of defense but, more importantly, makes the subject more resistant to low temperatures.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_MuffaloSpine</defName>
+    <label>animal muffalo spine</label>
+    <description>Manufacture a spine implant that uses genetic splicing with muffalo genes to give an old (or damaged) spine decent functioning. This implant is not meant to replace healthy spines.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_NeuronReinforcement</defName>
+    <label>neuron reinforcement</label>
+    <description>Manufacture a biochip using animal stem cells to reinforce the natural abilities of human neurons, increasing learning and research speed.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_Ovipositor</defName>
+    <label>ovipositor</label>
+    <description>Manufacture a reproductive implant that allows a human host to lay chicken eggs twice a day, at the cost of substantial pain.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_PsychicDampeners</defName>
+    <label>psychic dampeners</label>
+    <description>Manufacture artificial hearing aids that block psychic emanations, providing considerable resistance to mechanoid psychic attacks.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_RodentEar</defName>
+    <label>animal rodent ear</label>
+    <description>Manufacture an ear implant that uses genetic splicing with rodent genes to give an old (or damaged) ear decent hearing. This implant is not meant to replace healthy ears.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_RodentNose</defName>
+    <label>animal rodent nose</label>
+    <description>Manufacture an implant that uses genetic splicing with rodent genes to give an old (or damaged) nose decent smelling. This implant is not meant to replace healthy noses. Can't be installed on birds and insects.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_ScytherTail</defName>
+    <label>animal scyther tail</label>
+    <description>Manufacture a scyther tail created by attaching a jury-rigged scyther blade to an animal's tail. Note that only creatures with a natural tail can use this.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_ThrumboBrain</defName>
+    <label>animal bionic thrumbo brain</label>
+    <description>Manufacture a neural implant using thrumbo tissue to provide exceptional intelligence and reflexes.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_ThrumboEye</defName>
+    <label>animal bionic thrumbo eye</label>
+    <description>Manufacture a bionic eye reinforced with specialized photoreceptors from a powerful thrumbo.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_ThrumboJaws</defName>
+    <label>animal bionic thrumbo jaws</label>
+    <description>Manufacture a bionic implant adding thrumbo jaws to the creature's mouth. These creatures devour trees, so you can imagine their jaws are up to the task.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_ThrumboLeg</defName>
+    <label>animal elephant leg</label>
+    <description>Manufacture a bionic animal leg reinforced with muscle tissue from a powerful elephant.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_ThrumboSkin</defName>
+    <label>thrumbo skin</label>
+    <description>Manufacture a synthetic skin substitute that is much thicker and a much better insulator than human skin. This provides a lot of defense and makes the subject more resistant to extremes of temperature.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_VenomousFangs</defName>
+    <label>venomous fangs</label>
+    <description>Manufacture a hybrid jaw replacement fitted with venom-injecting teeth. It provides a useful combat weapon but is uncomfortable to wear.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_WolfJaws</defName>
+    <label>animal wolf fangs</label>
+    <description>Manufacture an implant that uses genetic splicing with wolf genes to give an old (or damaged) jaw decent functioning. This implant is not meant to replace healthy jaws.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_WolfMuscularFibers</defName>
+    <label>wolf muscular fibers</label>
+    <description>Manufacture hybrid human-wolf muscle grafts that integrate into the legs to substantially increase movement speed.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>GR_GeneticCompatibility</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

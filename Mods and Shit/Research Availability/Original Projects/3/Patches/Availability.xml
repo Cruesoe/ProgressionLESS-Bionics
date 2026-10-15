@@ -1,0 +1,2073 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BlacksightDevice"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>BlacksightDevice</defName>
+            <label>blacksight device</label>
+            <description>Manufacture an implant that allows the user to temporarily partially shift into the void. The implant is crafted from modified noctolith sensors, using archotech shards to control the phase mechanisms. The user can activate the device, causing them to move and attack far faster in darkness. However, the inverse is true in light. While active, the user is unthreatened by unnatural darkness.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Spacer</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>40</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">DisruptorFlares</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BlacksightDevice"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/label</xpath>
+        <value>
+          <label>blacksight device</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]</xpath>
+        <value>
+          <label>blacksight device</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BlacksightDevice"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/description</xpath>
+        <value>
+          <description>Manufacture an implant that allows the user to temporarily partially shift into the void. The implant is crafted from modified noctolith sensors, using archotech shards to control the phase mechanisms. The user can activate the device, causing them to move and attack far faster in darkness. However, the inverse is true in light. While active, the user is unthreatened by unnatural darkness.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]</xpath>
+        <value>
+          <description>Manufacture an implant that allows the user to temporarily partially shift into the void. The implant is crafted from modified noctolith sensors, using archotech shards to control the phase mechanisms. The user can activate the device, causing them to move and attack far faster in darkness. However, the inverse is true in light. While active, the user is unthreatened by unnatural darkness.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BlacksightDevice"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BlacksightDevice"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">DisruptorFlares</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">DisruptorFlares</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BlacksightDevice"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BlacksightDevice"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BlacksightDevice"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>40</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]</xpath>
+        <value>
+          <knowledgeCost>40</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="BlacksightDevice"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="BlacksightDevice"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeacidifierMembrane"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>HyperalkalaicArchites</defName>
+            <label>alkalicoat implant</label>
+            <description>Manufacture an implant that grants its user immunity to acid. The implant is crafted from the archite stomach lining that prevents devourers from digesting themselves and maintained by the influence of an archotech shard. By implanting a thin layer of these archites between the dermal layers, the user gains immunity to acid damage, and cannot be digested.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Spacer</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>30</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeacidifierMembrane"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/label</xpath>
+        <value>
+          <label>alkalicoat implant</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]</xpath>
+        <value>
+          <label>alkalicoat implant</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeacidifierMembrane"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/description</xpath>
+        <value>
+          <description>Manufacture an implant that grants its user immunity to acid. The implant is crafted from the archite stomach lining that prevents devourers from digesting themselves and maintained by the influence of an archotech shard. By implanting a thin layer of these archites between the dermal layers, the user gains immunity to acid damage, and cannot be digested.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]</xpath>
+        <value>
+          <description>Manufacture an implant that grants its user immunity to acid. The implant is crafted from the archite stomach lining that prevents devourers from digesting themselves and maintained by the influence of an archotech shard. By implanting a thin layer of these archites between the dermal layers, the user gains immunity to acid damage, and cannot be digested.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeacidifierMembrane"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeacidifierMembrane"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeacidifierMembrane"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeacidifierMembrane"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeacidifierMembrane"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeacidifierMembrane"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperalkalaicArchites"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeadlifeCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>DeadlifeCoil</defName>
+            <label>deadlife coil</label>
+            <description>Manufacture an implant that makes the user far stronger as a shambler, and revives them as one upon death. The implant consists of a strange archo-organ surrounded by twisting bioferrite pipes and uses an archotech shard at it's core to maintain and supercharge any deadlife archites present in the user’s body.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Spacer</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>30</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">DeadlifeDust</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeadlifeCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/label</xpath>
+        <value>
+          <label>deadlife coil</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]</xpath>
+        <value>
+          <label>deadlife coil</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeadlifeCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/description</xpath>
+        <value>
+          <description>Manufacture an implant that makes the user far stronger as a shambler, and revives them as one upon death. The implant consists of a strange archo-organ surrounded by twisting bioferrite pipes and uses an archotech shard at it's core to maintain and supercharge any deadlife archites present in the user’s body.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]</xpath>
+        <value>
+          <description>Manufacture an implant that makes the user far stronger as a shambler, and revives them as one upon death. The implant consists of a strange archo-organ surrounded by twisting bioferrite pipes and uses an archotech shard at it's core to maintain and supercharge any deadlife archites present in the user’s body.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeadlifeCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeadlifeCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">DeadlifeDust</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">DeadlifeDust</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeadlifeCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeadlifeCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeadlifeCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DeadlifeCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DeadlifeCoil"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DefensiveImpaler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>DefensiveImpaler</defName>
+            <label>retributive impaler</label>
+            <description>Manufacture an implant that is formed of hundreds of telescopic, subdermally implanted bioferrite quills and connected to implanted nerves. The implant is crafted from harvested gorehulk nervous systems, using an archotech shard to safely fuse with the user. The retractable spines extend from the user's flesh to impale those who harm them in melee range.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Spacer</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>30</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DefensiveImpaler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/label</xpath>
+        <value>
+          <label>retributive impaler</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]</xpath>
+        <value>
+          <label>retributive impaler</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DefensiveImpaler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/description</xpath>
+        <value>
+          <description>Manufacture an implant that is formed of hundreds of telescopic, subdermally implanted bioferrite quills and connected to implanted nerves. The implant is crafted from harvested gorehulk nervous systems, using an archotech shard to safely fuse with the user. The retractable spines extend from the user's flesh to impale those who harm them in melee range.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]</xpath>
+        <value>
+          <description>Manufacture an implant that is formed of hundreds of telescopic, subdermally implanted bioferrite quills and connected to implanted nerves. The implant is crafted from harvested gorehulk nervous systems, using an archotech shard to safely fuse with the user. The retractable spines extend from the user's flesh to impale those who harm them in melee range.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DefensiveImpaler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DefensiveImpaler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DefensiveImpaler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DefensiveImpaler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DefensiveImpaler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DefensiveImpaler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DefensiveImpaler"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Dreadheart"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>DreadheartRegeneration</defName>
+            <label>dreadheart</label>
+            <description>Manufacture a bio-mechanical organ that allows the user to temporarily gain impossible regeneration. The implant is crafted from a modified dreadmeld core, using archotech shards to control the growth mechanisms. The user can unbind the functions of the core, causing new flesh to sprout in place of their wounds. However, if used too frequently, there's a chance of the regeneration going rampant, incapacitating the user as huge masses of flesh sprout from their body, becoming fleshbeasts.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Spacer</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>40</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">DisruptorFlares</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Dreadheart"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/label</xpath>
+        <value>
+          <label>dreadheart</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]</xpath>
+        <value>
+          <label>dreadheart</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Dreadheart"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/description</xpath>
+        <value>
+          <description>Manufacture a bio-mechanical organ that allows the user to temporarily gain impossible regeneration. The implant is crafted from a modified dreadmeld core, using archotech shards to control the growth mechanisms. The user can unbind the functions of the core, causing new flesh to sprout in place of their wounds. However, if used too frequently, there's a chance of the regeneration going rampant, incapacitating the user as huge masses of flesh sprout from their body, becoming fleshbeasts.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]</xpath>
+        <value>
+          <description>Manufacture a bio-mechanical organ that allows the user to temporarily gain impossible regeneration. The implant is crafted from a modified dreadmeld core, using archotech shards to control the growth mechanisms. The user can unbind the functions of the core, causing new flesh to sprout in place of their wounds. However, if used too frequently, there's a chance of the regeneration going rampant, incapacitating the user as huge masses of flesh sprout from their body, becoming fleshbeasts.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Dreadheart"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Dreadheart"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">DisruptorFlares</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">DisruptorFlares</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Dreadheart"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Dreadheart"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Dreadheart"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>40</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]</xpath>
+        <value>
+          <knowledgeCost>40</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="Dreadheart"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="DreadheartRegeneration"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="GhoulPowerPlating"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>LTS_AdvancedGhoulEnhancements</defName>
+            <label>ghoul power plating</label>
+            <description>Manufacture reinforced bioferrite armor with neural assistors for surgical attachment to vulnerable areas. It significantly reduces incoming damage but still slows movement. Only ghouls can tolerate the installation's extreme pain.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Industrial</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>60</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">GhoulEnhancements</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="GhoulPowerPlating"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/label</xpath>
+        <value>
+          <label>ghoul power plating</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]</xpath>
+        <value>
+          <label>ghoul power plating</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="GhoulPowerPlating"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/description</xpath>
+        <value>
+          <description>Manufacture reinforced bioferrite armor with neural assistors for surgical attachment to vulnerable areas. It significantly reduces incoming damage but still slows movement. Only ghouls can tolerate the installation's extreme pain.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]</xpath>
+        <value>
+          <description>Manufacture reinforced bioferrite armor with neural assistors for surgical attachment to vulnerable areas. It significantly reduces incoming damage but still slows movement. Only ghouls can tolerate the installation's extreme pain.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="GhoulPowerPlating"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="GhoulPowerPlating"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">GhoulEnhancements</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">GhoulEnhancements</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="GhoulPowerPlating"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="GhoulPowerPlating"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="GhoulPowerPlating"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>60</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]</xpath>
+        <value>
+          <knowledgeCost>60</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="GhoulPowerPlating"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="LTS_AdvancedGhoulEnhancements"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HyperAdrenalineGland"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>HyperAdrenalineGland</defName>
+            <label>hyper-adrenaline gland</label>
+            <description>Manufacture an implant that enhances the speed and pain resistance of the user after taking damage. The implant is crafted from the archotechnological adrenal glands of a chimera, using an archotech shard to stimulate the release procedure. By pumping a combination of synthetic superadrenaline and archites into the bloodstream, the user is able to move much faster and ignore their pain for a period of time after recieving enough damage. Unfortunately, the presence of hyper-adrenaline in the body boosts aggression levels, leading to increased chances of social fights.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Spacer</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>30</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HyperAdrenalineGland"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/label</xpath>
+        <value>
+          <label>hyper-adrenaline gland</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]</xpath>
+        <value>
+          <label>hyper-adrenaline gland</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HyperAdrenalineGland"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/description</xpath>
+        <value>
+          <description>Manufacture an implant that enhances the speed and pain resistance of the user after taking damage. The implant is crafted from the archotechnological adrenal glands of a chimera, using an archotech shard to stimulate the release procedure. By pumping a combination of synthetic superadrenaline and archites into the bloodstream, the user is able to move much faster and ignore their pain for a period of time after recieving enough damage. Unfortunately, the presence of hyper-adrenaline in the body boosts aggression levels, leading to increased chances of social fights.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]</xpath>
+        <value>
+          <description>Manufacture an implant that enhances the speed and pain resistance of the user after taking damage. The implant is crafted from the archotechnological adrenal glands of a chimera, using an archotech shard to stimulate the release procedure. By pumping a combination of synthetic superadrenaline and archites into the bloodstream, the user is able to move much faster and ignore their pain for a period of time after recieving enough damage. Unfortunately, the presence of hyper-adrenaline in the body boosts aggression levels, leading to increased chances of social fights.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HyperAdrenalineGland"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HyperAdrenalineGland"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HyperAdrenalineGland"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HyperAdrenalineGland"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HyperAdrenalineGland"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="HyperAdrenalineGland"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="HyperAdrenalineGland"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MetalhorrorSymbiont"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>MetalhorrorSymbiont</defName>
+            <label>metalhorror symbiont</label>
+            <description>Manufacture an implant that enhances the combative capabilities of its host. The implant is crafted from the archometallic seed of a metalhorror, using an archotech shard to control and manipulate the growth of the creature. The symbiont’s metallic filaments weave through the host’s body, forming a second musculature system and the metalblood flowing through the host’s veins hardens in response to physical trauma. Due to the symbiont’s presence, any attempt by other metalhorrors to colonise the host will be rapidly destroyed. Upon death, the mechanisms that slave the metalhorror to the host will fail, allowing it to immediately tear free of the corpse.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Spacer</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>30</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">DisruptorFlares</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MetalhorrorSymbiont"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/label</xpath>
+        <value>
+          <label>metalhorror symbiont</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]</xpath>
+        <value>
+          <label>metalhorror symbiont</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MetalhorrorSymbiont"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/description</xpath>
+        <value>
+          <description>Manufacture an implant that enhances the combative capabilities of its host. The implant is crafted from the archometallic seed of a metalhorror, using an archotech shard to control and manipulate the growth of the creature. The symbiont’s metallic filaments weave through the host’s body, forming a second musculature system and the metalblood flowing through the host’s veins hardens in response to physical trauma. Due to the symbiont’s presence, any attempt by other metalhorrors to colonise the host will be rapidly destroyed. Upon death, the mechanisms that slave the metalhorror to the host will fail, allowing it to immediately tear free of the corpse.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]</xpath>
+        <value>
+          <description>Manufacture an implant that enhances the combative capabilities of its host. The implant is crafted from the archometallic seed of a metalhorror, using an archotech shard to control and manipulate the growth of the creature. The symbiont’s metallic filaments weave through the host’s body, forming a second musculature system and the metalblood flowing through the host’s veins hardens in response to physical trauma. Due to the symbiont’s presence, any attempt by other metalhorrors to colonise the host will be rapidly destroyed. Upon death, the mechanisms that slave the metalhorror to the host will fail, allowing it to immediately tear free of the corpse.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MetalhorrorSymbiont"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MetalhorrorSymbiont"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">DisruptorFlares</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">DisruptorFlares</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MetalhorrorSymbiont"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MetalhorrorSymbiont"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MetalhorrorSymbiont"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="MetalhorrorSymbiont"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="MetalhorrorSymbiont"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicAgonizer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>PsychicAgonizer</defName>
+            <label>psychic agonizer</label>
+            <description>Manufacture an implant that allows the user to project a pulse of pure mental pain. The implant is crafted from a modified nociosphere emitter, using archotech shards to harness its psychic capabilities. The user can release a wave of psychic agony, briefly incapacitating all creatures nearby. However, while the user is in pain, the implant also constantly causes a feedback loop of psychic pain to all creatures that spend too much time in the user's presence.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Spacer</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>40</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">DisruptorFlares</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicAgonizer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/label</xpath>
+        <value>
+          <label>psychic agonizer</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]</xpath>
+        <value>
+          <label>psychic agonizer</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicAgonizer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/description</xpath>
+        <value>
+          <description>Manufacture an implant that allows the user to project a pulse of pure mental pain. The implant is crafted from a modified nociosphere emitter, using archotech shards to harness its psychic capabilities. The user can release a wave of psychic agony, briefly incapacitating all creatures nearby. However, while the user is in pain, the implant also constantly causes a feedback loop of psychic pain to all creatures that spend too much time in the user's presence.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]</xpath>
+        <value>
+          <description>Manufacture an implant that allows the user to project a pulse of pure mental pain. The implant is crafted from a modified nociosphere emitter, using archotech shards to harness its psychic capabilities. The user can release a wave of psychic agony, briefly incapacitating all creatures nearby. However, while the user is in pain, the implant also constantly causes a feedback loop of psychic pain to all creatures that spend too much time in the user's presence.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicAgonizer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicAgonizer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">DisruptorFlares</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">DisruptorFlares</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicAgonizer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicAgonizer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicAgonizer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>40</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]</xpath>
+        <value>
+          <knowledgeCost>40</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicAgonizer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicAgonizer"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicBeguiler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>PsychicBeguiler</defName>
+            <label>psychic beguiler</label>
+            <description>Manufacture an implant that allows the user to enthrall another person. The implant is crafted from a modified golden cube, using archotech shards to control its psychic influence. The user radiates an aura of perfection and beauty, enhanced by their psychic sensitivity, and gains the ability to focus this psychic field into the mind of another, rapidly captivating and luring them into the user's faction. The victim will always feel strong positive emotions for the beguiler but will enter a berserk rage when they die.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Spacer</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>40</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicBeguiler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/label</xpath>
+        <value>
+          <label>psychic beguiler</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]</xpath>
+        <value>
+          <label>psychic beguiler</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicBeguiler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/description</xpath>
+        <value>
+          <description>Manufacture an implant that allows the user to enthrall another person. The implant is crafted from a modified golden cube, using archotech shards to control its psychic influence. The user radiates an aura of perfection and beauty, enhanced by their psychic sensitivity, and gains the ability to focus this psychic field into the mind of another, rapidly captivating and luring them into the user's faction. The victim will always feel strong positive emotions for the beguiler but will enter a berserk rage when they die.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]</xpath>
+        <value>
+          <description>Manufacture an implant that allows the user to enthrall another person. The implant is crafted from a modified golden cube, using archotech shards to control its psychic influence. The user radiates an aura of perfection and beauty, enhanced by their psychic sensitivity, and gains the ability to focus this psychic field into the mind of another, rapidly captivating and luring them into the user's faction. The victim will always feel strong positive emotions for the beguiler but will enter a berserk rage when they die.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicBeguiler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicBeguiler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicBeguiler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicBeguiler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicBeguiler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>40</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]</xpath>
+        <value>
+          <knowledgeCost>40</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicBeguiler"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicBeguiler"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicSustainer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>PsychicSustainer</defName>
+            <label>psychic sustainer</label>
+            <description>Manufacture an implant that sustains the user during meditation and psychic rituals. The implant uses dark archotechnology to allow its user to tap into the ambient psychic field of a distant archotech, enabling to enter a psychic trance that sustains their body.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Spacer</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>50</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicSustainer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/label</xpath>
+        <value>
+          <label>psychic sustainer</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]</xpath>
+        <value>
+          <label>psychic sustainer</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicSustainer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/description</xpath>
+        <value>
+          <description>Manufacture an implant that sustains the user during meditation and psychic rituals. The implant uses dark archotechnology to allow its user to tap into the ambient psychic field of a distant archotech, enabling to enter a psychic trance that sustains their body.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]</xpath>
+        <value>
+          <description>Manufacture an implant that sustains the user during meditation and psychic rituals. The implant uses dark archotechnology to allow its user to tap into the ambient psychic field of a distant archotech, enabling to enter a psychic trance that sustains their body.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicSustainer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicSustainer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicSustainer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicSustainer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicSustainer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>50</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]</xpath>
+        <value>
+          <knowledgeCost>50</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="PsychicSustainer"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PsychicSustainer"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SlayersCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>SlayersCollar</defName>
+            <label>slayer's collar</label>
+            <description>Manufacture an implant that allows its user escape death by causing it. The implant is formed of a ring of jagged, chaotic void metal and uses an archotech shard to flay a corpse of it's lingering psychic energy. After murdering 50 humanoids, the collar gains enough psychic energy to produce a seed of death refusal archites.
+
+Slayers collars serve as a symbol of eternal servitude among worshippers of Horax.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Spacer</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>30</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SlayersCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/label</xpath>
+        <value>
+          <label>slayer's collar</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]</xpath>
+        <value>
+          <label>slayer's collar</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SlayersCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/description</xpath>
+        <value>
+          <description>Manufacture an implant that allows its user escape death by causing it. The implant is formed of a ring of jagged, chaotic void metal and uses an archotech shard to flay a corpse of it's lingering psychic energy. After murdering 50 humanoids, the collar gains enough psychic energy to produce a seed of death refusal archites.
+
+Slayers collars serve as a symbol of eternal servitude among worshippers of Horax.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]</xpath>
+        <value>
+          <description>Manufacture an implant that allows its user escape death by causing it. The implant is formed of a ring of jagged, chaotic void metal and uses an archotech shard to flay a corpse of it's lingering psychic energy. After murdering 50 humanoids, the collar gains enough psychic energy to produce a seed of death refusal archites.
+
+Slayers collars serve as a symbol of eternal servitude among worshippers of Horax.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SlayersCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SlayersCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">BioferriteShaping</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SlayersCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SlayersCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SlayersCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="SlayersCollar"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="SlayersCollar"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+</Patch>

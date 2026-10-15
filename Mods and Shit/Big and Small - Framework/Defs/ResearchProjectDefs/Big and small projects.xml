@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_BS_BionicLocomotiveSpine</defName>
+    <label>bionic locomotive spine</label>
+    <description>Manufacture an advanced artificial locomotive spine. It is designed to replace the lower parts of the spine of a snake-like being. Unlike a regular bionic spine this one will significantly aid locomotion for such beings.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_BS_BionicStriderLeg</defName>
+    <label>bionic strider leg</label>
+    <description>Manufacture an advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system. This version is usually somewhat inferior to the bionic leg for baseline humans, but is slightly better for beings with more than two legs.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Bionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+</Defs>

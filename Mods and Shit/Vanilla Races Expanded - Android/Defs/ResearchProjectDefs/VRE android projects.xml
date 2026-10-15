@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_AirFilter</defName>
+    <label>air filter</label>
+    <description>Manufacture a synthetic respiratory component for an android body. Two of these form a complete breathing system.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_AndroidArm</defName>
+    <label>android arm</label>
+    <description>Manufacture a synthetic replacement upper limb for an android body.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_AndroidFoot</defName>
+    <label>android foot</label>
+    <description>Manufacture a synthetic replacement foot for an android body.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_AndroidHand</defName>
+    <label>android hand</label>
+    <description>Manufacture a synthetic replacement hand for an android body.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_AndroidLeg</defName>
+    <label>android leg</label>
+    <description>Manufacture a synthetic replacement lower limb for an android body.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_ArtificialJaw</defName>
+    <label>artificial jaw</label>
+    <description>Manufacture a synthetic replacement jaw for an android body.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_ArtificialNose</defName>
+    <label>artificial nose</label>
+    <description>Manufacture a synthetic facial sensory organ that gives an android the ability to detect smells.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_ArtificialRibcage</defName>
+    <label>artificial ribcage</label>
+    <description>Manufacture a synthetic replacement rib cage for an android body.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_ArtificialSpine</defName>
+    <label>artificial spine</label>
+    <description>Manufacture a synthetic replacement spinal column for an android body.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_AudioProcessor</defName>
+    <label>audio processor</label>
+    <description>Manufacture an electronic auditory implant that gives an android the ability to hear.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_MetabolismRegulator</defName>
+    <label>metabolism regulator</label>
+    <description>Manufacture a synthetic control implant that helps an android maintain maximum energy efficiency.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_NeuroPump</defName>
+    <label>neuropump</label>
+    <description>Manufacture a synthetic circulation unit that distributes neutroamine throughout an android’s subsystems.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_Neutrofilter</defName>
+    <label>neutrofilter</label>
+    <description>Manufacture a filtration implant that cleans and recycles spent neutroamine in an android body.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_OpticalUnit</defName>
+    <label>optical unit</label>
+    <description>Manufacture an electronic visual implant that gives an android the ability to see.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_VREA_Reactor</defName>
+    <label>reactor</label>
+    <description>Manufacture a replaceable power unit for an android body. It must be extracted and replaced once spent.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>VREA_AndroidTech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+</Defs>

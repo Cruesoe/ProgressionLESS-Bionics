@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_PyrinthTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>Ferny_PyrinthTalon</defName>
+            <label>pyrinth talon</label>
+            <description>Manufacture an arm made of pyrinth shards locked between anima branches. Increases damage, and adds a chance of setting targets on fire, at the cost of manipulation.</description>
+            <baseCost>100</baseCost>
+            <techLevel>Medieval</techLevel>
+            <prerequisites Inherit="False">
+              <li>DV_GolemResearch_GolemancyModules</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_PyrinthTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]/label</xpath>
+        <value>
+          <label>pyrinth talon</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]</xpath>
+        <value>
+          <label>pyrinth talon</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_PyrinthTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]/description</xpath>
+        <value>
+          <description>Manufacture an arm made of pyrinth shards locked between anima branches. Increases damage, and adds a chance of setting targets on fire, at the cost of manipulation.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]</xpath>
+        <value>
+          <description>Manufacture an arm made of pyrinth shards locked between anima branches. Increases damage, and adds a chance of setting targets on fire, at the cost of manipulation.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_PyrinthTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]/baseCost</xpath>
+        <value>
+          <baseCost>100</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]</xpath>
+        <value>
+          <baseCost>100</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_PyrinthTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>DV_GolemResearch_GolemancyModules</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>DV_GolemResearch_GolemancyModules</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="DV_Golem_PyrinthTalon"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_PyrinthTalon"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+</Patch>

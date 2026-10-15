@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<loadFolders>
+  <v1.6>
+    <li>/</li>
+    <li IfModActive="7f.securityclearance">Mods and Shit/Security Clearance</li>
+    <li IfModActive="det.epochsgolems">Mods and Shit/Epochs - Golems</li>
+    <li IfModActive="dubwise.dubsbadhygiene">Mods and Shit/Dubs Bad Hygiene</li>
+    <li IfModActive="el.invmech">Mods and Shit/Mechanoid Invaders</li>
+    <li IfModActive="hlx.ultratechalteredcarbon">Mods and Shit/Altered Carbon 2 ReSleeved</li>
+    <li IfModActive="icc.fov.orbiter">Mods and Shit/Faction - Orbiters</li>
+    <li IfModActive="lts.i">Mods and Shit/Integrated Implants</li>
+    <li IfModActive="lts.i" IfModNotActive="mrkociak.yabembionicmodularity">Mods and Shit/Integrated Implants without Bionic modularity</li>
+    <li IfModActive="ludeon.rimworld.anomaly">Mods and Shit/Anomaly</li>
+    <li IfModActive="ludeon.rimworld.biotech">Mods and Shit/Biotech</li>
+    <li IfModActive="ludeon.rimworld.odyssey">Mods and Shit/Odyssey</li>
+    <li IfModActive="ludeon.rimworld.royalty">Mods and Shit/Royalty</li>
+    <li IfModActive="mersid.wce2updated.core">Mods and Shit/War Crimes Expanded 2 Core (Updated)</li>
+    <li IfModActive="mlie.dieforme">Mods and Shit/Die for me (Continued)</li>
+    <li IfModActive="mrkociak.yabembionicmodularity">Mods and Shit/Bionic modularity</li>
+    <li IfModActive="mrkociak.yabembionicmodularityanimals">Mods and Shit/Bionic modularity - animals</li>
+    <li IfModActive="redmattis.betterprerequisites">Mods and Shit/Big and Small - Framework</li>
+    <li IfModActive="sarg.alphaimplants">Mods and Shit/Alpha Implants</li>
+    <li IfModActive="sov.detvisorroyalty">Mods and Shit/Royalty eye bionic</li>
+    <li IfModActive="thcon.cellcycleacceleration">Mods and Shit/Cellcycle Acceleration</li>
+    <li IfModActive="ushanka.biologicalwarfare">Mods and Shit/Ushankas Biological Warfare</li>
+    <li IfModActive="ushanka.glittertechexpansion">Mods and Shit/Ushankas Glittertech Expansion</li>
+    <li IfModActive="ushanka.hackingexpansion">Mods and Shit/Ushankas Hacking Expansion</li>
+    <li IfModActive="vanillaexpanded.vgeneticse">Mods and Shit/Vanilla Genetics Expanded</li>
+    <li IfModActive="vanillaexpanded.vgeneticsemorelabstuff">Mods and Shit/Vanilla Genetics Expanded - More Lab Stuff</li>
+    <li IfModActive="vanillaracesexpanded.android">Mods and Shit/Vanilla Races Expanded - Android</li>
+    <li IfModActive="vat.epoeforked">Mods and Shit/Expanded Prosthetics and Organ Engineering - Forked</li>
+    <li IfModActive="vat.epoeforkedroyalty">Mods and Shit/EPOE-Forked Royalty DLC expansion</li>
+    <li IfModActive="zal.chimeracreation">Mods and Shit/Chimera Creation (Continued)</li>
+    <li IfModActive="zwei2stein.pyrinthbionics">Mods and Shit/Pyrinth Bionics</li>
+    <li IfModActiveAll="mrkociak.yabembionicmodularity,lts.i,ebsg.framework">Mods and Shit/Bionic modularity + Integrated Implants</li>
+    <li IfModActiveAll="det.epochsgolems,det.epochspyrinth">Mods and Shit/Research Availability/Original Projects/0</li>
+    <li IfModActiveAll="ebsg.framework,lts.i">Mods and Shit/Research Availability/Original Projects/1</li>
+    <li IfModActiveAll="ebsg.framework,lts.i,ludeon.rimworld.royalty">Mods and Shit/Research Availability/Original Projects/2</li>
+    <li IfModActiveAll="lts.i,ludeon.rimworld.anomaly">Mods and Shit/Research Availability/Original Projects/3</li>
+    <li IfModActiveAll="lts.i,ludeon.rimworld.biotech">Mods and Shit/Research Availability/Original Projects/4</li>
+    <li IfModActiveAll="lts.i,oskarpotocki.vanillafactionsexpanded.core">Mods and Shit/Research Availability/Original Projects/5</li>
+    <li>Mods and Shit/Research Availability/Missing Items</li>
+    <li IfModNotActive="ebsg.framework">Mods and Shit/Research Availability/Missing Requirements/ebsg.framework</li>
+    <li IfModNotActive="ludeon.rimworld.anomaly">Mods and Shit/Research Availability/Missing Requirements/ludeon.rimworld.anomaly</li>
+    <li IfModNotActive="ludeon.rimworld.biotech">Mods and Shit/Research Availability/Missing Requirements/ludeon.rimworld.biotech</li>
+    <li IfModNotActive="ludeon.rimworld.ideology">Mods and Shit/Research Availability/Missing Requirements/ludeon.rimworld.ideology</li>
+    <li IfModNotActive="ludeon.rimworld.odyssey">Mods and Shit/Research Availability/Missing Requirements/ludeon.rimworld.odyssey</li>
+    <li IfModNotActive="ludeon.rimworld.royalty">Mods and Shit/Research Availability/Missing Requirements/ludeon.rimworld.royalty</li>
+    <li IfModNotActive="oskarpotocki.vanillafactionsexpanded.core">Mods and Shit/Research Availability/Missing Requirements/oskarpotocki.vanillafactionsexpanded.core</li>
+    <li IfModNotActive="oskarpotocki.vfe.empire">Mods and Shit/Research Availability/Missing Requirements/oskarpotocki.vfe.empire</li>
+    <li IfModNotActive="oskarpotocki.vfe.pirates">Mods and Shit/Research Availability/Missing Requirements/oskarpotocki.vfe.pirates</li>
+    <li IfModNotActive="vanillaexpanded.gravship">Mods and Shit/Research Availability/Missing Requirements/vanillaexpanded.gravship</li>
+    <li IfModNotActive="vanillaexpanded.vwec">Mods and Shit/Research Availability/Missing Requirements/vanillaexpanded.vwec</li>
+    <li IfModNotActive="vanillaexpanded.vwel">Mods and Shit/Research Availability/Missing Requirements/vanillaexpanded.vwel</li>
+    <li IfModNotActive="vanillaexpanded.vwenl">Mods and Shit/Research Availability/Missing Requirements/vanillaexpanded.vwenl</li>
+    <li IfModNotActive="vanillaquestsexpanded.cryptoforge">Mods and Shit/Research Availability/Missing Requirements/vanillaquestsexpanded.cryptoforge</li>
+    <li>Mods and Shit/Research Availability/Resolve Prerequisites</li>
+  </v1.6>
+</loadFolders>

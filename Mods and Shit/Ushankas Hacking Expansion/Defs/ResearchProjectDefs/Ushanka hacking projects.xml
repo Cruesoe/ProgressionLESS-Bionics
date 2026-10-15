@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_AdvancedCyberlink</defName>
+    <label>advanced cyberlink</label>
+    <description>Manufacture an advanced version of the cyberlink, with updated software and additional memory slots for installing complex implants. It allows hackers to establish more stable, coherent connections to cyberspace. It can be installed without a basic cyberlink; if one is present, it will replace it.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>USH_AdvancedCybertech</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_AdvancedJammerKit</defName>
+    <label>jammer kit (high)</label>
+    <description>Manufacture an implant which increases hacker's stealth.
+
+This implant can be installed up to 3 times to increase its effect and requires an advanced cyberlink to function.
+
+It can be self-installed without surgery.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Ferny_Bionics_USH_JammerKit</li>
+      <li>USH_AdvancedCybertech</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_AdvancedOptimizationModule</defName>
+    <label>optimization module (high)</label>
+    <description>Manufacture an implant which increases hacker's speed.
+
+This implant can be installed up to 3 times to increase its effect and requires an advanced cyberlink to function.
+
+It can be self-installed without surgery.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Ferny_Bionics_USH_OptimizationModule</li>
+      <li>USH_AdvancedCybertech</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_AdvancedRemoteAccessPort</defName>
+    <label>remote access port (high)</label>
+    <description>Manufacture an implant which increases a hacker's remote hacking distance.
+
+This implant can be installed up to 2 times to increase its effect and requires an advanced cyberlink to function.
+
+It can be self-installed without surgery.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Ferny_Bionics_USH_RemoteAccessPort</li>
+      <li>USH_AdvancedCybertech</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_ExecData_Disarm</defName>
+    <label>exec data (disarm)</label>
+    <description>Manufacture a data disk containing a program that temporarily disables a targeted weapon and forces its holder to drop it. Connect it to an implanted data case and train it in cyberspace before use.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>USH_ExecData</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_ExecData_Discharge</defName>
+    <label>exec data (discharge)</label>
+    <description>Manufacture a data disk containing a program that forces a device to release its internal power supply in an electromagnetic explosion. Connect it to an implanted data case and train it in cyberspace before use.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>USH_ExecData</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_ExecData_ForkBomb</defName>
+    <label>exec data (fork bomb)</label>
+    <description>Manufacture a data disk containing a program that overwhelms targeted software with recursively multiplying commands that consume its processing power. Connect it to an implanted data case and train it in cyberspace before use.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>USH_ExecData</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_ExecData_HijackSubcore</defName>
+    <label>exec data (hijack subcore)</label>
+    <description>Manufacture a data disk containing a program that reprograms a mechanoid to recognize the hacker as an ally. Connect it to an implanted data case and train it in cyberspace before use. Prolonged mental focus causes necrosis around the neural port, which can subsequently be healed.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>USH_ExecData</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_ExecData_ShortCircuit</defName>
+    <label>exec data (short circuit)</label>
+    <description>Manufacture a data disk containing a program that damages a device’s internal components with a small incendiary explosion. Connect it to an implanted data case and train it in cyberspace before use.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>USH_ExecData</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_ExecData_VirtualICEBreaker</defName>
+    <label>exec data (virtual black ICE breaker)</label>
+    <description>Manufacture a data disk containing a program that disables a targeted device’s lethal security measures. Connect it to an implanted data case and train it in cyberspace before use.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>USH_ExecData</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_ExecData_Zapcode</defName>
+    <label>exec data (zapcode)</label>
+    <description>Manufacture a data disk containing a program that bypasses early security layers, adding 35% hacking progress to a device that is less than 25% hacked. Connect it to an implanted data case and train it in cyberspace before use.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>USH_ExecData</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_JammerKit</defName>
+    <label>jammer kit (standard)</label>
+    <description>Manufacture an implant which increases hacker's stealth.
+
+This implant can be installed up to 3 times to increase its effect. To go higher, a more advanced jammer must be used.
+
+It can be self-installed without surgery.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>USH_BasicCybertech</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_OptimizationModule</defName>
+    <label>optimization module (standard)</label>
+    <description>Manufacture an implant which increases hacker's speed.
+
+This implant can be installed up to 3 times to increase its effect. To go higher, a more advanced module must be used.
+
+It can be self-installed without surgery.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>USH_BasicCybertech</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_USH_RemoteAccessPort</defName>
+    <label>remote access port (standard)</label>
+    <description>Manufacture an implant which increases a hacker's remote hacking distance.
+
+This implant can be installed up to 1 time to increase its effect. To go higher, a more advanced port must be used.
+
+It can be self-installed without surgery.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>USH_BasicCybertech</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

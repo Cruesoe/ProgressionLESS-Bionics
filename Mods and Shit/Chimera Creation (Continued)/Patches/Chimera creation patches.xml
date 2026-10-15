@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>AnAl_ChimeraCreation</defName>
+            <label>adrenal heart (chimera)</label>
+            <description>Manufacture a special bioferrite prosthetic that allows a chimera to further saturate its bloodstream with stress hormones and liquid energy during its rage speed. The chimera will be able to attack faster and move faster compared to normal rage speed. The prosthetic somewhat increases the chimera's metabolism, causing it to eat more.
+
+This prosthetic is too painful to be installed on normal animals. It's still painful for chimeras when not in rage speed, but they can handle it due to their body being used to large quantities of stress hormones and liquid energy.</description>
+            <baseCost>0</baseCost>
+            <techLevel>Industrial</techLevel>
+            <knowledgeCategory>Advanced</knowledgeCategory>
+            <knowledgeCost>30</knowledgeCost>
+            <tab>Anomaly</tab>
+            <prerequisites Inherit="False">
+              <li MayRequire="ludeon.rimworld.anomaly">AdvancedPsychicRituals</li>
+              <li MayRequire="vanillaexpanded.vgeneticse">GR_HybridImplantology</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/label</xpath>
+        <value>
+          <label>adrenal heart (chimera)</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]</xpath>
+        <value>
+          <label>adrenal heart (chimera)</label>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/description</xpath>
+        <value>
+          <description>Manufacture a special bioferrite prosthetic that allows a chimera to further saturate its bloodstream with stress hormones and liquid energy during its rage speed. The chimera will be able to attack faster and move faster compared to normal rage speed. The prosthetic somewhat increases the chimera's metabolism, causing it to eat more.
+
+This prosthetic is too painful to be installed on normal animals. It's still painful for chimeras when not in rage speed, but they can handle it due to their body being used to large quantities of stress hormones and liquid energy.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]</xpath>
+        <value>
+          <description>Manufacture a special bioferrite prosthetic that allows a chimera to further saturate its bloodstream with stress hormones and liquid energy during its rage speed. The chimera will be able to attack faster and move faster compared to normal rage speed. The prosthetic somewhat increases the chimera's metabolism, causing it to eat more.
+
+This prosthetic is too painful to be installed on normal animals. It's still painful for chimeras when not in rage speed, but they can handle it due to their body being used to large quantities of stress hormones and liquid energy.</description>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/baseCost</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]</xpath>
+        <value>
+          <baseCost>0</baseCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">AdvancedPsychicRituals</li>
+            <li MayRequire="vanillaexpanded.vgeneticse">GR_HybridImplantology</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li MayRequire="ludeon.rimworld.anomaly">AdvancedPsychicRituals</li>
+            <li MayRequire="vanillaexpanded.vgeneticse">GR_HybridImplantology</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/knowledgeCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/knowledgeCategory</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]</xpath>
+        <value>
+          <knowledgeCategory>Advanced</knowledgeCategory>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/knowledgeCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/knowledgeCost</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]</xpath>
+        <value>
+          <knowledgeCost>30</knowledgeCost>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/tab</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]/tab</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="AnAl_ChimeraCreation"]</xpath>
+        <value>
+          <tab>Anomaly</tab>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]</xpath>
+        <value>
+          <recipeMaker />
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">AnAl_ChimeraCreation</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">AnAl_ChimeraCreation</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/*[self::ThingDef or self::PyrinthBionics.PyrinthItemDef][defName="AnAl_AdrenalHeartChimera"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_AnAl_AdrenalHeartChimera"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_AnAl_AdrenalHeartChimera"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">AnAl_ChimeraCreation</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_AnAl_AdrenalHeartChimera"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_AnAl_AdrenalHeartChimera"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">AnAl_ChimeraCreation</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_AnAl_AdrenalHeartChimera"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_AnAl_AdrenalHeartChimera"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_AnAl_AdrenalHeartChimera"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_AnAl_AdrenalHeartChimera"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+</Patch>

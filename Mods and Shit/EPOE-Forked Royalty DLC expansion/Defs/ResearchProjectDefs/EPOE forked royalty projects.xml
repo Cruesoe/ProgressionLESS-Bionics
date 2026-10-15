@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPIA_CircadianRefresher</defName>
+    <label>circadian refresher</label>
+    <description>Manufacture an artificial gland. Produces chemicals and nanomachines that clear toxin buildup from the brain when the user is asleep and improving the quality of sleep.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">CircadianInfluence</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPOE_AdvancedDrillArm</defName>
+    <label>advanced drill arm</label>
+    <description>Manufacture a upgraded mechanical arm replacement for speeding up mining. It has a built-in snake drill, which allows the miner to rapidly find and exploit weak lines in the rock. It also has a general-purpose manipulator. Capable of packing itself into a manageable compact form when not drilling, no longer as ungainly and slowing down movement like its original model.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>EPOE_AdvancedSpecializedLimbs</li>
+      <li MayRequire="ludeon.rimworld.royalty">Ferny_Bionics_DrillArm</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPOE_AdvancedElbowBlade</defName>
+    <label>advanced bionic elbow blade</label>
+    <description>Manufacture a replaced razor-sharp blade, originally from a deadly Scyther mechanoid, that extends at will from a hidden opening at the end of the ulna. Appearing without warning, it can be used for devastating slice attacks.
+
+The more efficient Scyther blade have replaced the original blade in the previous bionic elbow blade model, making it more deadlier in melee combat.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="vat.epoeforked">Ferny_Bionics_EPIA_ScytherBlade</li>
+      <li>Ferny_Bionics_EPOE_ScytherElbowBlade</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPOE_AdvancedHandTalon</defName>
+    <label>advanced bionic hand talon</label>
+    <description>Manufacture a modified razor-sharp talon which extends from a hidden opening between the middle and ring fingers. The talon is longer than the palm, but it becomes flexible upon retracting, allowing the user to curl it up and conceal it inside the palm of the bionic hand.
+
+The material of the hand talon is replaced by a special flexible piece of alloy that is found as a component of the Scyther blade. The increased flexibility, a newly added micro-computer to further support the bionic hand movements in close combat, have made this weaponized bionic into a deadly accurate melee combat support weapon.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>EPOE_AdvancedCompactWeaponry</li>
+      <li MayRequire="vat.epoeforked">Ferny_Bionics_EPIA_ScytherBlade</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPOE_AdvancedKneeSpike</defName>
+    <label>advanced bionic knee spike</label>
+    <description>Manufacture a modified spike that extends at will from a hidden opening on the front of the knee. Appearing without warning, it can be used for devastating stabbing attacks.
+
+By reshaping the deadlier Scyther blade into a spike, the penetration power of this bionic weapon is increased, dealing more damage.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="vat.epoeforked">Ferny_Bionics_EPIA_ScytherBlade</li>
+      <li>Ferny_Bionics_EPOE_ScytherKneeSpike</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPOE_DetoxifierEnhancer</defName>
+    <label>detoxifier enhancer</label>
+    <description>Manufacture an analysis computer inspects the bloodstream, classifies harmful toxic substances, and rapidly prompts the body’s natural immune system to respond to them faster than it could alone. This reduces vulnerability to toxic effects.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">MolecularAnalysis</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPOE_ImmunoenhancerSyntheticKidney</defName>
+    <label>synthetic immunoenhanced kidney</label>
+    <description>Manufacture an enhanced kidney augmented with synthetic fibres to decrease rejection rate. Upgraded further by integrating the immunoenhancer implant into it.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>EPOE_SyntheticOrgansIntegration</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPOE_ScytherElbowBlade</defName>
+    <label>bionic elbow blade</label>
+    <description>Manufacture a razor-sharp blade that extends at will from a hidden opening at the end of the ulna. Appearing without warning, it can be used for devastating slice attacks. Appearing without warning, it can be used for devastating slice attacks.
+
+This weapon system have been integrated into a bionic arm, at a small cost to the efficiency of the original bionic arm. No longer needing to be careful in not injuring the user's biological arm, the elbow blade are now sharper than ever.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>EPOE_AdvancedCompactWeaponry</li>
+      <li MayRequire="ludeon.rimworld.royalty">Ferny_Bionics_ElbowBlade</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_EPOE_ScytherKneeSpike</defName>
+    <label>bionic knee spike</label>
+    <description>Manufacture a spike that extends at will from a hidden opening on the front of the bionic knee. Appearing without warning, it can be used for devastating stabbing attacks.
+
+This weapon system have been integrated into a bionic leg, at a small cost to the efficiency of the original bionic leg.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>EPOE_AdvancedCompactWeaponry</li>
+      <li>Ferny_Bionics_BionicLeg</li>
+      <li MayRequire="ludeon.rimworld.royalty">Ferny_Bionics_KneeSpike</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+</Defs>

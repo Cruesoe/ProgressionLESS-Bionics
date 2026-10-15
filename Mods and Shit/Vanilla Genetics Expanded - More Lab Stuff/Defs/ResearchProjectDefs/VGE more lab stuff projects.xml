@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_GR_AnimalControlImplant</defName>
+    <label>animal Implant: animal mind controller</label>
+    <description>Manufacture an animal mind controller implant. This implant will allow this creature to be drafted and controlled by the player.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="vanillaexpanded.vgeneticse">GR_HybridImplantology</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

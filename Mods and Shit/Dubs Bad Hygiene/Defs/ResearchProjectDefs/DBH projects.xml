@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_HygieneEnhancer</defName>
+    <label>hygiene enhancer</label>
+    <description>Manufacture an implant that releases mechanites to break down dead skin and other debris on the skin and hair, dispersing the residue harmlessly into the air.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>HygieneBionics</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

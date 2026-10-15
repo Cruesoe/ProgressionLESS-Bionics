@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_CellcycleAccelerator</defName>
+    <label>cellcycle accelerator</label>
+    <description>Manufacture an implant that accelerates cellular renewal and regeneration. Faster telomere shortening also accelerates aging, and malignant tumors can occur as a rare side effect.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.royalty">HealingFactors</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+</Defs>
