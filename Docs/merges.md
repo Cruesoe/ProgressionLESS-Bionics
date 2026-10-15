@@ -1,10 +1,10 @@
-# ProgressionLESS: Bionics merge proposal (draft 261015)
+# ProgressionLESS: Bionics merges (applied 261015)
 
-Plan file: `Projects\Tools\RimWorld\ProgressionLESS\Plans\Bionics.ps1`. The table below is generated from it.
+Plan file: `Projects\Tools\RimWorld\ProgressionLESS\Plans\Bionics.ps1`. The table below is generated from it; rows 87 to 93 are listed under the optional folds.
 
 ## Result
 
-| | Original | This proposal | With the optional folds |
+| | Original | Without the optional folds | Applied (all rows) |
 |---|---|---|---|
 | Research projects ferny adds | 562 | 86 | 79 |
 | All projects the mod defines or rethemes | 644 | 164 | 157 |
@@ -42,13 +42,17 @@ Medieval Overhaul: the original has no Medieval Overhaul folder and none of thes
 
 Kept on their own: Animal prosthetics and Animal bionics (gates for whole rows), power arm, crypto claw module, arm incinerator module (Anomaly), repair probe (Archotech behind Ultra mechtech), the animal mind controller (VE Genetics - More Lab Stuff), and the seven Integrated Implants modules above.
 
-## Consolidations to the code (need your OK)
+## How it is implemented (261015)
 
-1. **New merge script for this mod.** `Merge-Research.ps1` can't apply this plan: 38 members, including every fold, are projects ferny creates inside patches, and every project is also named about three times in the generated Research Availability layer (about 1,500 references). I'd write `Merge-GeneratedResearch.ps1` (or a Bionics mode in Merge-Research). It would rewrite member references to the surviving project, put each member's extra prerequisites on its item's recipe, and drop the member projects.
-2. **Rebuild Research Availability from the plan.** Ferny removes a project whenever its one item is missing. After merging, that would delete a whole group when any one item is missing, so the layer has to be regenerated per group: remove a merged project only when none of its items exist, and rewire prerequisites per group. This roughly halves the layer's 57,000 lines.
-3. **Move ferny's patch-created projects into Defs** with `MayRequire`, as Hives did for Alpha Animals, wherever the project is ferny's own (golem modules, mechanitor implants, shoulder rocket pod). Projects that belong to other mods stay patched.
-4. **Leave ferny's per-item recipe patches as they are.** Each item has about ten conditional operations covering every recipe shape. They are verbose but generated and correct, and keeping them makes upstream ports a straight text diff.
-5. **Layout.** No project in the original sets a position: all 644 sit at the default (1, 1) and rely on the game spreading them out. The merged tree (about 160 projects) needs real positions, chosen with `Get-TabSpace.ps1` as for the other forks.
+All 93 rows, including the optional folds, were applied. Two of the proposed code changes turned out to be unnecessary once the merge ran as a patch layer:
+
+1. **`Merge-GeneratedResearch.ps1`** (Projects tools) reads the plan and writes `Common/Merged`: the 65 new projects in `Defs/ResearchProjectDefs/MergedResearch.xml` and the merge itself in `Patches/MergedResearch.xml`. `Common/Merged` is listed first in LoadFolders, so it is patched after every other folder. It removes a merged project only when none of its members survived ferny's own per-item checks, adds each member's other prerequisites to the recipes that name it, points every reference at the merged project, and removes the members. A fold runs only when its existing project exists. Each new project carries `MayRequireAnyOf` for its members' mods.
+2. **Research Availability is left as ferny wrote it.** It runs first and removes per-item projects as before. The merge layer then turns that into per-group behavior, so the 57,000 lines need no rewrite and upstream changes still diff cleanly.
+3. **No defs needed moving.** Every patch-created project ferny owns is now a member that the merge removes.
+4. **Ferny's per-item recipe patches are unchanged.**
+5. **Layout.** `Tools/New-Layout.ps1` writes `Common/Merged/Patches/Layout.xml`. It places 74 projects on a new Bionics tab, in 11 columns in era order, at most 12 rows per column, Y 0 to 7.7, with prerequisites to the left and no overlaps. It puts the 5 Anomaly projects on the Anomaly tab at X 7.5 to 8.5, right of vanilla's last column.
+
+**Checks.** `Tools/Test-All.ps1` (run by every deploy) applies the merge patch offline to every research project plus synthetic items and recipes in three cases: every mod present, some groups losing all or some members, and a fold target missing. All references must resolve, with no duplicates, no member left beside its merged project, and no group removed while a member exists. It passes. `Test-ResearchLinks.ps1` reports 0 links that can dangle and 0 loops.
 
 ## Merge table
 
