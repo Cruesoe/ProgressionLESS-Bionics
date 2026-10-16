@@ -10,7 +10,7 @@
 [/list]
 
 [h2]Why "LESS"?[/h2]
-Progression: Bionics adds up to [b]562 research projects[/b] depending on your mods. This fork groups them into [b]at most 79[/b], on their own Bionics research tab:
+Progression: Bionics adds up to [b]562 research projects[/b] depending on your mods. This fork groups them into [b]at most 79[/b], most of them on their own Bionics research tab, with the Anomaly projects on the Anomaly tab:
 [list]
 [*][b]Medieval:[/b] Medieval prosthetics, Golem modules
 [*][b]Industrial:[/b] Prosthetic parts, Surrogate organs, Specialized limbs, Compact weapons, Brain wiring implants, Animal prosthetics, Animal prosthetic parts, Animal combat implants, Cybertech kits, Advanced cybertech kits
