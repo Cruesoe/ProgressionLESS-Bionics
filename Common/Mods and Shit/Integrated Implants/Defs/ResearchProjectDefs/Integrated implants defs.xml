@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ResearchProjectDef>
+  <ResearchProjectDef MayRequire="ebsg.framework">
     <defName>Ferny_Bionics_LTS_ModuleArm_CryptoClaw</defName>
     <label>crypto claw module</label>
     <description>Manufacture a bionic module that allows the user to extend retractable cryogenic-coated claws. On impact, they inflicts deep frostburns, flash-freezing flesh and lacing wounds with cryptofreeze, slowing movement and dealing substantial hypothermic damage over time.
@@ -16,7 +16,7 @@ Modules can be self-installed into modified bionic or archotech parts, but can o
     <researchViewX>7.00</researchViewX>
     <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef>
+  <ResearchProjectDef MayRequire="ebsg.framework">
     <defName>Ferny_Bionics_LTS_ModuleArm_Incinerator</defName>
     <label>arm incinerator module</label>
     <description>Manufacture a bionic module that allows the user to extend a compact flamethrower from their forearm. An internal pump slowly but autonomously refills the weapon.

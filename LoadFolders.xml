@@ -9,7 +9,7 @@
     <li IfModActive="hlx.ultratechalteredcarbon">Common/Mods and Shit/Altered Carbon 2 ReSleeved</li>
     <li IfModActive="icc.fov.orbiter">Common/Mods and Shit/Faction - Orbiters</li>
     <li IfModActive="lts.i">Common/Mods and Shit/Integrated Implants</li>
-    <li IfModActive="lts.i" IfModNotActive="mrkociak.yabembionicmodularity">Common/Mods and Shit/Integrated Implants without Bionic modularity</li>
+    <li IfModActiveAll="lts.i,ebsg.framework" IfModNotActive="mrkociak.yabembionicmodularity">Common/Mods and Shit/Integrated Implants without Bionic modularity</li>
     <li IfModActive="ludeon.rimworld.anomaly">Common/Mods and Shit/Anomaly</li>
     <li IfModActive="ludeon.rimworld.biotech">Common/Mods and Shit/Biotech</li>
     <li IfModActive="ludeon.rimworld.odyssey">Common/Mods and Shit/Odyssey</li>
@@ -66,7 +66,7 @@
     <li IfModActive="hlx.ultratechalteredcarbon">Common/Mods and Shit/Altered Carbon 2 ReSleeved</li>
     <li IfModActive="icc.fov.orbiter">Common/Mods and Shit/Faction - Orbiters</li>
     <li IfModActive="lts.i">Common/Mods and Shit/Integrated Implants</li>
-    <li IfModActive="lts.i" IfModNotActive="mrkociak.yabembionicmodularity">Common/Mods and Shit/Integrated Implants without Bionic modularity</li>
+    <li IfModActiveAll="lts.i,ebsg.framework" IfModNotActive="mrkociak.yabembionicmodularity">Common/Mods and Shit/Integrated Implants without Bionic modularity</li>
     <li IfModActive="ludeon.rimworld.anomaly">Common/Mods and Shit/Anomaly</li>
     <li IfModActive="ludeon.rimworld.biotech">Common/Mods and Shit/Biotech</li>
     <li IfModActive="ludeon.rimworld.odyssey">Common/Mods and Shit/Odyssey</li>
