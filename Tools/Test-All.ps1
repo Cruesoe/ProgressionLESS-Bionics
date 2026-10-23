@@ -3,7 +3,8 @@
 Offline checks for the merged research. Run by Deploy-Mod.ps1; exits non-zero on failure.
 
 .DESCRIPTION
-- every XML file under Common parses;
+- every XML file under Common parses and holds something;
+- no LoadFolders.xml condition is empty, and every listed folder holds files;
 - every Ferny_ project named anywhere (values, lists, xpaths) is defined somewhere in the repo;
 - no prerequisite or research list names a project twice;
 - every Ferny_ project has a position; on the Bionics tab no two overlap (dx < 0.95 and dy < 0.6) and each sits right
@@ -16,7 +17,16 @@ $root = Split-Path $PSScriptRoot
 $fail = New-Object Collections.Generic.List[string]
 $docs = @{}
 foreach ($f in Get-ChildItem (Join-Path $root 'Common') -Recurse -Filter *.xml) {
-  try { $docs[$f.FullName] = [xml][IO.File]::ReadAllText($f.FullName) } catch { $fail.Add("does not parse: $($f.FullName)") }
+  try { $docs[$f.FullName] = [xml][IO.File]::ReadAllText($f.FullName) } catch { $fail.Add("does not parse: $($f.FullName)"); continue }
+  if (-not $docs[$f.FullName].DocumentElement.SelectSingleNode('*')) { $fail.Add("empty file: $($f.FullName.Substring($root.Length + 1))") }
+}
+
+# Load folders: an empty condition never matches (it requires a mod with an empty package ID), and every listed folder has files
+$lf = [xml][IO.File]::ReadAllText((Join-Path $root 'LoadFolders.xml'))
+foreach ($li in $lf.SelectNodes('/loadFolders/*/li')) {
+  $p = $li.InnerText.Trim()
+  foreach ($a in $li.Attributes) { if (-not $a.Value.Trim()) { $fail.Add("LoadFolders: empty $($a.Name) on $p") } }
+  if ($p -ne '/' -and -not (Get-ChildItem -LiteralPath (Join-Path $root ($p -replace '/', '\')) -Recurse -File -ErrorAction SilentlyContinue | Select-Object -First 1)) { $fail.Add("LoadFolders: $p has no files") }
 }
 
 # Definitions and references

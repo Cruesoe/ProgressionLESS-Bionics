@@ -9,12 +9,9 @@
     <li IfModActiveAll="lts.i,ludeon.rimworld.anomaly">Common/Mods/Research Availability/Original Projects/3</li>
     <li IfModActiveAll="ebsg.framework,lts.i,ludeon.rimworld.royalty">Common/Mods/Research Availability/Original Projects/2</li>
     <li IfModActiveAll="ebsg.framework,lts.i">Common/Mods/Research Availability/Original Projects/1</li>
-    <li IfModActiveAll="det.epochsgolems,det.epochspyrinth">Common/Mods/Research Availability/Original Projects/0</li>
     <li IfModActiveAll="mrkociak.yabembionicmodularity,lts.i,ebsg.framework">Common/Mods/Bionic modularity + Integrated Implants</li>
     <li IfModActive="zwei2stein.pyrinthbionics" IfModActiveAll="ludeon.rimworld.royalty">Common/Mods/Conditional/Pyrinth Bionics/Crafting and research 002</li>
     <li IfModActive="zwei2stein.pyrinthbionics">Common/Mods/Conditional/Pyrinth Bionics/Crafting and research 001</li>
-    <li IfModActive="zwei2stein.pyrinthbionics" IfModActiveAll="ludeon.rimworld.royalty">Common/Mods/Conditional/Pyrinth Bionics/Requires ludeon.rimworld.royalty</li>
-    <li IfModActive="zwei2stein.pyrinthbionics">Common/Mods/Pyrinth Bionics</li>
     <li IfModActive="zal.chimeracreation">Common/Mods/Chimera Creation (Continued)</li>
     <li IfModActive="vat.epoeforkedroyalty">Common/Mods/EPOE-Forked Royalty DLC expansion</li>
     <li IfModActive="vat.epoeforked">Common/Mods/Expanded Prosthetics and Organ Engineering - Forked</li>
@@ -36,9 +33,6 @@
     <li IfModActive="ludeon.rimworld.odyssey" IfModActiveAll="ludeon.rimworld.royalty">Common/Mods/Conditional/Odyssey/Crafting and research 003</li>
     <li IfModActive="ludeon.rimworld.odyssey">Common/Mods/Conditional/Odyssey/Crafting and research 002</li>
     <li IfModActive="ludeon.rimworld.odyssey" IfModActiveAll="ludeon.rimworld.anomaly">Common/Mods/Conditional/Odyssey/Crafting and research 001</li>
-    <li IfModActive="ludeon.rimworld.odyssey" IfModActiveAll="ludeon.rimworld.royalty">Common/Mods/Conditional/Odyssey/Requires ludeon.rimworld.royalty</li>
-    <li IfModActive="ludeon.rimworld.odyssey" IfModActiveAll="ludeon.rimworld.anomaly">Common/Mods/Conditional/Odyssey/Requires ludeon.rimworld.anomaly</li>
-    <li IfModActive="ludeon.rimworld.odyssey">Common/Mods/Odyssey</li>
     <li IfModActive="ludeon.rimworld.biotech">Common/Mods/Biotech</li>
     <li IfModActive="ludeon.rimworld.anomaly">Common/Mods/Anomaly</li>
     <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,ludeon.rimworld.anomaly" IfModNotActive="mrkociak.yabembionicmodularity">Common/Mods/Conditional/Integrated Implants without Bionic modularity/Crafting and research 004</li>
@@ -111,30 +105,8 @@
     <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.anomaly">Common/Mods/Conditional/Integrated Implants/Crafting and research 003</li>
     <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.ideology">Common/Mods/Conditional/Integrated Implants/Crafting and research 002</li>
     <li IfModActive="lts.i">Common/Mods/Conditional/Integrated Implants/Crafting and research 001</li>
-    <li IfModActive="lts.i" IfModActiveAll="vanillaquestsexpanded.cryptoforge">Common/Mods/Conditional/Integrated Implants/Requires vanillaquestsexpanded.cryptoforge</li>
-    <li IfModActive="lts.i" IfModActiveAll="vanillaexpanded.gravship">Common/Mods/Conditional/Integrated Implants/Requires vanillaexpanded.gravship</li>
-    <li IfModActive="lts.i" IfModActiveAll="oskarpotocki.vanillafactionsexpanded.core">Common/Mods/Conditional/Integrated Implants/Requires oskarpotocki.vanillafactionsexpanded.core</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.royalty">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.royalty</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.odyssey,oskarpotocki.vanillafactionsexpanded.core">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.odyssey + oskarpotocki.vanillafactionsexpanded.core</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.odyssey">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.odyssey</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.ideology">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.ideology</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.biotech,ludeon.rimworld.odyssey">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.biotech + ludeon.rimworld.odyssey</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.biotech">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.biotech</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.anomaly,ludeon.rimworld.royalty">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.anomaly + ludeon.rimworld.royalty</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.anomaly">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.anomaly</li>
     <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,vanillaquestsexpanded.cryptoforge">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + vanillaquestsexpanded.cryptoforge</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,vanillaexpanded.vwenl">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + vanillaexpanded.vwenl</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,vanillaexpanded.vwel">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + vanillaexpanded.vwel</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,vanillaexpanded.vwec">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + vanillaexpanded.vwec</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,oskarpotocki.vfe.empire">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + oskarpotocki.vfe.empire</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,oskarpotocki.vanillafactionsexpanded.core">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + oskarpotocki.vanillafactionsexpanded.core</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,ludeon.rimworld.royalty">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + ludeon.rimworld.royalty</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,ludeon.rimworld.odyssey,oskarpotocki.vfe.pirates">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + ludeon.rimworld.odyssey + oskarpotocki.vfe.pirates</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,ludeon.rimworld.odyssey">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + ludeon.rimworld.odyssey</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,ludeon.rimworld.biotech">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + ludeon.rimworld.biotech</li>
     <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,ludeon.rimworld.anomaly">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + ludeon.rimworld.anomaly</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework</li>
-    <li IfModActive="lts.i">Common/Mods/Integrated Implants</li>
     <li IfModActive="icc.fov.orbiter">Common/Mods/Faction - Orbiters</li>
     <li IfModActive="hlx.ultratechalteredcarbon">Common/Mods/Altered Carbon 2 ReSleeved</li>
     <li IfModActive="el.invmech">Common/Mods/Mechanoid Invaders</li>
@@ -142,7 +114,6 @@
     <li IfModActive="det.epochsgolems">Common/Mods/Conditional/Epochs - Golems/Crafting and research 003</li>
     <li IfModActive="det.epochsgolems" IfModActiveAll="det.epochspyrinth">Common/Mods/Conditional/Epochs - Golems/Crafting and research 002</li>
     <li IfModActive="det.epochsgolems">Common/Mods/Conditional/Epochs - Golems/Crafting and research 001</li>
-    <li IfModActive="det.epochsgolems">Common/Mods/Epochs - Golems</li>
     <li IfModActive="7f.securityclearance">Common/Mods/Security Clearance</li>
     <li>Common</li>
   </v1.6>
@@ -155,12 +126,9 @@
     <li IfModActiveAll="lts.i,ludeon.rimworld.anomaly">Common/Mods/Research Availability/Original Projects/3</li>
     <li IfModActiveAll="ebsg.framework,lts.i,ludeon.rimworld.royalty">Common/Mods/Research Availability/Original Projects/2</li>
     <li IfModActiveAll="ebsg.framework,lts.i">Common/Mods/Research Availability/Original Projects/1</li>
-    <li IfModActiveAll="det.epochsgolems,det.epochspyrinth">Common/Mods/Research Availability/Original Projects/0</li>
     <li IfModActiveAll="mrkociak.yabembionicmodularity,lts.i,ebsg.framework">Common/Mods/Bionic modularity + Integrated Implants</li>
     <li IfModActive="zwei2stein.pyrinthbionics" IfModActiveAll="ludeon.rimworld.royalty">Common/Mods/Conditional/Pyrinth Bionics/Crafting and research 002</li>
     <li IfModActive="zwei2stein.pyrinthbionics">Common/Mods/Conditional/Pyrinth Bionics/Crafting and research 001</li>
-    <li IfModActive="zwei2stein.pyrinthbionics" IfModActiveAll="ludeon.rimworld.royalty">Common/Mods/Conditional/Pyrinth Bionics/Requires ludeon.rimworld.royalty</li>
-    <li IfModActive="zwei2stein.pyrinthbionics">Common/Mods/Pyrinth Bionics</li>
     <li IfModActive="zal.chimeracreation">Common/Mods/Chimera Creation (Continued)</li>
     <li IfModActive="vat.epoeforkedroyalty">Common/Mods/EPOE-Forked Royalty DLC expansion</li>
     <li IfModActive="vat.epoeforked">Common/Mods/Expanded Prosthetics and Organ Engineering - Forked</li>
@@ -182,9 +150,6 @@
     <li IfModActive="ludeon.rimworld.odyssey" IfModActiveAll="ludeon.rimworld.royalty">Common/Mods/Conditional/Odyssey/Crafting and research 003</li>
     <li IfModActive="ludeon.rimworld.odyssey">Common/Mods/Conditional/Odyssey/Crafting and research 002</li>
     <li IfModActive="ludeon.rimworld.odyssey" IfModActiveAll="ludeon.rimworld.anomaly">Common/Mods/Conditional/Odyssey/Crafting and research 001</li>
-    <li IfModActive="ludeon.rimworld.odyssey" IfModActiveAll="ludeon.rimworld.royalty">Common/Mods/Conditional/Odyssey/Requires ludeon.rimworld.royalty</li>
-    <li IfModActive="ludeon.rimworld.odyssey" IfModActiveAll="ludeon.rimworld.anomaly">Common/Mods/Conditional/Odyssey/Requires ludeon.rimworld.anomaly</li>
-    <li IfModActive="ludeon.rimworld.odyssey">Common/Mods/Odyssey</li>
     <li IfModActive="ludeon.rimworld.biotech">Common/Mods/Biotech</li>
     <li IfModActive="ludeon.rimworld.anomaly">Common/Mods/Anomaly</li>
     <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,ludeon.rimworld.anomaly" IfModNotActive="mrkociak.yabembionicmodularity">Common/Mods/Conditional/Integrated Implants without Bionic modularity/Crafting and research 004</li>
@@ -257,30 +222,8 @@
     <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.anomaly">Common/Mods/Conditional/Integrated Implants/Crafting and research 003</li>
     <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.ideology">Common/Mods/Conditional/Integrated Implants/Crafting and research 002</li>
     <li IfModActive="lts.i">Common/Mods/Conditional/Integrated Implants/Crafting and research 001</li>
-    <li IfModActive="lts.i" IfModActiveAll="vanillaquestsexpanded.cryptoforge">Common/Mods/Conditional/Integrated Implants/Requires vanillaquestsexpanded.cryptoforge</li>
-    <li IfModActive="lts.i" IfModActiveAll="vanillaexpanded.gravship">Common/Mods/Conditional/Integrated Implants/Requires vanillaexpanded.gravship</li>
-    <li IfModActive="lts.i" IfModActiveAll="oskarpotocki.vanillafactionsexpanded.core">Common/Mods/Conditional/Integrated Implants/Requires oskarpotocki.vanillafactionsexpanded.core</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.royalty">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.royalty</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.odyssey,oskarpotocki.vanillafactionsexpanded.core">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.odyssey + oskarpotocki.vanillafactionsexpanded.core</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.odyssey">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.odyssey</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.ideology">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.ideology</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.biotech,ludeon.rimworld.odyssey">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.biotech + ludeon.rimworld.odyssey</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.biotech">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.biotech</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.anomaly,ludeon.rimworld.royalty">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.anomaly + ludeon.rimworld.royalty</li>
-    <li IfModActive="lts.i" IfModActiveAll="ludeon.rimworld.anomaly">Common/Mods/Conditional/Integrated Implants/Requires ludeon.rimworld.anomaly</li>
     <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,vanillaquestsexpanded.cryptoforge">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + vanillaquestsexpanded.cryptoforge</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,vanillaexpanded.vwenl">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + vanillaexpanded.vwenl</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,vanillaexpanded.vwel">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + vanillaexpanded.vwel</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,vanillaexpanded.vwec">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + vanillaexpanded.vwec</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,oskarpotocki.vfe.empire">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + oskarpotocki.vfe.empire</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,oskarpotocki.vanillafactionsexpanded.core">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + oskarpotocki.vanillafactionsexpanded.core</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,ludeon.rimworld.royalty">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + ludeon.rimworld.royalty</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,ludeon.rimworld.odyssey,oskarpotocki.vfe.pirates">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + ludeon.rimworld.odyssey + oskarpotocki.vfe.pirates</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,ludeon.rimworld.odyssey">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + ludeon.rimworld.odyssey</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,ludeon.rimworld.biotech">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + ludeon.rimworld.biotech</li>
     <li IfModActive="lts.i" IfModActiveAll="ebsg.framework,ludeon.rimworld.anomaly">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework + ludeon.rimworld.anomaly</li>
-    <li IfModActive="lts.i" IfModActiveAll="ebsg.framework">Common/Mods/Conditional/Integrated Implants/Requires ebsg.framework</li>
-    <li IfModActive="lts.i">Common/Mods/Integrated Implants</li>
     <li IfModActive="icc.fov.orbiter">Common/Mods/Faction - Orbiters</li>
     <li IfModActive="hlx.ultratechalteredcarbon">Common/Mods/Altered Carbon 2 ReSleeved</li>
     <li IfModActive="el.invmech">Common/Mods/Mechanoid Invaders</li>
@@ -288,7 +231,6 @@
     <li IfModActive="det.epochsgolems">Common/Mods/Conditional/Epochs - Golems/Crafting and research 003</li>
     <li IfModActive="det.epochsgolems" IfModActiveAll="det.epochspyrinth">Common/Mods/Conditional/Epochs - Golems/Crafting and research 002</li>
     <li IfModActive="det.epochsgolems">Common/Mods/Conditional/Epochs - Golems/Crafting and research 001</li>
-    <li IfModActive="det.epochsgolems">Common/Mods/Epochs - Golems</li>
     <li IfModActive="7f.securityclearance">Common/Mods/Security Clearance</li>
     <li>Common</li>
   </v1.7>
