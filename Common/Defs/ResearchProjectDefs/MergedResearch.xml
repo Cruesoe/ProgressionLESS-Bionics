@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ResearchProjectDef MayRequireAnyOf="vat.epoeforked">
+  <ResearchProjectDef MayRequire="vat.epoeforked">
     <defName>Ferny_Bionics_MedievalProsthetics</defName>
     <label>medieval prosthetics</label>
     <description>Forge crude replacement limbs from steel. Covers, depending on your mods: hook hand and steel arm.</description>
@@ -13,7 +13,7 @@
     <researchViewX>0.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="det.epochsgolems,det.epochspyrinth">
+  <ResearchProjectDef MayRequire="det.epochsgolems">
     <defName>Ferny_Bionics_GolemModules</defName>
     <label>golem modules</label>
     <description>Carve and assemble modules that upgrade golems. Covers, depending on your mods: brain module, anima claw, attack booster, brick fist, sleep accelerator, speed enhancer and pyrinth talon.</description>
@@ -39,7 +39,7 @@
     <researchViewX>1.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="vat.epoeforked">
+  <ResearchProjectDef MayRequire="vat.epoeforked">
     <defName>Ferny_Bionics_SurrogateOrgans</defName>
     <label>surrogate organs</label>
     <description>Manufacture powered mechanical stand-ins for failing organs. Covers, depending on your mods: surrogate kidney, surrogate liver, surrogate lung, surrogate stomach and brain stimulator.</description>
@@ -75,7 +75,7 @@
     <researchViewX>1.00</researchViewX>
     <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="ludeon.rimworld.royalty">
+  <ResearchProjectDef MayRequire="ludeon.rimworld.royalty">
     <defName>Ferny_Bionics_SpecializedLimbs</defName>
     <label>specialized limbs</label>
     <description>Manufacture replacement arms built for a single job. Covers, depending on your mods: drill arm and field hand.</description>
@@ -88,7 +88,7 @@
     <researchViewX>1.00</researchViewX>
     <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
+  <ResearchProjectDef MayRequire="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalProstheticParts</defName>
     <label>animal prosthetic parts</label>
     <description>Manufacture simple mechanical replacements for animal body parts. Covers, depending on your mods: animal prosthetic beak, animal prosthetic blade, animal prosthetic gas bag, animal prosthetic heart, animal prosthetic horn, animal prosthetic jaw, animal prosthetic kidney, animal prosthetic leg, animal prosthetic liver, animal prosthetic lung, animal prosthetic shell, animal prosthetic spine, animal prosthetic stinger, animal prosthetic stomach, animal prosthetic tail, animal prosthetic tentacle, animal prosthetic wing, animal chemfuel nodules, animal pouncing leg and animal thermoregulator.</description>
@@ -101,7 +101,7 @@
     <researchViewX>2.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
+  <ResearchProjectDef MayRequire="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalCombatImplants</defName>
     <label>animal combat implants</label>
     <description>Give animals simple implants that make them tougher in a fight. Covers, depending on your mods: animal painstopper, animal power claw, animal skin hardener, animal vacskin gland and animal venom fangs.</description>
@@ -117,7 +117,7 @@
     <researchViewX>8.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="ushanka.hackingexpansion">
+  <ResearchProjectDef MayRequire="ushanka.hackingexpansion">
     <defName>Ferny_Bionics_CybertechKits</defName>
     <label>cybertech kits</label>
     <description>Build the first cybernetic kits for hacking and system access. Covers, depending on your mods: jammer kit (standard), optimization module (standard) and remote access port (standard).</description>
@@ -130,21 +130,21 @@
     <researchViewX>1.00</researchViewX>
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="ushanka.hackingexpansion">
+  <ResearchProjectDef MayRequire="ushanka.hackingexpansion">
     <defName>Ferny_Bionics_AdvancedCybertechKits</defName>
     <label>advanced cybertech kits</label>
     <description>Upgrade cybernetic kits into their high-end versions. Covers, depending on your mods: jammer kit (high), optimization module (high) and remote access port (high).</description>
     <baseCost>250</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li MayRequireAnyOf="ushanka.hackingexpansion">Ferny_Bionics_CybertechKits</li>
+      <li MayRequire="ushanka.hackingexpansion">Ferny_Bionics_CybertechKits</li>
       <li>USH_AdvancedCybertech</li>
     </prerequisites>
     <tab>Ferny_Bionics</tab>
     <researchViewX>2.00</researchViewX>
     <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="ludeon.rimworld.anomaly,ludeon.rimworld.odyssey">
+  <ResearchProjectDef MayRequire="ludeon.rimworld.anomaly">
     <defName>Ferny_Bionics_GhoulEnhancements</defName>
     <label>ghoul enhancements</label>
     <description>Graft bioferrite prosthetics that only a ghoul can tolerate. Covers, depending on your mods: adrenal heart, corrosive heart, ghoul plating, metalblood heart and blood warmer.</description>
@@ -159,7 +159,7 @@
     <researchViewX>7.50</researchViewX>
     <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="lts.i">
+  <ResearchProjectDef MayRequire="lts.i,ludeon.rimworld.anomaly">
     <defName>Ferny_Bionics_AdvancedGhoulEnhancements</defName>
     <label>advanced ghoul enhancements</label>
     <description>Graft heavier bioferrite enhancements onto ghouls. Covers, depending on your mods: deadlife venom claw, ghoul bioferrite extractor, metabolic engine, nerve shredder claw and stalker skull.</description>
@@ -191,7 +191,7 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="lts.i,ushanka.biologicalwarfare,zwei2stein.pyrinthbionics">
+  <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.biotech,ludeon.rimworld.royalty,ushanka.biologicalwarfare,zwei2stein.pyrinthbionics">
     <defName>Ferny_Bionics_BionicOrgans</defName>
     <label>bionic organs</label>
     <description>Manufacture powered artificial internal organs. Covers, depending on your mods: bionic kidney, bionic liver, bionic lung, iron lung, bionic womb, pyrinth liver and pyrinth stomach.</description>
@@ -208,7 +208,7 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="vat.epoeforked">
+  <ResearchProjectDef MayRequire="vat.epoeforked">
     <defName>Ferny_Bionics_AdvancedBionicParts</defName>
     <label>advanced bionic parts</label>
     <description>Manufacture improved bionics and exoskeletons that outperform the first generation. Covers, depending on your mods: advanced bionic leg, advanced bionic ear, advanced bionic eye, advanced bionic foot, advanced bionic hand, advanced bionic jaw, advanced bionic spine, advanced power arm, protective exoskeleton and exoskeleton suit.</description>
@@ -225,7 +225,7 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="vat.epoeforkedroyalty">
+  <ResearchProjectDef MayRequire="vat.epoeforkedroyalty">
     <defName>Ferny_Bionics_AdvancedScytherLimbs</defName>
     <label>advanced scyther limbs</label>
     <description>Build scyther-grade blades and spikes into bionic limbs. Covers, depending on your mods: advanced bionic elbow blade, advanced bionic hand talon and advanced bionic knee spike.</description>
@@ -243,7 +243,7 @@
     <researchViewX>7.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.odyssey">
+  <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.odyssey,oskarpotocki.vanillafactionsexpanded.core,vanillaexpanded.gravship">
     <defName>Ferny_Bionics_GravshipImplants</defName>
     <label>gravship implants</label>
     <description>Install implants that help colonists fly and fight aboard gravships. Covers, depending on your mods: personal grav engine, gunnery assistant and pilot assistant.</description>
@@ -260,7 +260,7 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequire="lts.i,ebsg.framework">
+  <ResearchProjectDef MayRequire="ebsg.framework,lts.i">
     <defName>Ferny_Bionics_SkillChips</defName>
     <label>skill chips</label>
     <description>Program chips that load a skill straight into a chip port. Covers, depending on your mods: skill chip (animals), skill chip (artistic), skill chip (construction), skill chip (cooking), skill chip (crafting), skill chip (intellectual), skill chip (medical), skill chip (melee), skill chip (mining), skill chip (plants), skill chip (shooting) and skill chip (social).</description>
@@ -277,7 +277,7 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="lts.i">
+  <ResearchProjectDef MayRequire="lts.i,ludeon.rimworld.biotech">
     <defName>Ferny_Bionics_SanguophageImplants</defName>
     <label>sanguophage implants</label>
     <description>Install implants built for sanguophage biology. Covers, depending on your mods: hemo-fangs, hemogenic microcompressor and deathrest capacitor.</description>
@@ -291,7 +291,7 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="lts.i">
+  <ResearchProjectDef MayRequire="lts.i">
     <defName>Ferny_Bionics_ShoulderWeapons</defName>
     <label>shoulder weapons</label>
     <description>Mount heavier weapons on implanted shoulder turrets. Covers, depending on your mods: shoulder beam turret, shoulder charge turret, shoulder mortar and shoulder rocket pod.</description>
@@ -325,7 +325,7 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>4.90</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.royalty,thcon.cellcycleacceleration">
+  <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.royalty,thcon.cellcycleacceleration,vanillaquestsexpanded.cryptoforge">
     <defName>Ferny_Bionics_HealingImplants</defName>
     <label>healing implants</label>
     <description>Install implants that speed up healing and stop bleeding. Covers, depending on your mods: healing enhancer, cellcycle accelerator, cryptocoagulator and synthmarrow.</description>
@@ -342,7 +342,7 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>5.60</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.royalty,vat.epoeforkedroyalty">
+  <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.ideology,ludeon.rimworld.royalty,vat.epoeforkedroyalty">
     <defName>Ferny_Bionics_MolecularImplants</defName>
     <label>molecular implants</label>
     <description>Install implants that analyze and adjust the body chemistry. Covers, depending on your mods: immunoenhancer, bio-tuner, detoxifier enhancer and gourmand tongue.</description>
@@ -373,7 +373,7 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>7.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.odyssey,ludeon.rimworld.royalty">
+  <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.odyssey,ludeon.rimworld.royalty,vanillaquestsexpanded.cryptoforge">
     <defName>Ferny_Bionics_SkinGlands</defName>
     <label>skin glands</label>
     <description>Implant glands that harden the skin. Covers, depending on your mods: armorskin gland, stoneskin gland, jotunnskin gland and vacskin gland.</description>
@@ -390,7 +390,7 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>7.70</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="ludeon.rimworld.royalty">
+  <ResearchProjectDef MayRequire="ludeon.rimworld.royalty">
     <defName>Ferny_Bionics_MetabolicStomachs</defName>
     <label>metabolic stomachs</label>
     <description>Replace the stomach with organs that process food in unusual ways. Covers, depending on your mods: nuclear stomach and sterilizing stomach.</description>
@@ -441,7 +441,7 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="vat.epoeforked">
+  <ResearchProjectDef MayRequire="vat.epoeforked">
     <defName>Ferny_Bionics_RibImplants</defName>
     <label>rib implants</label>
     <description>Fit implants into a replacement rib cage. Covers, depending on your mods: adrenaline rib implant, coagulator rib implant, cooling rib implant, drugged rib implant, heating rib implant, medical rib implant, painkiller rib implant, respiration rib implant and wake-up rib implant.</description>
@@ -458,7 +458,7 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="vat.epoeforked">
+  <ResearchProjectDef MayRequire="vat.epoeforked">
     <defName>Ferny_Bionics_GlitterworldImplants</defName>
     <label>glitterworld implants</label>
     <description>Install glitterworld-grade brain and eye implants. Covers, depending on your mods: auxiliary AI (combat), auxiliary AI (worker) and tactical bionic eye.</description>
@@ -475,7 +475,7 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="lts.i">
+  <ResearchProjectDef MayRequire="lts.i,ludeon.rimworld.biotech">
     <defName>Ferny_Bionics_SignalBoosters</defName>
     <label>signal boosters</label>
     <description>Install signal boosters that extend a mechanitor's bandwidth. Covers, depending on your mods: signal booster (standard) and signal booster (high).</description>
@@ -489,7 +489,7 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="lts.i">
+  <ResearchProjectDef MayRequire="lts.i,ludeon.rimworld.biotech">
     <defName>Ferny_Bionics_UltraMechanitorImplants</defName>
     <label>ultra mechanitor implants</label>
     <description>Install ultratech implants that give a mechanitor command over mechanoids. Covers, depending on your mods: cerebrex node implant, remote resurrector, warprogrammer interface, signal booster (ultra), mechwomb and remote dominator.</description>
@@ -503,7 +503,7 @@
     <researchViewX>9.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="ludeon.rimworld.biotech">
+  <ResearchProjectDef MayRequire="ludeon.rimworld.biotech">
     <defName>Ferny_Bionics_BasicMechanitorImplants</defName>
     <label>basic mechanitor implants</label>
     <description>Install the first implants that extend a mechanitor's control. Covers, depending on your mods: control sublink (standard), mech gestation processor and control sublink (high).</description>
@@ -528,7 +528,7 @@
     <researchViewX>10.00</researchViewX>
     <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_MeleeModules</defName>
     <label>melee modules</label>
     <description>Fit modular bionics with melee weapons. Covers, depending on your mods: elbow blade module, hand talon module, knee spike module, power blade module, power claw module, power fang module, power fist module, power kick module, power saw module, powerslash horn module, powerstrike horn module, venom fangs module, venom talon module and brawler lens combat module.</description>
@@ -545,7 +545,7 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_RangedWeaponModules</defName>
     <label>ranged weapon modules</label>
     <description>Fit modular bionics with built-in guns and launchers. Covers, depending on your mods: assault rifle module, autopistol module, chain shotgun module, charge lance module, charge rifle module, heavy SMG module, LMG module, minigun module, pump shotgun module, sniper rifle module, doomsday rocket launcher module, EMP launcher module, incendiary launcher module, smoke launcher module, toxbomb launcher module and ranger lens combat module.</description>
@@ -562,7 +562,7 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>4.90</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_GrenadeAndTrapModules</defName>
     <label>grenade and trap modules</label>
     <description>Fit modular bionics with grenade throwers and trap deployers. Covers, depending on your mods: frag grenade module, EMP grenade module, tox grenade module, antigrain trap deployer module, deadlife trap deployer module, EMP trap deployer module, explosive trap deployer module, firefoam trap deployer module, incendiary trap deployer module, smoke trap deployer module, tox trap deployer module and EMP burst module.</description>
@@ -576,7 +576,7 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>5.60</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_DeployerModules</defName>
     <label>deployer modules</label>
     <description>Fit modular bionics with deployable turrets, drones and shields. Covers, depending on your mods: turret deployer module, hunter drone deployer module, low-shield deployer module, mini-turret gravdrone module and crypto turret gravdrone module.</description>
@@ -590,7 +590,7 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>6.30</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_ProjectorModules</defName>
     <label>projector modules</label>
     <description>Fit modular bionics with field projectors. Covers, depending on your mods: cryoprojector module, magprojector module, medprojector module, pyroprojector module and radprojector module.</description>
@@ -608,7 +608,7 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>7.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_MobilityModules</defName>
     <label>mobility modules</label>
     <description>Fit modular bionics with jump packs and hover systems. Covers, depending on your mods: jump pack module, nuclear jump pack module, leap module and hover module.</description>
@@ -625,7 +625,7 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>7.70</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_WorkModules</defName>
     <label>work modules</label>
     <description>Fit modular bionics with tools for everyday work. Covers, depending on your mods: analyzer module, chef module, constructor module, crafter module, drill module, field module, medic module, mindreader module, faunamaster module, gastro-analyzer module, mechanalyzer module and mechsensor module.</description>
@@ -642,7 +642,7 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_UtilityModules</defName>
     <label>utility modules</label>
     <description>Fit modular bionics with utility functions. Covers, depending on your mods: aesthetic module, airwire module, atmofilter module, biowelder module, coagulator module, cooler module, detoxifier module, devourer module, echolocation module, flashlight module, gastrosterilizer module, heater module, hemofilter module, immunoenhancer module, mecharray module, reprocessor module, silence module, tunenode module, vacbreath module and voicemod module.</description>
@@ -659,7 +659,7 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_PowerModules</defName>
     <label>power modules</label>
     <description>Fit modular bionics with their own power sources. Covers, depending on your mods: atompower module, chempower module and nuclear module.</description>
@@ -676,7 +676,7 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_SynthesizerModules</defName>
     <label>synthesizer modules</label>
     <description>Fit modular bionics with synthesizers that produce drugs and fuel. Covers, depending on your mods: alcohol synthesizer module, go-juice synthesizer module, psychite synthesizer module, smokeleaf synthesizer module, wake-up synthesizer module, fuelmaker module, hemomaker module and fertility adjuster module.</description>
@@ -693,7 +693,7 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_OrbitalModules</defName>
     <label>orbital modules</label>
     <description>Fit modular bionics with uplinks that call down orbital strikes. Covers, depending on your mods: orbital bombardment module, orbital mech cluster module, orbital power beam module and tornado generator module.</description>
@@ -710,7 +710,7 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_ChemicalBurstModules</defName>
     <label>chemical burst modules</label>
     <description>Fit modular bionics with chemical bursts, spewers and weaves. Covers, depending on your mods: high-explosive burst module, incendiary burst module, smoke burst module, smoke spewer module, tox burst module, tox spewer module, cryoweave module, magweave module, pyroweave module and toxweave module.</description>
@@ -727,7 +727,7 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_SubpersonaChips</defName>
     <label>subpersona chips</label>
     <description>Install auxiliary subpersona chips that take over specialized work. Covers, depending on your mods: assembler subpersona, botanist subpersona, brawler subpersona, chef subpersona, constructor subpersona, mechlord subpersona, miner subpersona, psywielder subpersona, ranger subpersona, socialite subpersona, surgeon subpersona and zoologist subpersona.</description>
@@ -744,7 +744,7 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_UltratechModules</defName>
     <label>ultratech modules</label>
     <description>Fit modular bionics with mono, plasma and zeus weapons. Covers, depending on your mods: monofang module, monosaw module, monoslash horn module, plasmablade module, plasmafang module, plasmasaw module, plasmaslash horn module, zeusfang module, zeusfist module, zeuskick module and zeustrike horn module.</description>
@@ -761,7 +761,7 @@
     <researchViewX>9.00</researchViewX>
     <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularity">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularity">
     <defName>Ferny_Bionics_AnomalyModules</defName>
     <label>anomaly modules</label>
     <description>Fit modular bionics with dark archotech abilities. Covers, depending on your mods: deadlife burst module, deadlife spewer module, disruptor flare module and revenant vertebrae module.</description>
@@ -776,7 +776,7 @@
     <researchViewX>7.50</researchViewX>
     <researchViewY>4.50</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularityanimals">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularityanimals">
     <defName>Ferny_Bionics_AnimalStrikeModules</defName>
     <label>animal strike modules</label>
     <description>Fit animal bionics with strike and tail modules. Covers, depending on your mods: cryostrike module, magstrike module, monoslash tail module, plasmaslash tail module, powerslash tail module, powerstrike tail module, pyrostrike module, venomstrike module and zeustrike tail module.</description>
@@ -794,7 +794,7 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>4.90</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="mrkociak.yabembionicmodularityanimals">
+  <ResearchProjectDef MayRequire="mrkociak.yabembionicmodularityanimals">
     <defName>Ferny_Bionics_AnimalProducerModules</defName>
     <label>animal producer modules</label>
     <description>Fit animal bionics with modules that produce leather and meat. Covers, depending on your mods: leathermaker module and meatmaker module.</description>
@@ -813,7 +813,7 @@
     <researchViewX>8.00</researchViewX>
     <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequire="lts.i,ebsg.framework">
+  <ResearchProjectDef MayRequire="ebsg.framework,lts.i">
     <defName>Ferny_Bionics_ArmModules</defName>
     <label>arm modules</label>
     <description>Fit modular bionic arms with weapons and grips. Covers, depending on your mods: arm dart gun module, arm gauss lance module, arm shotgun module, arm SMG module, death grip module, recoil suppression module and vibro-module.</description>
@@ -830,7 +830,7 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>5.60</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequire="lts.i,ebsg.framework">
+  <ResearchProjectDef MayRequire="ebsg.framework,lts.i">
     <defName>Ferny_Bionics_HeadModules</defName>
     <label>head modules</label>
     <description>Fit modular bionic eyes and jaws with new functions. Covers, depending on your mods: eye colour module, night vision module, protective lens module, targeting module, telescopic sight module, gourmand tongue module and hemo-fangs module.</description>
@@ -847,7 +847,7 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>6.30</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequire="lts.i,ebsg.framework">
+  <ResearchProjectDef MayRequire="ebsg.framework,lts.i">
     <defName>Ferny_Bionics_LegAndLungModules</defName>
     <label>leg and lung modules</label>
     <description>Fit modular bionic legs and lungs with new functions. Covers, depending on your mods: digitigrade module, foot blade module, retractable flipper module, venom foot blade module and rebreather module.</description>
@@ -864,7 +864,7 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>7.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
+  <ResearchProjectDef MayRequire="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalBionicParts</defName>
     <label>animal bionic parts</label>
     <description>Manufacture bionic replacements for animal body parts. Covers, depending on your mods: animal bionic beak, animal bionic blade, animal bionic ear, animal bionic eye, animal bionic gas bag, animal bionic heart, animal bionic horn, animal bionic jaw, animal detoxifier kidney, animal bionic leg, animal detoxifier liver, animal detoxifier lung, animal bionic nose, animal bionic shell, animal bionic spine, animal bionic stinger, animal bionic stomach, animal bionic tail, animal bionic tentacle and animal bionic wing.</description>
@@ -881,7 +881,7 @@
     <researchViewX>8.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
+  <ResearchProjectDef MayRequire="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalBionicImplants</defName>
     <label>animal bionic implants</label>
     <description>Give animals bionic implants that improve their bodies. Covers, depending on your mods: animal circadian supercharger, animal dermal armor gland, animal healclot synergizer, animal immunoenhancer, animal nuclear stomach and animal unstable skip synapsis.</description>
@@ -898,7 +898,7 @@
     <researchViewX>8.00</researchViewX>
     <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
+  <ResearchProjectDef MayRequire="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalMutationImplants</defName>
     <label>animal mutation implants</label>
     <description>Graft mutated flesh weapons onto animals. Covers, depending on your mods: animal eldritch flesh tentacle, animal pseudo deadlife shaper, animal ranged trispikes and animal toughspikes.</description>
@@ -914,7 +914,7 @@
     <researchViewX>7.50</researchViewX>
     <researchViewY>5.30</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
+  <ResearchProjectDef MayRequire="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalWorkChips</defName>
     <label>animal work chips</label>
     <description>Program chips that teach animals new work. Covers, depending on your mods: animal work chip: clean, animal work chip: feed patient, animal work chip: flick, animal work chip: harvest, animal work chip: hunting, animal work chip: mine, animal work chip: slaughter and animal work chip: sow.</description>
@@ -931,7 +931,7 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>7.70</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
+  <ResearchProjectDef MayRequire="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalNaturalWeapons</defName>
     <label>animal natural weapons</label>
     <description>Give animals implanted breath, spit and spine weapons. Covers, depending on your mods: animal acid spray, animal acidic breath, animal acidic spitter, animal barbed quill thrower, animal bioelectric organ, animal fire breath, animal fire spray, animal foam spray, animal toxic breath, animal venomous spitter, animal wisp fire, animal quad tesla cannon, animal ranged spinneret, animal petrifying gaze, animal piercing spine, animal light focusing lens and animal goo acidifier.</description>
@@ -948,7 +948,7 @@
     <researchViewX>6.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="sarg.alphaimplants">
+  <ResearchProjectDef MayRequire="sarg.alphaimplants">
     <defName>Ferny_Bionics_AnimalBodyImplants</defName>
     <label>animal body implants</label>
     <description>Give animals implants that change their size and body. Covers, depending on your mods: animal enlarger implant, animal shrinker implant, animal stealthskin implant, animal hyper acidic stomach, animal healy power and animal extra gas bag.</description>
@@ -965,7 +965,7 @@
     <researchViewX>6.00</researchViewX>
     <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="vanillaexpanded.vgeneticse">
+  <ResearchProjectDef MayRequire="vanillaexpanded.vgeneticse">
     <defName>Ferny_Bionics_HumanGeneticImplants</defName>
     <label>human genetic implants</label>
     <description>Graft animal-derived genetic implants into people. Covers, depending on your mods: bear claws, bear muscle tissue, boomalope nodules, cat eye, chemfuel heart, chemfuel stomach, compound insectoid eye, devouring jaws, digging mole claws, hibernation module, iguana scales, insectoid receptor, kidney toxic filters, mole-rat nerve dampener, mouse pheromones, muffalo mammaries, muffalo skin, muffalo strengthened muscles, neuron reinforcement, ovipositor, psychic dampeners, thrumbo horn, thrumbo skin, venomous fangs and wolf muscular fibers.</description>
@@ -979,7 +979,7 @@
     <researchViewX>6.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="vanillaexpanded.vgeneticse">
+  <ResearchProjectDef MayRequire="vanillaexpanded.vgeneticse">
     <defName>Ferny_Bionics_AnimalGeneticImplants</defName>
     <label>animal genetic implants</label>
     <description>Graft genetic implants from other species into animals. Covers, depending on your mods: animal bear leg, animal bear liver, animal bionic thrumbo brain, animal bionic thrumbo eye, animal bionic thrumbo jaws, animal boomalope heart, animal boomalope stomach, animal canid eye, animal cat tail, animal chicken brains, animal chitinous heart, animal crocodile spine, animal elephant auditory receptor, animal elephant leg, animal insect mandibles, animal insectile eye, animal insectoid pheromones, animal lizard leg, animal miniature thrumbo horn, animal monitor lizard brain, animal moth tympanal organ, animal muffalo lung, animal muffalo spine, animal reinforced bionic heart, animal reinforced bionic spine, animal reinforced tail, animal rodent ear, animal rodent nose, animal scyther tail and animal wolf fangs.</description>
@@ -993,7 +993,7 @@
     <researchViewX>6.00</researchViewX>
     <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="vanillaracesexpanded.android">
+  <ResearchProjectDef MayRequire="vanillaracesexpanded.android">
     <defName>Ferny_Bionics_AndroidParts</defName>
     <label>android parts</label>
     <description>Manufacture the artificial parts androids are built from. Covers, depending on your mods: android arm, android foot, android hand, android leg, artificial jaw, artificial nose, artificial ribcage, artificial spine, air filter, audio processor, metabolism regulator, neuropump, neutrofilter, optical unit and reactor.</description>
@@ -1010,7 +1010,7 @@
     <researchViewX>9.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="ushanka.hackingexpansion">
+  <ResearchProjectDef MayRequire="ushanka.hackingexpansion">
     <defName>Ferny_Bionics_ExecDataPrograms</defName>
     <label>exec data programs</label>
     <description>Write exec data programs for hacking. Covers, depending on your mods: exec data (disarm), exec data (discharge), exec data (fork bomb), exec data (hijack subcore), exec data (short circuit), exec data (virtual black ICE breaker) and exec data (zapcode).</description>

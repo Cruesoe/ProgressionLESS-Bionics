@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_ZeusKnuckles</defName>
+    <label>zeusknuckles module</label>
+    <description>Manufacture a set of hardened bionic knuckles with an embedded EMP capacitor. Upon impact, it blasts the target with an EMP burst in addition to the physical damage.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionicWeaponryUltra</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>5.60</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleJaw_VenomFangs</defName>
+    <label>venom fangs module</label>
+    <description>Manufacture a bionic module consisting of a pair of injectors implanted through the canine teeth, connected to a venom pump. The user can bite an enemy, extend the injectors, and pump venom into the target.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>6.30</researchViewY>
+  </ResearchProjectDef>
+</Defs>

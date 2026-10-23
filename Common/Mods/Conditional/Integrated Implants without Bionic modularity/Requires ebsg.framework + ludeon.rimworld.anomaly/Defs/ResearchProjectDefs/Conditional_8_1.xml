@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleSpine_RevenantVertebrae</defName>
+    <label>revenant vertebrae module</label>
+    <description>Manufacture a bionic module that allows the user to temporarily become invisible. The module is crafted from a modified revenant spine and uses archotech shards to restrain the dormant revenant. The user can manipulate the visual centers of those nearby, effectively turning themself invisible for a short time.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>Ferny_Bionics</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
+  </ResearchProjectDef>
+</Defs>

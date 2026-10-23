@@ -9,7 +9,7 @@ Offline checks for the merged research. Run by Deploy-Mod.ps1; exits non-zero on
 - every Ferny_ project has a position; on the Bionics tab no two overlap (dx < 0.95 and dy < 0.6) and each sits right
   of its prerequisites there;
 - each merged project's availability check ("Missing Items") removes it when none of its items exists and keeps it
-  when one does, simulated on a test document.
+  when one does, and leaves no markers, simulated on a test document.
 #>
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot
@@ -57,22 +57,55 @@ for ($i = 0; $i -lt $keys.Count; $i++) {
   }
 }
 
-# Availability of merged projects, simulated
+# Availability of merged projects, simulated: each member's item checks ("Missing Items") add a ProgressionLESS_Missing
+# marker to the project, which goes when every member is marked; the markers are then removed
+function Invoke-Op($doc, $op) {
+  $x = $op.SelectSingleNode('xpath'); $xp = if ($x) { $x.InnerText.Trim() } else { '' }
+  $ok = switch ($op.GetAttribute('Class')) {
+    'PatchOperationSequence' { $r = $true; foreach ($li in $op.SelectNodes('operations/li')) { if (-not (Invoke-Op $doc $li)) { $r = $false; break } }; $r }
+    'PatchOperationConditional' {
+      $m = $op.SelectSingleNode('match'); $n = $op.SelectSingleNode('nomatch')
+      if ($doc.SelectSingleNode($xp)) { if ($m) { Invoke-Op $doc $m } else { [bool]$n } } elseif ($n) { Invoke-Op $doc $n } else { [bool]$m }
+    }
+    'PatchOperationAdd' { $t = @($doc.SelectNodes($xp)); foreach ($e in $t) { foreach ($c in $op.SelectSingleNode('value').ChildNodes) { [void]$e.AppendChild($doc.ImportNode($c, $true)) } }; $t.Count -gt 0 }
+    'PatchOperationReplace' { $t = @($doc.SelectNodes($xp)); foreach ($e in $t) { foreach ($c in $op.SelectSingleNode('value').ChildNodes) { [void]$e.ParentNode.InsertBefore($doc.ImportNode($c, $true), $e) }; [void]$e.ParentNode.RemoveChild($e) }; $t.Count -gt 0 }
+    'PatchOperationRemove' { $t = @($doc.SelectNodes($xp)); foreach ($e in $t) { [void]$e.ParentNode.RemoveChild($e) }; $t.Count -gt 0 }
+    default { $true }
+  }
+  $s = $op.SelectSingleNode('success')
+  if ($s -and $s.InnerText.Trim() -eq 'Always') { return $true }
+  [bool]$ok
+}
 $mi = $docs.Keys | Where-Object { $_ -match '\\Missing Items\\' } | Select-Object -First 1
+$tops = @($docs[$mi].Patch.SelectNodes('Operation'))
+$blocks = @{}; $items = @{}
+foreach ($op in $tops) {
+  foreach ($a in $op.SelectNodes('.//*[value/ProgressionLESS_Missing]')) {
+    if ($a.xpath -notmatch 'defName="([^"]+)"') { continue }
+    $t = $Matches[1]; $slot = $a.value.ProgressionLESS_Missing
+    if (-not $blocks[$t]) { $blocks[$t] = New-Object Collections.Generic.List[object] }
+    if (-not $blocks[$t].Contains($op)) { $blocks[$t].Add($op) }
+    if ($op.xpath -match '^Defs/ThingDef\[defName="([^"]+)"\]$') { $items["$t|$slot"] = $Matches[1] }
+  }
+}
 $checked = 0
-foreach ($op in $docs[$mi].Patch.Operation) {
-  $rm = $op.SelectSingleNode('nomatch/match[@Class="PatchOperationRemove"]/xpath')
-  if (-not $rm -or $rm.InnerText -notmatch 'defName="(Ferny_Bionics_[^"]+)"') { continue }
-  $t = $Matches[1]; $x = $op.xpath
-  $items = @([regex]::Matches($x, '(?:^|\| )Defs\[\*\[[^\]]*\]\[defName="([^"]+)"\]') | ForEach-Object { $_.Groups[1].Value } | Select-Object -Unique)
-  if (-not $items.Count) { $fail.Add("$t availability check names no items"); continue }
+foreach ($op in $tops) {
+  if ($op.GetAttribute('Class') -ne 'PatchOperationConditional' -or $op.xpath -notmatch '^Defs/ResearchProjectDef\[defName="(Ferny_Bionics_[^"]+)"\]\[(.+)\]$') { continue }
+  $t = $Matches[1]; $slots = @([regex]::Matches($Matches[2], 'ProgressionLESS_Missing="(\d+)"') | ForEach-Object { $_.Groups[1].Value })
+  $tail = @($tops | Where-Object { $_.xpath -like "Defs/ResearchProjectDef``[defName=`"$t`"``]*" })
+  $last = $items["$t|$($slots[-1])"]
+  if (-not $blocks[$t] -or -not $last) { $fail.Add("$t availability check has no item checks"); continue }
+  foreach ($s in $slots) { if (-not ($blocks[$t] | Where-Object { $_.SelectSingleNode(".//value[ProgressionLESS_Missing=`"$s`"]") })) { $fail.Add("$t member $s is never marked missing") } }
   foreach ($case in 'none', 'one') {
     $doc = New-Object Xml.XmlDocument
-    $item = if ($case -eq 'one') { "<ThingDef><defName>$($items[-1])</defName><recipeMaker /></ThingDef>" } else { '' }
+    $item = if ($case -eq 'one') { "<ThingDef><defName>$last</defName><recipeMaker /></ThingDef>" } else { '' }
     $doc.LoadXml("<Defs><ResearchProjectDef><defName>$t</defName></ResearchProjectDef>$item</Defs>")
-    $present = $doc.SelectNodes($x).Count -gt 0
+    foreach ($o in $blocks[$t].ToArray()) { [void](Invoke-Op $doc $o) }
+    foreach ($o in $tail) { [void](Invoke-Op $doc $o) }
+    $present = [bool]$doc.SelectSingleNode("Defs/ResearchProjectDef[defName=`"$t`"]")
     if ($case -eq 'none' -and $present) { $fail.Add("$t would stay with none of its items") }
-    if ($case -eq 'one' -and -not $present) { $fail.Add("$t would be removed although $($items[-1]) exists") }
+    if ($case -eq 'one' -and -not $present) { $fail.Add("$t would be removed although $last exists") }
+    if ($doc.SelectSingleNode('//ProgressionLESS_Missing')) { $fail.Add("$t keeps its availability markers") }
   }
   $checked++
 }
