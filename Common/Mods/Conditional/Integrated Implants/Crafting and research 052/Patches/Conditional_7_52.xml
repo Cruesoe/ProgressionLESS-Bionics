@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_Voidlink"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="LTS_Voidlink"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="LTS_Voidlink"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="LTS_Voidlink"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="LTS_Voidlink"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">PsychicSustainer</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">PsychicSustainer</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">PsychicSustainer</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">PsychicSustainer</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">PsychicSustainer</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">PsychicSustainer</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">PsychicSustainer</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">PsychicSustainer</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_Voidlink"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_Voidlink"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_Voidlink"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">PsychicSustainer</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_Voidlink"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_Voidlink"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">PsychicSustainer</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_Voidlink"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_Voidlink"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_LTS_Voidlink"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_LTS_Voidlink"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -1,4 +1,4 @@
-# ProgressionLESS: Bionics merges (applied 261015)
+# ProgressionLESS: Bionics merges (applied 261015, regenerated from ferny's 23 Oct release 261023)
 
 Plan file: `Projects\Tools\RimWorld\ProgressionLESS\Plans\Bionics.ps1`. The table below is generated from it; rows 87 to 93 are listed under the optional folds.
 
@@ -17,11 +17,11 @@ Plan file: `Projects\Tools\RimWorld\ProgressionLESS\Plans\Bionics.ps1`. The tabl
 - **Fold into existing**: the members join the project they sat behind, mostly other mods' own projects that ferny rethemed (Integrated Implants, EPOE, Die for me, Glittertech). The item keeps its era but unlocks one step earlier, as it did before ferny split it off.
 - **↑** marks a member that needs another member of its row. Merging moves it one step earlier.
 - Every row stays within one era and one tab (verified against the inventory). Rows tagged "(Anomaly)" are on the Anomaly tab and use knowledge instead of research points.
-- A row with members from several mods exists when any of those mods is active. Each member's item still only exists with its own mod.
+- A row exists when the mods every member needs are active and, if every member needs more, one of the rest. Each member's item still only exists with its own mod.
 
 ## Mod combinations
 
-Most rows hold one mod's items. The rows that mix mods are 1, 8, 12, 13, 54, 59, 64, 65, 70, 73, 74, 76, 77, 79 and 86. Each has the same shape: the merged project loads when any member's mod is active, and each item is gated by its own folder as before. Two cases need care:
+Most rows hold one mod's items. The rows that mix mods are 1, 8, 12, 13, 54, 59, 64, 65, 70, 73, 74, 76, 77, 79 and 86. Each has the same shape: the merged project loads when its members' mods allow (see above), and each item is gated by its own folder as before. Two cases need care:
 
 - **Integrated Implants without Bionic modularity** (7 modules that exist only when Bionic modularity is off). They are left out of the merges, so the merged Integrated Implants rows never depend on that switch.
 - **Bionic modularity + Integrated Implants**: ferny's seven ReplaceLib replacements stay as they are. The replaced Integrated Implants modules are among the seven above.
@@ -50,16 +50,20 @@ All 93 rows, including the optional folds, are merged in place, as in the other 
   - it removes the members' definitions, the patches that create them and every operation aimed at them;
   - it renames every remaining reference to the merged project, in values and xpaths, and drops duplicate list entries;
   - it writes each member's other prerequisites into the empty `researchPrerequisites` list ferny's patch gives that member's items, with the `MayRequire` ferny used for that link;
-  - it regroups ferny's availability layer. A merged project is removed when every member's item is missing or replaced (one check over all its items) or when a mod every member needs is absent.
-- **New projects** are in `Common/Defs/ResearchProjectDefs/MergedResearch.xml`, each with `MayRequireAnyOf` for its members' mods. **Folds** into projects other mods own are in `Common/Patches/MergedResearch.xml`, targeted by defName. That file sets the label and description, raises cost and bench to the members', and, for the four members that are other mods' projects (three Integrated Implants projects and Die for me's antigrain switch), removes them and moves their prerequisite links.
+  - availability (`Research Availability/Missing Items`): ferny checks each item by defName and removes its project when the item is missing or replaced. For a merged project, each member's removal becomes a `ProgressionLESS_Missing` marker added to the merged project; one operation then removes it when every member is marked, and another removes the markers;
+  - prerequisite resolution (`Research Availability/Resolve Prerequisites`): when a project is removed, its block hands its prerequisites to the projects that needed it. A merged project keeps one block, handing down its own prerequisites;
+  - files the merge leaves empty are deleted, and folders left without files are removed with their LoadFolders entries.
+- **New projects** are in `Common/Defs/ResearchProjectDefs/MergedResearch.xml`, each with `MayRequire` for the mods every member needs (its load folder's mods, or its own `MayRequire`) and `MayRequireAnyOf` for the rest when every member needs more. **Folds** into projects other mods own are in `Common/Patches/MergedResearch.xml`, targeted by defName. That file sets the label and description, raises cost and bench to the members', and, for the four members that are other mods' projects (three Integrated Implants projects and Die for me's antigrain switch), removes them and moves their prerequisite links.
+- **Folders and load order:** ferny's `Mods and Shit` is `Common/Mods` here and `Conditional Research` is `Common/Mods/Conditional`, which keeps deployed paths under Windows' 260-character limit. LoadFolders follows ferny's order (the availability folders first, so they patch last; `Common` last), with empty conditions dropped: ferny's `IfModActiveAll=""` never matches in game, so 18 of his folders never load.
 - **Layout:** `Tools/New-Layout.ps1` writes tab and position into every definition. That puts 74 projects on a new Bionics tab, in 11 columns in era order, at most 12 rows per column, Y 0 to 7.7, with prerequisites to the left and no overlaps. The 5 Anomaly projects go on the Anomaly tab at X 7.5 to 8.5, right of vanilla's last column.
-- **Load cost:** 26,066 patch operations (108,753 lines of XML) against the original's 28,788 (124,557).
+- **Load cost:** 70,017 patch operations in 120 XML files against the original's 77,427 in 166.
 
 **Checks.** `Tools/Test-All.ps1` runs on every deploy. It checks that:
-- every XML file parses and every Ferny_ project named anywhere is defined;
+- every XML file parses and holds something, and every Ferny_ project named anywhere is defined;
+- no LoadFolders condition is empty, and every listed folder holds files;
 - no list holds a duplicate;
 - every project has a position, with no overlaps and prerequisites to the left;
-- each of the 74 availability checks removes its project when none of its items exists and keeps it when one does.
+- each of the 61 availability checks removes its project when none of its items exists, keeps it when one does, and leaves no markers. Golem modules and shoulder weapons have no check: some of their members' projects are only created when the item exists, so they always stay.
 
 `Test-ResearchLinks.ps1` reports 0 links that can dangle and 0 loops, and the inventory shows 157 projects, 79 of them ferny's.
 ## Merge table

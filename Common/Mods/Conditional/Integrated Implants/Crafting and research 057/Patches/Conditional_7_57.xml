@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RemoteDominator"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="RemoteDominator"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RemoteDominator"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="RemoteDominator"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="RemoteDominator"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="sarg.alphamechs">AM_Cryptoharmonization</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="sarg.alphamechs">AM_Cryptoharmonization</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="sarg.alphamechs">AM_Cryptoharmonization</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="sarg.alphamechs">AM_Cryptoharmonization</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="sarg.alphamechs">AM_Cryptoharmonization</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="sarg.alphamechs">AM_Cryptoharmonization</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="sarg.alphamechs">AM_Cryptoharmonization</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteDominator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="sarg.alphamechs">AM_Cryptoharmonization</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_RemoteDominator"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_RemoteDominator"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_RemoteDominator"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_RemoteDominator"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_RemoteDominator"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_RemoteDominator"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li MayRequire="sarg.alphamechs">AM_Cryptoharmonization</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_RemoteDominator"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_RemoteDominator"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li MayRequire="sarg.alphamechs">AM_Cryptoharmonization</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RemoteResurrector"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="RemoteResurrector"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RemoteResurrector"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="RemoteResurrector"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="RemoteResurrector"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteResurrector"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_RemoteResurrector"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_RemoteResurrector"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_RemoteResurrector"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_RemoteResurrector"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_RemoteResurrector"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_RemoteResurrector"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_RemoteResurrector"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_RemoteResurrector"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBooster"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="SignalBooster"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="SignalBooster"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="SignalBooster"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="SignalBooster"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">StandardMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">StandardMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">StandardMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">StandardMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">StandardMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">StandardMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">StandardMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBooster"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">StandardMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SignalBooster"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_SignalBooster"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SignalBooster"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_SignalBooster"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SignalBooster"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_SignalBooster"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">StandardMechtech</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SignalBooster"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_SignalBooster"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">StandardMechtech</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">HighMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">HighMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">HighMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">HighMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">HighMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">HighMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">HighMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterHigh"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">HighMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SignalBoosterHigh"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_SignalBoosterHigh"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SignalBoosterHigh"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_SignalBoosterHigh"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SignalBoosters</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SignalBoosterHigh"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_SignalBoosterHigh"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">HighMechtech</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SignalBoosterHigh"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_SignalBoosterHigh"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.biotech">HighMechtech</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="lts.i,ludeon.rimworld.biotech">Ferny_Bionics_SignalBoosters</li><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="lts.i,ludeon.rimworld.biotech">Ferny_Bionics_SignalBoosters</li><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="lts.i,ludeon.rimworld.biotech">Ferny_Bionics_SignalBoosters</li><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="lts.i,ludeon.rimworld.biotech">Ferny_Bionics_SignalBoosters</li><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="lts.i,ludeon.rimworld.biotech">Ferny_Bionics_SignalBoosters</li><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="lts.i,ludeon.rimworld.biotech">Ferny_Bionics_SignalBoosters</li><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="lts.i,ludeon.rimworld.biotech">Ferny_Bionics_SignalBoosters</li><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SignalBoosterUltra"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="lts.i,ludeon.rimworld.biotech">Ferny_Bionics_SignalBoosters</li><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SignalBoosterUltra"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_SignalBoosterUltra"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SignalBoosterUltra"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_SignalBoosterUltra"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_UltraMechanitorImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SignalBoosterUltra"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_SignalBoosterUltra"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li MayRequire="lts.i,ludeon.rimworld.biotech">Ferny_Bionics_SignalBoosters</li><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SignalBoosterUltra"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_SignalBoosterUltra"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li MayRequire="lts.i,ludeon.rimworld.biotech">Ferny_Bionics_SignalBoosters</li><li MayRequire="ludeon.rimworld.biotech">UltraMechtech</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+</Patch>

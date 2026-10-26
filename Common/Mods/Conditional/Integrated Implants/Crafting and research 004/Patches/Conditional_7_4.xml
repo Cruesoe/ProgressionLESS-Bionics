@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CranialInsulation"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>I_CranialInsulation</defName>
+            <label>electromagnetic insulation</label>
+            <description>Manufacture an implant that, through the use of special shielding and shock-dissipation filaments, defends other implants from EMP shock.</description>
+            <baseCost>500</baseCost>
+            <techLevel>Spacer</techLevel>
+            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+            <prerequisites Inherit="False">
+              <li>Bionics</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ResearchProjectDef>
+              <defName>I_CranialInsulation</defName>
+              <label>electromagnetic insulation</label>
+              <description>Manufacture an implant that, through the use of special shielding and shock-dissipation filaments, defends other implants from EMP shock.</description>
+              <baseCost>500</baseCost>
+              <techLevel>Spacer</techLevel>
+              <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+              <prerequisites Inherit="False">
+                <li>Bionics</li>
+              </prerequisites>
+            </ResearchProjectDef>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CranialInsulation"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/label</xpath>
+        <value>
+          <label>electromagnetic insulation</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]</xpath>
+        <value>
+          <label>electromagnetic insulation</label>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/label</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/label</xpath>
+          <value>
+            <label>electromagnetic insulation</label>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]</xpath>
+          <value>
+            <label>electromagnetic insulation</label>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CranialInsulation"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/description</xpath>
+        <value>
+          <description>Manufacture an implant that, through the use of special shielding and shock-dissipation filaments, defends other implants from EMP shock.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]</xpath>
+        <value>
+          <description>Manufacture an implant that, through the use of special shielding and shock-dissipation filaments, defends other implants from EMP shock.</description>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/description</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/description</xpath>
+          <value>
+            <description>Manufacture an implant that, through the use of special shielding and shock-dissipation filaments, defends other implants from EMP shock.</description>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]</xpath>
+          <value>
+            <description>Manufacture an implant that, through the use of special shielding and shock-dissipation filaments, defends other implants from EMP shock.</description>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CranialInsulation"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/baseCost</xpath>
+        <value>
+          <baseCost>500</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]</xpath>
+        <value>
+          <baseCost>500</baseCost>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/baseCost</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/baseCost</xpath>
+          <value>
+            <baseCost>500</baseCost>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]</xpath>
+          <value>
+            <baseCost>500</baseCost>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CranialInsulation"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>Bionics</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>Bionics</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/prerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/prerequisites</xpath>
+          <value>
+            <prerequisites Inherit="False">
+              <li>Bionics</li>
+            </prerequisites>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]</xpath>
+          <value>
+            <prerequisites Inherit="False">
+              <li>Bionics</li>
+            </prerequisites>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CranialInsulation"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/hiddenPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]/hiddenPrerequisites</xpath>
+          <value>
+            <hiddenPrerequisites Inherit="False" />
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_CranialInsulation"]</xpath>
+          <value>
+            <hiddenPrerequisites Inherit="False" />
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CranialInsulation"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="CranialInsulation"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CranialInsulation"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="CranialInsulation"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="CranialInsulation"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_CranialInsulation</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_CranialInsulation</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_CranialInsulation</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_CranialInsulation</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_CranialInsulation</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_CranialInsulation</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_CranialInsulation</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_CranialInsulation</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CranialInsulation"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_CranialInsulation"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_CranialInsulation"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">I_CranialInsulation</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_CranialInsulation"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_CranialInsulation"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">I_CranialInsulation</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_CranialInsulation"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_CranialInsulation"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_CranialInsulation"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_CranialInsulation"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="CryptoWakeImplant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_CryptoWakeImplant"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_CryptoWakeImplant"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_CryptoWakeImplant"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_CryptoWakeImplant"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_CryptoWakeImplant"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_CryptoWakeImplant"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_CryptoWakeImplant"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_CryptoWakeImplant"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+</Patch>

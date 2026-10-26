@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="DeathrestApparatus"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>Deathrest</defName>
+            <label>deathrest apparatus</label>
+            <description>Manufacture an artificial secondary vascular system that unseals during deathrest, vastly improving the rate of hemogenic circulation and deathrest regeneration.
+
+Can only be installed on pawns with the deathrest gene.</description>
+            <baseCost>500</baseCost>
+            <techLevel>Spacer</techLevel>
+            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+            <prerequisites Inherit="False">
+              <li>I_SanguophageImplants</li>
+            </prerequisites>
+            <requiredResearchFacilities>
+              <li>MultiAnalyzer</li>
+            </requiredResearchFacilities>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="DeathrestApparatus"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ResearchProjectDef>
+              <defName>Deathrest</defName>
+              <label>deathrest apparatus</label>
+              <description>Manufacture an artificial secondary vascular system that unseals during deathrest, vastly improving the rate of hemogenic circulation and deathrest regeneration.
+
+Can only be installed on pawns with the deathrest gene.</description>
+              <baseCost>500</baseCost>
+              <techLevel>Spacer</techLevel>
+              <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+              <prerequisites Inherit="False">
+                <li>I_SanguophageImplants</li>
+              </prerequisites>
+              <requiredResearchFacilities>
+                <li>MultiAnalyzer</li>
+              </requiredResearchFacilities>
+            </ResearchProjectDef>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="DeathrestApparatus"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/label</xpath>
+        <value>
+          <label>deathrest apparatus</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+        <value>
+          <label>deathrest apparatus</label>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="DeathrestApparatus"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/label</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/label</xpath>
+          <value>
+            <label>deathrest apparatus</label>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+          <value>
+            <label>deathrest apparatus</label>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="DeathrestApparatus"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/description</xpath>
+        <value>
+          <description>Manufacture an artificial secondary vascular system that unseals during deathrest, vastly improving the rate of hemogenic circulation and deathrest regeneration.
+
+Can only be installed on pawns with the deathrest gene.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+        <value>
+          <description>Manufacture an artificial secondary vascular system that unseals during deathrest, vastly improving the rate of hemogenic circulation and deathrest regeneration.
+
+Can only be installed on pawns with the deathrest gene.</description>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="DeathrestApparatus"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/description</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/description</xpath>
+          <value>
+            <description>Manufacture an artificial secondary vascular system that unseals during deathrest, vastly improving the rate of hemogenic circulation and deathrest regeneration.
+
+Can only be installed on pawns with the deathrest gene.</description>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+          <value>
+            <description>Manufacture an artificial secondary vascular system that unseals during deathrest, vastly improving the rate of hemogenic circulation and deathrest regeneration.
+
+Can only be installed on pawns with the deathrest gene.</description>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="DeathrestApparatus"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/baseCost</xpath>
+        <value>
+          <baseCost>500</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+        <value>
+          <baseCost>500</baseCost>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="DeathrestApparatus"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/baseCost</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/baseCost</xpath>
+          <value>
+            <baseCost>500</baseCost>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+          <value>
+            <baseCost>500</baseCost>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="DeathrestApparatus"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>I_SanguophageImplants</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>I_SanguophageImplants</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="DeathrestApparatus"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/prerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/prerequisites</xpath>
+          <value>
+            <prerequisites Inherit="False">
+              <li>I_SanguophageImplants</li>
+            </prerequisites>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+          <value>
+            <prerequisites Inherit="False">
+              <li>I_SanguophageImplants</li>
+            </prerequisites>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="DeathrestApparatus"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="DeathrestApparatus"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/hiddenPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="Deathrest"]/hiddenPrerequisites</xpath>
+          <value>
+            <hiddenPrerequisites Inherit="False" />
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+          <value>
+            <hiddenPrerequisites Inherit="False" />
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicActivator"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>I_SanguophageImplants</defName>
+            <label>hemogenic activator</label>
+            <description>Manufacture an improved set of artificial hemogen glands that allow a sangophage to more efficiently convert blood into hemogen.
+
+Can only be installed on pawns with the hemogenic gene.</description>
+            <baseCost>500</baseCost>
+            <techLevel>Spacer</techLevel>
+            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+            <prerequisites Inherit="False">
+              <li>Fabrication</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ResearchProjectDef>
+              <defName>I_SanguophageImplants</defName>
+              <label>hemogenic activator</label>
+              <description>Manufacture an improved set of artificial hemogen glands that allow a sangophage to more efficiently convert blood into hemogen.
+
+Can only be installed on pawns with the hemogenic gene.</description>
+              <baseCost>500</baseCost>
+              <techLevel>Spacer</techLevel>
+              <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+              <prerequisites Inherit="False">
+                <li>Fabrication</li>
+              </prerequisites>
+            </ResearchProjectDef>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicActivator"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/label</xpath>
+        <value>
+          <label>hemogenic activator</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]</xpath>
+        <value>
+          <label>hemogenic activator</label>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/label</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/label</xpath>
+          <value>
+            <label>hemogenic activator</label>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]</xpath>
+          <value>
+            <label>hemogenic activator</label>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicActivator"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/description</xpath>
+        <value>
+          <description>Manufacture an improved set of artificial hemogen glands that allow a sangophage to more efficiently convert blood into hemogen.
+
+Can only be installed on pawns with the hemogenic gene.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]</xpath>
+        <value>
+          <description>Manufacture an improved set of artificial hemogen glands that allow a sangophage to more efficiently convert blood into hemogen.
+
+Can only be installed on pawns with the hemogenic gene.</description>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/description</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/description</xpath>
+          <value>
+            <description>Manufacture an improved set of artificial hemogen glands that allow a sangophage to more efficiently convert blood into hemogen.
+
+Can only be installed on pawns with the hemogenic gene.</description>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]</xpath>
+          <value>
+            <description>Manufacture an improved set of artificial hemogen glands that allow a sangophage to more efficiently convert blood into hemogen.
+
+Can only be installed on pawns with the hemogenic gene.</description>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicActivator"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/baseCost</xpath>
+        <value>
+          <baseCost>500</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]</xpath>
+        <value>
+          <baseCost>500</baseCost>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/baseCost</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/baseCost</xpath>
+          <value>
+            <baseCost>500</baseCost>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]</xpath>
+          <value>
+            <baseCost>500</baseCost>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicActivator"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>Fabrication</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>Fabrication</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/prerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/prerequisites</xpath>
+          <value>
+            <prerequisites Inherit="False">
+              <li>Fabrication</li>
+            </prerequisites>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]</xpath>
+          <value>
+            <prerequisites Inherit="False">
+              <li>Fabrication</li>
+            </prerequisites>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicActivator"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/hiddenPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]/hiddenPrerequisites</xpath>
+          <value>
+            <hiddenPrerequisites Inherit="False" />
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_SanguophageImplants"]</xpath>
+          <value>
+            <hiddenPrerequisites Inherit="False" />
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+</Patch>

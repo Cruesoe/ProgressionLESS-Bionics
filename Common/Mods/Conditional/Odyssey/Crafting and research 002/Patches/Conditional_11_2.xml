@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PilotAssistant"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="PilotAssistant"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="PilotAssistant"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="PilotAssistant"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="PilotAssistant"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_GravshipImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_GravshipImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_GravshipImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_GravshipImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_GravshipImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_GravshipImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_GravshipImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_GravshipImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.odyssey">AdvancedGravtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.odyssey">AdvancedGravtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.odyssey">AdvancedGravtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.odyssey">AdvancedGravtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.odyssey">AdvancedGravtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.odyssey">AdvancedGravtech</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.odyssey">AdvancedGravtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="PilotAssistant"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.odyssey">AdvancedGravtech</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_PilotAssistant"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_PilotAssistant"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GravshipImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_PilotAssistant"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_PilotAssistant"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_GravshipImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_PilotAssistant"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_PilotAssistant"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.odyssey">AdvancedGravtech</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_PilotAssistant"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_PilotAssistant"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li MayRequire="ludeon.rimworld.odyssey">AdvancedGravtech</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+</Patch>

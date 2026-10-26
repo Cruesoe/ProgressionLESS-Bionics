@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemoFangs"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="HemoFangs"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HemoFangs"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="HemoFangs"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="HemoFangs"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemoFangs"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HemoFangs"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_HemoFangs"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HemoFangs"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_HemoFangs"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HemoFangs"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_HemoFangs"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HemoFangs"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_HemoFangs"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicActivator"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="HemogenicActivator"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HemogenicActivator"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="HemogenicActivator"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="HemogenicActivator"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_SanguophageImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_SanguophageImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_SanguophageImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_SanguophageImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_SanguophageImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_SanguophageImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_SanguophageImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_SanguophageImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicActivator"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HemogenicActivator"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_HemogenicActivator"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">I_SanguophageImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HemogenicActivator"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_HemogenicActivator"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">I_SanguophageImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HemogenicActivator"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_HemogenicActivator"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HemogenicActivator"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_HemogenicActivator"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="HemogenicMicrocompressor"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HemogenicMicrocompressor"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_HemogenicMicrocompressor"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HemogenicMicrocompressor"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_HemogenicMicrocompressor"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_SanguophageImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HemogenicMicrocompressor"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_HemogenicMicrocompressor"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_HemogenicMicrocompressor"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_HemogenicMicrocompressor"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False"><li>I_SanguophageImplants</li></researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+</Patch>

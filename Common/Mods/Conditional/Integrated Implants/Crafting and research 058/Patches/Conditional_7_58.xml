@@ -1,0 +1,531 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SkeletalBracing"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>I_BasicImplants</defName>
+            <label>skeletal bracing</label>
+            <description>Manufacture an artificial, industrial skeleton affixed to the original, with responsive, motorised joints. It is designed to take a lot of the strain of carrying heavy objects off of the body, thus increasing carrying capacity.</description>
+            <baseCost>250</baseCost>
+            <techLevel>Industrial</techLevel>
+            <prerequisites Inherit="False">
+              <li>Prosthetics</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ResearchProjectDef>
+              <defName>I_BasicImplants</defName>
+              <label>skeletal bracing</label>
+              <description>Manufacture an artificial, industrial skeleton affixed to the original, with responsive, motorised joints. It is designed to take a lot of the strain of carrying heavy objects off of the body, thus increasing carrying capacity.</description>
+              <baseCost>250</baseCost>
+              <techLevel>Industrial</techLevel>
+              <prerequisites Inherit="False">
+                <li>Prosthetics</li>
+              </prerequisites>
+            </ResearchProjectDef>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SkeletalBracing"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/label</xpath>
+        <value>
+          <label>skeletal bracing</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+        <value>
+          <label>skeletal bracing</label>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/label</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/label</xpath>
+          <value>
+            <label>skeletal bracing</label>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+          <value>
+            <label>skeletal bracing</label>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SkeletalBracing"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/description</xpath>
+        <value>
+          <description>Manufacture an artificial, industrial skeleton affixed to the original, with responsive, motorised joints. It is designed to take a lot of the strain of carrying heavy objects off of the body, thus increasing carrying capacity.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+        <value>
+          <description>Manufacture an artificial, industrial skeleton affixed to the original, with responsive, motorised joints. It is designed to take a lot of the strain of carrying heavy objects off of the body, thus increasing carrying capacity.</description>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/description</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/description</xpath>
+          <value>
+            <description>Manufacture an artificial, industrial skeleton affixed to the original, with responsive, motorised joints. It is designed to take a lot of the strain of carrying heavy objects off of the body, thus increasing carrying capacity.</description>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+          <value>
+            <description>Manufacture an artificial, industrial skeleton affixed to the original, with responsive, motorised joints. It is designed to take a lot of the strain of carrying heavy objects off of the body, thus increasing carrying capacity.</description>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SkeletalBracing"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/baseCost</xpath>
+        <value>
+          <baseCost>250</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+        <value>
+          <baseCost>250</baseCost>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/baseCost</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/baseCost</xpath>
+          <value>
+            <baseCost>250</baseCost>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+          <value>
+            <baseCost>250</baseCost>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SkeletalBracing"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>Prosthetics</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>Prosthetics</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/prerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/prerequisites</xpath>
+          <value>
+            <prerequisites Inherit="False">
+              <li>Prosthetics</li>
+            </prerequisites>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+          <value>
+            <prerequisites Inherit="False">
+              <li>Prosthetics</li>
+            </prerequisites>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SkeletalBracing"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/hiddenPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]/hiddenPrerequisites</xpath>
+          <value>
+            <hiddenPrerequisites Inherit="False" />
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_BasicImplants"]</xpath>
+          <value>
+            <hiddenPrerequisites Inherit="False" />
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SkeletalBracing"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker</xpath>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="SkeletalBracing"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="SkeletalBracing"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]</xpath>
+                <value>
+                  <recipeMaker />
+                </value>
+              </match>
+            </li>
+          </operations>
+        </nomatch>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker</xpath>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker</xpath>
+          <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="SkeletalBracing"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="SkeletalBracing"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]</xpath>
+                <match Class="PatchOperationAdd">
+                  <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]</xpath>
+                  <value>
+                    <recipeMaker />
+                  </value>
+                </match>
+              </li>
+            </operations>
+          </nomatch>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisite</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisite</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisite)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisite)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisite)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisite)]</xpath>
+              <value>
+                <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisites</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisites)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <value>
+              <researchPrerequisites Inherit="False" />
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisites)]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisites)]</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="SkeletalBracing"]/recipeMaker[not(researchPrerequisites)]</xpath>
+              <value>
+                <researchPrerequisites Inherit="False" />
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SkeletalBracing"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_SkeletalBracing"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SkeletalBracing"][not(researchPrerequisite)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_SkeletalBracing"][not(researchPrerequisite)]</xpath>
+      <value>
+        <researchPrerequisite Inherit="False">I_BasicImplants</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SkeletalBracing"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="Make_SkeletalBracing"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Make_SkeletalBracing"][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="Make_SkeletalBracing"][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites Inherit="False" />
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ShoulderTurret"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>I_ShoulderTurrets</defName>
+            <label>shoulder turret</label>
+            <description>Manufacture a miniature, retractable turret implanted on the shoulder. It's AI allows it to autonomously fire, even on the move, though it's size limits it's effectiveness.</description>
+            <baseCost>250</baseCost>
+            <techLevel>Industrial</techLevel>
+            <prerequisites Inherit="False">
+              <li>GunTurrets</li>
+              <li>MicroelectronicsBasics</li>
+              <li>Prosthetics</li>
+            </prerequisites>
+          </ResearchProjectDef>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_ShoulderTurret"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ResearchProjectDef>
+              <defName>I_ShoulderTurrets</defName>
+              <label>shoulder turret</label>
+              <description>Manufacture a miniature, retractable turret implanted on the shoulder. It's AI allows it to autonomously fire, even on the move, though it's size limits it's effectiveness.</description>
+              <baseCost>250</baseCost>
+              <techLevel>Industrial</techLevel>
+              <prerequisites Inherit="False">
+                <li>GunTurrets</li>
+                <li>MicroelectronicsBasics</li>
+                <li>Prosthetics</li>
+              </prerequisites>
+            </ResearchProjectDef>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ShoulderTurret"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/label</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/label</xpath>
+        <value>
+          <label>shoulder turret</label>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]</xpath>
+        <value>
+          <label>shoulder turret</label>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_ShoulderTurret"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/label</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/label</xpath>
+          <value>
+            <label>shoulder turret</label>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]</xpath>
+          <value>
+            <label>shoulder turret</label>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ShoulderTurret"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/description</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/description</xpath>
+        <value>
+          <description>Manufacture a miniature, retractable turret implanted on the shoulder. It's AI allows it to autonomously fire, even on the move, though it's size limits it's effectiveness.</description>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]</xpath>
+        <value>
+          <description>Manufacture a miniature, retractable turret implanted on the shoulder. It's AI allows it to autonomously fire, even on the move, though it's size limits it's effectiveness.</description>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_ShoulderTurret"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/description</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/description</xpath>
+          <value>
+            <description>Manufacture a miniature, retractable turret implanted on the shoulder. It's AI allows it to autonomously fire, even on the move, though it's size limits it's effectiveness.</description>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]</xpath>
+          <value>
+            <description>Manufacture a miniature, retractable turret implanted on the shoulder. It's AI allows it to autonomously fire, even on the move, though it's size limits it's effectiveness.</description>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ShoulderTurret"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/baseCost</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/baseCost</xpath>
+        <value>
+          <baseCost>250</baseCost>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]</xpath>
+        <value>
+          <baseCost>250</baseCost>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_ShoulderTurret"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/baseCost</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/baseCost</xpath>
+          <value>
+            <baseCost>250</baseCost>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]</xpath>
+          <value>
+            <baseCost>250</baseCost>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ShoulderTurret"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/prerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/prerequisites</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>GunTurrets</li>
+            <li>MicroelectronicsBasics</li>
+            <li>Prosthetics</li>
+          </prerequisites>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]</xpath>
+        <value>
+          <prerequisites Inherit="False">
+            <li>GunTurrets</li>
+            <li>MicroelectronicsBasics</li>
+            <li>Prosthetics</li>
+          </prerequisites>
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_ShoulderTurret"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/prerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/prerequisites</xpath>
+          <value>
+            <prerequisites Inherit="False">
+              <li>GunTurrets</li>
+              <li>MicroelectronicsBasics</li>
+              <li>Prosthetics</li>
+            </prerequisites>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]</xpath>
+          <value>
+            <prerequisites Inherit="False">
+              <li>GunTurrets</li>
+              <li>MicroelectronicsBasics</li>
+              <li>Prosthetics</li>
+            </prerequisites>
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LTS_ShoulderTurret"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/hiddenPrerequisites</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/hiddenPrerequisites</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]</xpath>
+        <value>
+          <hiddenPrerequisites Inherit="False" />
+        </value>
+      </nomatch>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="LTS_ShoulderTurret"]</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/hiddenPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]/hiddenPrerequisites</xpath>
+          <value>
+            <hiddenPrerequisites Inherit="False" />
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="I_ShoulderTurrets"]</xpath>
+          <value>
+            <hiddenPrerequisites Inherit="False" />
+          </value>
+        </nomatch>
+      </match>
+    </nomatch>
+  </Operation>
+</Patch>

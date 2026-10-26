@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_Bionics_LTS_ModuleArm_Incinerator</defName>
+    <label>arm incinerator module</label>
+    <description>Manufacture a bionic module that allows the user to extend a compact flamethrower from their forearm. An internal pump slowly but autonomously refills the weapon.
+
+Modules can be self-installed into modified bionic or archotech parts, but can only be ejected by removing the part.</description>
+    <baseCost>0</baseCost>
+    <techLevel>Spacer</techLevel>
+    <knowledgeCategory>Basic</knowledgeCategory>
+    <knowledgeCost>60</knowledgeCost>
+    <tab>Anomaly</tab>
+    <prerequisites>
+      <li MayRequire="ludeon.rimworld.anomaly">BioferriteIgnition</li>
+      <li>LTS_ModularBionics</li>
+    </prerequisites>
+    <researchViewX>7.50</researchViewX>
+    <researchViewY>6.10</researchViewY>
+  </ResearchProjectDef>
+</Defs>

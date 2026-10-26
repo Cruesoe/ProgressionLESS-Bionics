@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Patch>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_CryptoClaw"]</xpath>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_LTS_ModuleArm_CryptoClaw"]</xpath>
-    </match>
-  </Operation>
-</Patch>
