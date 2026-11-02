@@ -3,12 +3,12 @@
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="USH_CryogenicNexus"]</xpath>
     <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]</xpath>
       <nomatch Class="PatchOperationAdd">
         <xpath>Defs</xpath>
         <value>
           <ResearchProjectDef>
-            <defName>Cryptosleep</defName>
+            <defName>Ferny_Bionics_USH_CryogenicNexus</defName>
             <label>cryogenic nexus</label>
             <description>Manufacture a glittertech heart replacement that renders the user’s blood mutated and fire‑immune. It protects all body cells and the skin from ignition, but it also lowers antibody counts and compromises the immune system, reducing blood filtration efficiency.
 
@@ -23,6 +23,9 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
               <li>MultiAnalyzer</li>
               <li>USH_ResearchProbe</li>
             </requiredResearchFacilities>
+            <tab>Ferny_Bionics</tab>
+            <researchViewX>9.00</researchViewX>
+            <researchViewY>2.10</researchViewY>
           </ResearchProjectDef>
         </value>
       </nomatch>
@@ -30,12 +33,12 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <nomatch Class="PatchOperationConditional">
       <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="USH_CryogenicNexus"]</xpath>
       <match Class="PatchOperationConditional">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]</xpath>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
             <ResearchProjectDef>
-              <defName>Cryptosleep</defName>
+              <defName>Ferny_Bionics_USH_CryogenicNexus</defName>
               <label>cryogenic nexus</label>
               <description>Manufacture a glittertech heart replacement that renders the user’s blood mutated and fire‑immune. It protects all body cells and the skin from ignition, but it also lowers antibody counts and compromises the immune system, reducing blood filtration efficiency.
 
@@ -50,6 +53,9 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
                 <li>MultiAnalyzer</li>
                 <li>USH_ResearchProbe</li>
               </requiredResearchFacilities>
+              <tab>Ferny_Bionics</tab>
+              <researchViewX>9.00</researchViewX>
+              <researchViewY>2.10</researchViewY>
             </ResearchProjectDef>
           </value>
         </nomatch>
@@ -59,15 +65,15 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="USH_CryogenicNexus"]</xpath>
     <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/label</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/label</xpath>
       <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/label</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/label</xpath>
         <value>
           <label>cryogenic nexus</label>
         </value>
       </match>
       <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]</xpath>
         <value>
           <label>cryogenic nexus</label>
         </value>
@@ -76,15 +82,15 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <nomatch Class="PatchOperationConditional">
       <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="USH_CryogenicNexus"]</xpath>
       <match Class="PatchOperationConditional">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/label</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/label</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/label</xpath>
+          <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/label</xpath>
           <value>
             <label>cryogenic nexus</label>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+          <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]</xpath>
           <value>
             <label>cryogenic nexus</label>
           </value>
@@ -95,9 +101,9 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="USH_CryogenicNexus"]</xpath>
     <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/description</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/description</xpath>
       <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/description</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/description</xpath>
         <value>
           <description>Manufacture a glittertech heart replacement that renders the user’s blood mutated and fire‑immune. It protects all body cells and the skin from ignition, but it also lowers antibody counts and compromises the immune system, reducing blood filtration efficiency.
 
@@ -105,7 +111,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
         </value>
       </match>
       <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]</xpath>
         <value>
           <description>Manufacture a glittertech heart replacement that renders the user’s blood mutated and fire‑immune. It protects all body cells and the skin from ignition, but it also lowers antibody counts and compromises the immune system, reducing blood filtration efficiency.
 
@@ -116,9 +122,9 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <nomatch Class="PatchOperationConditional">
       <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="USH_CryogenicNexus"]</xpath>
       <match Class="PatchOperationConditional">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/description</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/description</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/description</xpath>
+          <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/description</xpath>
           <value>
             <description>Manufacture a glittertech heart replacement that renders the user’s blood mutated and fire‑immune. It protects all body cells and the skin from ignition, but it also lowers antibody counts and compromises the immune system, reducing blood filtration efficiency.
 
@@ -126,7 +132,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+          <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]</xpath>
           <value>
             <description>Manufacture a glittertech heart replacement that renders the user’s blood mutated and fire‑immune. It protects all body cells and the skin from ignition, but it also lowers antibody counts and compromises the immune system, reducing blood filtration efficiency.
 
@@ -139,15 +145,15 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="USH_CryogenicNexus"]</xpath>
     <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/baseCost</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/baseCost</xpath>
       <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/baseCost</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/baseCost</xpath>
         <value>
           <baseCost>800</baseCost>
         </value>
       </match>
       <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]</xpath>
         <value>
           <baseCost>800</baseCost>
         </value>
@@ -156,15 +162,15 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <nomatch Class="PatchOperationConditional">
       <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="USH_CryogenicNexus"]</xpath>
       <match Class="PatchOperationConditional">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/baseCost</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/baseCost</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/baseCost</xpath>
+          <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/baseCost</xpath>
           <value>
             <baseCost>800</baseCost>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+          <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]</xpath>
           <value>
             <baseCost>800</baseCost>
           </value>
@@ -175,9 +181,9 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="USH_CryogenicNexus"]</xpath>
     <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/prerequisites</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/prerequisites</xpath>
       <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/prerequisites</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/prerequisites</xpath>
         <value>
           <prerequisites Inherit="False">
             <li>USH_SkinRes</li>
@@ -185,7 +191,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
         </value>
       </match>
       <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]</xpath>
         <value>
           <prerequisites Inherit="False">
             <li>USH_SkinRes</li>
@@ -196,9 +202,9 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <nomatch Class="PatchOperationConditional">
       <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="USH_CryogenicNexus"]</xpath>
       <match Class="PatchOperationConditional">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/prerequisites</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/prerequisites</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/prerequisites</xpath>
+          <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/prerequisites</xpath>
           <value>
             <prerequisites Inherit="False">
               <li>USH_SkinRes</li>
@@ -206,7 +212,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+          <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]</xpath>
           <value>
             <prerequisites Inherit="False">
               <li>USH_SkinRes</li>
@@ -219,15 +225,15 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="USH_CryogenicNexus"]</xpath>
     <match Class="PatchOperationConditional">
-      <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/hiddenPrerequisites</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/hiddenPrerequisites</xpath>
       <match Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/hiddenPrerequisites</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/hiddenPrerequisites</xpath>
         <value>
           <hiddenPrerequisites Inherit="False" />
         </value>
       </match>
       <nomatch Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]</xpath>
         <value>
           <hiddenPrerequisites Inherit="False" />
         </value>
@@ -236,15 +242,15 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <nomatch Class="PatchOperationConditional">
       <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="USH_CryogenicNexus"]</xpath>
       <match Class="PatchOperationConditional">
-        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/hiddenPrerequisites</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/hiddenPrerequisites</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]/hiddenPrerequisites</xpath>
+          <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]/hiddenPrerequisites</xpath>
           <value>
             <hiddenPrerequisites Inherit="False" />
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+          <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_USH_CryogenicNexus"]</xpath>
           <value>
             <hiddenPrerequisites Inherit="False" />
           </value>
@@ -323,7 +329,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
           <match Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="USH_CryogenicNexus"]/recipeMaker/researchPrerequisite</xpath>
             <value>
-              <researchPrerequisite Inherit="False">Cryptosleep</researchPrerequisite>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_USH_CryogenicNexus</researchPrerequisite>
             </value>
           </match>
         </li>
@@ -332,7 +338,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
           <match Class="PatchOperationReplace">
             <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="USH_CryogenicNexus"]/recipeMaker/researchPrerequisite</xpath>
             <value>
-              <researchPrerequisite Inherit="False">Cryptosleep</researchPrerequisite>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_USH_CryogenicNexus</researchPrerequisite>
             </value>
           </match>
         </li>
@@ -347,7 +353,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
             <match Class="PatchOperationReplace">
               <xpath>Defs/ThingDef[defName="USH_CryogenicNexus"]/recipeMaker/researchPrerequisite</xpath>
               <value>
-                <researchPrerequisite Inherit="False">Cryptosleep</researchPrerequisite>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_USH_CryogenicNexus</researchPrerequisite>
               </value>
             </match>
           </li>
@@ -356,7 +362,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
             <match Class="PatchOperationReplace">
               <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="USH_CryogenicNexus"]/recipeMaker/researchPrerequisite</xpath>
               <value>
-                <researchPrerequisite Inherit="False">Cryptosleep</researchPrerequisite>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_USH_CryogenicNexus</researchPrerequisite>
               </value>
             </match>
           </li>
@@ -373,7 +379,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
           <match Class="PatchOperationAdd">
             <xpath>Defs/ThingDef[defName="USH_CryogenicNexus"]/recipeMaker[not(researchPrerequisite)]</xpath>
             <value>
-              <researchPrerequisite Inherit="False">Cryptosleep</researchPrerequisite>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_USH_CryogenicNexus</researchPrerequisite>
             </value>
           </match>
         </li>
@@ -382,7 +388,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
           <match Class="PatchOperationAdd">
             <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="USH_CryogenicNexus"]/recipeMaker[not(researchPrerequisite)]</xpath>
             <value>
-              <researchPrerequisite Inherit="False">Cryptosleep</researchPrerequisite>
+              <researchPrerequisite Inherit="False">Ferny_Bionics_USH_CryogenicNexus</researchPrerequisite>
             </value>
           </match>
         </li>
@@ -397,7 +403,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
             <match Class="PatchOperationAdd">
               <xpath>Defs/ThingDef[defName="USH_CryogenicNexus"]/recipeMaker[not(researchPrerequisite)]</xpath>
               <value>
-                <researchPrerequisite Inherit="False">Cryptosleep</researchPrerequisite>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_USH_CryogenicNexus</researchPrerequisite>
               </value>
             </match>
           </li>
@@ -406,7 +412,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
             <match Class="PatchOperationAdd">
               <xpath>Defs/PyrinthBionics.PyrinthItemDef[defName="USH_CryogenicNexus"]/recipeMaker[not(researchPrerequisite)]</xpath>
               <value>
-                <researchPrerequisite Inherit="False">Cryptosleep</researchPrerequisite>
+                <researchPrerequisite Inherit="False">Ferny_Bionics_USH_CryogenicNexus</researchPrerequisite>
               </value>
             </match>
           </li>
@@ -519,7 +525,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationReplace">
       <xpath>Defs/RecipeDef[defName="Make_USH_CryogenicNexus"]/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Cryptosleep</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_CryogenicNexus</researchPrerequisite>
       </value>
     </match>
   </Operation>
@@ -528,7 +534,7 @@ While it can save lives during short-term fire exposure, it becomes highly unsta
     <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="Make_USH_CryogenicNexus"][not(researchPrerequisite)]</xpath>
       <value>
-        <researchPrerequisite Inherit="False">Cryptosleep</researchPrerequisite>
+        <researchPrerequisite Inherit="False">Ferny_Bionics_USH_CryogenicNexus</researchPrerequisite>
       </value>
     </match>
   </Operation>
