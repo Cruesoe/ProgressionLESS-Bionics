@@ -191,10 +191,10 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.biotech,ludeon.rimworld.royalty,ushanka.biologicalwarfare,zwei2stein.pyrinthbionics">
+  <ResearchProjectDef MayRequireAnyOf="lts.i,ludeon.rimworld.biotech,ludeon.rimworld.royalty,sk.injectorimplant,ushanka.biologicalwarfare,zwei2stein.pyrinthbionics">
     <defName>Ferny_Bionics_BionicOrgans</defName>
     <label>bionic organs</label>
-    <description>Manufacture powered artificial internal organs. Covers, depending on your mods: bionic kidney, bionic liver, bionic lung, iron lung, bionic womb, pyrinth liver and pyrinth stomach.</description>
+    <description>Manufacture powered artificial internal organs. Covers, depending on your mods: bionic kidney, bionic liver, bionic lung, iron lung, bionic womb, pyrinth liver, pyrinth stomach and injector implant.</description>
     <baseCost>500</baseCost>
     <techLevel>Spacer</techLevel>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>

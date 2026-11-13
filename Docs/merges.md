@@ -6,8 +6,8 @@ Plan file: `Projects\Tools\RimWorld\ProgressionLESS\Plans\Bionics.ps1`. The tabl
 
 | | Original | Without the optional folds | Applied (all rows) |
 |---|---|---|---|
-| Research projects ferny adds | 562 | 86 | 79 |
-| All projects the mod defines or rethemes | 644 | 164 | 157 |
+| Research projects ferny adds | 563 | 86 | 79 |
+| All projects the mod defines or rethemes | 645 | 164 | 157 |
 | Projects in the Genesis pack (Core, DLCs, Dubs Bad Hygiene) | 61 | 38 | 37 |
 
 ## How the groups are built
@@ -128,7 +128,7 @@ All 93 rows, including the optional folds, are merged in place, as in the other 
 | 56 | sanguophage implants | Spacer | 3 -> 1 | new group | Integrated Implants | - | hemo-fangs, hemogenic microcompressor, deathrest capacitor |
 | 57 | advanced specialized limbs | Spacer | 2 -> 1 | fold into **advanced field hand** | EPOE-Forked Royalty | - | **advanced field hand** (existing), advanced drill arm ↑ |
 | 58 | bionic compact weapons | Spacer | 3 -> 1 | fold into **bionic hand talon** | EPOE-Forked Royalty | - | **bionic hand talon** (existing), bionic elbow blade ↑, bionic knee spike ↑ |
-| 59 | bionic organs | Spacer | 7 -> 1 | new group | Integrated Implants, Ushanka Biological Warfare, Pyrinth Bionics | - | bionic kidney, bionic liver, bionic lung, iron lung, bionic womb, pyrinth liver, pyrinth stomach |
+| 59 | bionic organs | Spacer | 8 -> 1 | new group | Integrated Implants, Ushanka Biological Warfare, Pyrinth Bionics, Injector Implant | - | bionic kidney, bionic liver, bionic lung, iron lung, bionic womb, pyrinth liver, pyrinth stomach, injector implant |
 | 60 | advanced bionic parts | Spacer | 10 -> 1 | new group | EPOE-Forked | - | advanced bionic leg, advanced bionic ear, advanced bionic eye, advanced bionic foot, advanced bionic hand, advanced bionic jaw, advanced bionic spine, advanced power arm, protective exoskeleton, exoskeleton suit |
 | 61 | skill chips | Spacer | 12 -> 1 | new group | Integrated Implants | - | skill chip (animals), skill chip (artistic), skill chip (construction), skill chip (cooking), skill chip (crafting), skill chip (intellectual), skill chip (medical), skill chip (melee), skill chip (mining), skill chip (plants), skill chip (shooting), skill chip (social) |
 | 62 | bionic tails | Spacer | 3 -> 1 | fold into **bionic tail** | Integrated Implants | - | **bionic tail** (existing), claw tail ↑, venom tail ↑ |
