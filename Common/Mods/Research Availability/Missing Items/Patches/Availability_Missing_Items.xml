@@ -85828,7 +85828,16 @@
       </operations>
     </match>
   </Operation>
-
+  <!-- ProgressionLESS: injector implant, which ferny's release leaves out of this file -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="InjectorImplant"]</xpath>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BionicOrgans"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BionicOrgans"]</xpath>
+      <success>Always</success><value><ProgressionLESS_Missing>8</ProgressionLESS_Missing></value></match>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_MedievalProsthetics"][ProgressionLESS_Missing="1" and ProgressionLESS_Missing="2"]</xpath>
     <match Class="PatchOperationRemove">
@@ -85964,7 +85973,7 @@
     <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BionicBodyParts"]/ProgressionLESS_Missing</xpath>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BionicOrgans"][ProgressionLESS_Missing="1" and ProgressionLESS_Missing="2" and ProgressionLESS_Missing="3" and ProgressionLESS_Missing="4" and ProgressionLESS_Missing="5" and ProgressionLESS_Missing="6" and ProgressionLESS_Missing="7"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BionicOrgans"][ProgressionLESS_Missing="1" and ProgressionLESS_Missing="2" and ProgressionLESS_Missing="3" and ProgressionLESS_Missing="4" and ProgressionLESS_Missing="5" and ProgressionLESS_Missing="6" and ProgressionLESS_Missing="7" and ProgressionLESS_Missing="8"]</xpath>
     <match Class="PatchOperationRemove">
       <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BionicOrgans"]</xpath>
     </match>

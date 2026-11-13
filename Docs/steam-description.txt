@@ -10,7 +10,7 @@
 [/list]
 
 [h2]Why "LESS"?[/h2]
-Progression: Bionics adds up to [b]562 research projects[/b] depending on your mods. This fork groups them into [b]at most 79[/b], most of them on their own Bionics research tab, with the Anomaly projects on the Anomaly tab:
+Progression: Bionics adds up to [b]563 research projects[/b] depending on your mods. This fork groups them into [b]at most 80[/b], most of them on their own Bionics research tab, with the Anomaly projects on the Anomaly tab:
 [list]
 [*][b]Medieval:[/b] Medieval prosthetics, Golem modules
 [*][b]Industrial:[/b] Prosthetic parts, Surrogate organs, Specialized limbs, Compact weapons, Brain wiring implants, Animal prosthetics, Animal prosthetic parts, Animal combat implants, Cybertech kits, Advanced cybertech kits
@@ -46,7 +46,7 @@ Keeps all of the original's mod support:
 [*]Integrated Implants, Bionic modularity and Bionic modularity - animals
 [*]Alpha Implants, Alpha Mechs, Vanilla Genetics Expanded (and More Lab Stuff), Vanilla Races Expanded - Android
 [*]Ushanka's Hacking, Glittertech and Biological Warfare expansions
-[*]Pyrinth Bionics, Epochs - Golems, Big and Small, Altered Carbon 2 ReSleeved, Cellcycle Acceleration, Chimera Creation, Die for me, Dubs Bad Hygiene, Faction - Orbiters, Mechanoid Invaders, Royalty eye bionic, Security Clearance and War Crimes Expanded 2
+[*]Pyrinth Bionics, Epochs - Golems, Big and Small, Altered Carbon 2 ReSleeved, Cellcycle Acceleration, Chimera Creation, Die for me, Dubs Bad Hygiene, Faction - Orbiters, Mechanoid Invaders, Royalty eye bionic, Security Clearance, Injector Implant and War Crimes Expanded 2
 [/list]
 
 [b]Replaces the original. Don't use both.[/b]

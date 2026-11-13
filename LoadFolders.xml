@@ -116,6 +116,7 @@
     <li IfModActive="det.epochsgolems">Common/Mods/Conditional/Epochs - Golems/Crafting and research 001</li>
     <li IfModActive="7f.securityclearance">Common/Mods/Security Clearance</li>
     <li>Common</li>
+    <li IfModActive="sk.injectorimplant">Common/Mods/Injector Implant</li>
   </v1.6>
   <v1.7>
     <li>/</li>
@@ -233,5 +234,6 @@
     <li IfModActive="det.epochsgolems">Common/Mods/Conditional/Epochs - Golems/Crafting and research 001</li>
     <li IfModActive="7f.securityclearance">Common/Mods/Security Clearance</li>
     <li>Common</li>
+    <li IfModActive="sk.injectorimplant">Common/Mods/Injector Implant</li>
   </v1.7>
 </loadFolders>
