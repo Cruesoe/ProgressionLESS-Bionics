@@ -41,6 +41,8 @@ foreach ($path in $docs.Keys) {
   $text = [IO.File]::ReadAllText($path)
   foreach ($m in [regex]::Matches($text, '(?:>|")(Ferny_[A-Za-z0-9_]+)(?:<|")')) { $refs[$m.Groups[1].Value] = Split-Path $path -Leaf }
 }
+# research projects of ProgressionLESS: Robotics, used only when it is active
+foreach ($r in 'Ferny_ControlSublink', 'Ferny_ControlSublinkHigh', 'Ferny_MechlordSuit', 'Ferny_RemoteRepairer', 'Ferny_SystemInterlink') { $defined[$r] = 1 }
 foreach ($r in $refs.Keys) { if (-not $defined[$r]) { $fail.Add("$r is named in $($refs[$r]) but never defined") } }
 
 foreach ($d in $docs.Values) {
