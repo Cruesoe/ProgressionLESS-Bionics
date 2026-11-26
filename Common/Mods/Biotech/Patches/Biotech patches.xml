@@ -2896,4 +2896,157 @@ This implant can be installed up to 6 times to increase its effect.</description
       </value>
     </match>
   </Operation>
+  <!-- With a Robotics mod, mechanitor gear and mechlink upgrades stay on its research projects -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublink"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ControlSublink"]/recipeMaker/researchPrerequisite | Defs/PyrinthBionics.PyrinthItemDef[defName="ControlSublink"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ControlSublink"]/recipeMaker/researchPrerequisite | Defs/PyrinthBionics.PyrinthItemDef[defName="ControlSublink"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_ControlSublink</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="Make_ControlSublink"]/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/RecipeDef[defName="Make_ControlSublink"]/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_ControlSublink</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_ControlSublinkHigh"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ControlSublinkHigh"]/recipeMaker/researchPrerequisite | Defs/PyrinthBionics.PyrinthItemDef[defName="ControlSublinkHigh"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ControlSublinkHigh"]/recipeMaker/researchPrerequisite | Defs/PyrinthBionics.PyrinthItemDef[defName="ControlSublinkHigh"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_ControlSublinkHigh</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="Make_ControlSublinkHigh"]/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/RecipeDef[defName="Make_ControlSublinkHigh"]/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_ControlSublinkHigh</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RemoteRepairer"]/recipeMaker/researchPrerequisite | Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteRepairer"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RemoteRepairer"]/recipeMaker/researchPrerequisite | Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteRepairer"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_RemoteRepairer</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="Make_RemoteRepairer"]/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/RecipeDef[defName="Make_RemoteRepairer"]/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_RemoteRepairer</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_RemoteRepairer"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RemoteShielder"]/recipeMaker/researchPrerequisite | Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteShielder"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RemoteShielder"]/recipeMaker/researchPrerequisite | Defs/PyrinthBionics.PyrinthItemDef[defName="RemoteShielder"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_RemoteRepairer</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="Make_RemoteShielder"]/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/RecipeDef[defName="Make_RemoteShielder"]/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_RemoteRepairer</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs[ResearchProjectDef[defName="Ferny_MechlordSuit"]]/ResearchProjectDef[defName="Ferny_RepairProbe"][tab="Ferny_Bionics"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RepairProbe"]/recipeMaker/researchPrerequisite | Defs/PyrinthBionics.PyrinthItemDef[defName="RepairProbe"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RepairProbe"]/recipeMaker/researchPrerequisite | Defs/PyrinthBionics.PyrinthItemDef[defName="RepairProbe"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_MechlordSuit</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="Make_RepairProbe"]/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/RecipeDef[defName="Make_RepairProbe"]/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_MechlordSuit</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_RepairProbe"][not(//*[not(self::defName)][text()="Ferny_RepairProbe"])]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_RepairProbe"][not(//*[not(self::defName)][text()="Ferny_RepairProbe"])]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_HighMechanitorImplants"][not(//*[not(self::defName)][text()="Ferny_Bionics_HighMechanitorImplants"])]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_HighMechanitorImplants"][not(//*[not(self::defName)][text()="Ferny_Bionics_HighMechanitorImplants"])]</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BasicMechanitorImplants"][//ResearchProjectDef[defName="Ferny_ControlSublink"]]/description</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BasicMechanitorImplants"]/description</xpath>
+      <value>
+        <description>Install an implant that speeds up a mechanitor's mech gestation. Covers, depending on your mods: mech gestation processor.</description>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BasicMechanitorImplants"][not(//*[not(self::defName)][text()="Ferny_Bionics_BasicMechanitorImplants"])]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_BasicMechanitorImplants"][not(//*[not(self::defName)][text()="Ferny_Bionics_BasicMechanitorImplants"])]</xpath>
+    </match>
+  </Operation>
 </Patch>

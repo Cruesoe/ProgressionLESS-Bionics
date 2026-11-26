@@ -298,4 +298,36 @@
       </value>
     </match>
   </Operation>
+  <!-- With a Robotics mod, the system interlink stays on its research project -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_SystemInterlink"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="IM_SystemInterlink"]/recipeMaker/researchPrerequisite | Defs/PyrinthBionics.PyrinthItemDef[defName="IM_SystemInterlink"]/recipeMaker/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="IM_SystemInterlink"]/recipeMaker/researchPrerequisite | Defs/PyrinthBionics.PyrinthItemDef[defName="IM_SystemInterlink"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_SystemInterlink</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="Make_IM_SystemInterlink"]/researchPrerequisite</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/RecipeDef[defName="Make_IM_SystemInterlink"]/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite Inherit="False">Ferny_SystemInterlink</researchPrerequisite>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_HighMechanitorImplants"][not(//*[not(self::defName)][text()="Ferny_Bionics_HighMechanitorImplants"])]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Bionics_HighMechanitorImplants"][not(//*[not(self::defName)][text()="Ferny_Bionics_HighMechanitorImplants"])]</xpath>
+    </match>
+  </Operation>
 </Patch>
